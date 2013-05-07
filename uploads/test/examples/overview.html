@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="new ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="new ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="new ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="new" lang="en"><!--<![endif]-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Force IE to use the latest rendering engine or Chrome Frame (if available) -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+		<!-- Page Info -->
+		<title>Overview Example | Microlise Bootstrap</title>
+		<meta name="description" content="Generic description of the application goes here."/>
+		<meta name="author" content="Microlise Ltd."/>
+		<meta name="copyright" content="Copyright (c) 2012 Microlise Ltd." />
+
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="../img/favicon.ico"/>
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+
+		<!-- Global CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css" media="all" />
+		<!--[if lte IE 7]>
+			<link rel="stylesheet" type="text/css" href="ie.css" media="all" />
+		<![endif]-->
+
+		<!-- Themes -->
+		<link rel="alternate stylesheet" type="text/css" href="../css/dummy.css" title="dummy" media="screen" disabled="">
+		<link rel="alternate stylesheet" type="text/css" href="../css/jcb.css" title="jcb" media="screen" disabled="">
+
+		<script type="text/javascript" src="../js/modernizr.min.js"></script>
+		<!-- Other Javascript goes at the bottom of the page, to improve page load-times. -->
+	</head>
+	<body onload="prettyPrint()">
+
+		<a href="#content" class="skiplink">Skip Navigation</a>
+
+		<div class="session">
+			<div class="container">
+				<p class="session-powered">Powered by <a href="http://microlise.com/" class="icon-microlise"> microlise</a></p>
+				<ul class="session-actions">
+					<li>Signed in as <strong>Ben Jenkinson</strong> to <strong>JCB Customer Experience</strong> <a href="#" title="Change the current tenancy">(Change)</a></li>
+					<li><a href="#" rel="help">Help</a>
+					<li><a href="#" >Account</a>
+					<li><a href="#">Customise</a></li>
+					<li><a href="#">Sign out</a>
+				</ul>
+			</div><!-- /.container -->
+		</div><!-- /.session -->
+
+		<header class="site-header">
+			<div class="nav nav-main">
+				<div class="container">
+					<div class="logo">Microlise</div>
+					<ul>
+						<li class="active"><a href="#">Top</a></li>
+						<li><a href="#">Level</a></li>
+						<li><a href="#">Navigation</a></li>
+					</ul>
+				</div><!-- /.container -->
+			</div><!-- /.main -->
+			<div class="nav nav-sub">
+				<div class="container">
+					<ul>
+						<li class="active"><a href="#">Sub</a></li>
+						<li><a href="#">Level</a></li>
+						<li><a href="#">Navigation</a></li>
+						<li><a href="#">If</a></li>
+						<li><a href="#">Appropriate</a></li>
+					</ul>
+				</div><!-- /.container -->
+			</div><!-- /.subnav -->
+		</header>
+
+		<div id="content">
+			<div class="container">
+				<h1 class="align-v">Overview</h1>
+
+				<div class="row align-v">
+					<div class="span6">
+						<section class="mod t-simple">
+							<div class="hd t-bam">
+								<h2 class="title"><a href="#"><i class="icon-down"></i> Debrief List (All groups)</a></h2>
+							</div><!-- /.mod-head -->
+							<div class="bd">
+								<table id="debrief-table"><tr><td></td></tr></table>
+								<div id="debrief-pager"></div>
+							</div><!-- /.bd -->
+						</section><!-- /.mod -->
+					</div><!-- /.span -->
+
+					<div class="span6">
+						<section class="mod t-simple">
+							<div class="hd t-bam">
+								<h2 class="title"><a href="#"><i class="icon-down"></i> Arrivals (All groups)</a></h2>
+							</div><!-- /.mod-head -->
+							<div class="bd">
+								<table id="arrivals-table"><tr><td></td></tr></table>
+								<div id="arrivals-pager"></div>
+							</div><!-- /.bd -->
+						</section><!-- /.mod -->
+					</div><!-- /.span -->
+
+				</div><!-- /.row -->
+
+				<div class="row align-v">
+					<div class="span6">
+						<section class="mod t-simple">
+							<div class="hd t-bam">
+								<h2 class="title"><a href="#"><i class="icon-down"></i> Departures (All groups)</a></h2>
+							</div><!-- /.mod-head -->
+							<div class="bd">
+								<table id="departures-table"><tr><td></td></tr></table>
+								<div id="departures-pager"></div>
+							</div><!-- /.bd -->
+						</section><!-- /.mod -->
+					</div><!-- /.span -->
+
+					<div class="span6">
+						<section class="mod t-simple">
+							<div class="hd t-bam">
+								<h2 class="title"><a href="#"><i class="icon-forward"></i> Some Collapsed adminbox</a></h2>
+							</div><!-- /.mod-head -->
+							<div class="bd collapsed">
+							<table id="collapsed-table"><tr><td></td></tr></table>
+								<div id="collapsed-pager"></div>
+							</div><!-- /.bd -->
+						</section><!-- /.mod -->
+					</div><!-- /.span -->
+
+				</div><!-- /.row -->
+
+			</div><!-- /#content -->
+		</div><!-- /.container -->
+
+		<footer>
+			<div class="container">
+				<a href="#" class="poweredby">Powered by Microlise</a>
+				<a href="#" id="toggler">Toggle stylesheet</a>
+			</div>
+		</footer>
+
+		<!-- Required, on all pages: -->
+			<!-- JQuery -->
+			<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+			<!-- Modernizer polyfill -->
+			<script type="text/javascript" src="../js/initialize.js"></script>
+			<!-- jqGrid -->
+			<script type="text/javascript" src="../js/jqgrid/grid.locale-en.js"></script>
+			<script type="text/javascript" src="../js/jqgrid/jquery.jqGrid.min.js"></script>
+
+		<!-- Not required, Bootstrap demo data -->
+			<script type="text/javascript" src="../js/google-code-prettify/prettify.js"></script>
+			<script type="text/javascript" src="../js/stylesheet-toggle.min.js"></script>
+			<script type="text/javascript">
+				$(function(){
+					// Call stylesheet init so that all stylesheet changing functions will work
+					$.stylesheetInit();
+
+					// JQGrid
+					//<![CDATA[
+						jQuery(document).ready(function () {
+							var mydata = [
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"},
+								{driver:"data",vehicle:"data",route:"data",date:"data",eta:"data",ptatrailer:"data",origin:"data",prevloc:"data",curloc:"data",status:"data",site:"data",mins:"data",timestart:"data",timeend:"data",action:"data"}
+							];
+							$("#debrief-table").jqGrid({
+								datatype: "local",
+								data: mydata,
+								colNames:['Driver', 'Vehicle', 'Route', 'Date', 'ETA', 'PTA', 'Trailer', 'Origin', 'Prev Location', 'Cur Location', 'Status', 'Site', 'Mins Var', 'Time Window Start', 'Time Window End', 'Action'],
+								colModel:[
+									{name:'driver',index:'driver', width:90},
+									{name:'vehicle',index:'vehicle', width:140},
+									{name:'route',index:'amount', width:140},
+									{name:'date',index:'amount', width:140},
+									{name:'eta',index:'amount', width:140},
+									{name:'pta',index:'amount', width:140},
+									{name:'trailer',index:'amount', width:140},
+									{name:'origin',index:'amount', width:140},
+									{name:'prevloc',index:'amount', width:140},
+									{name:'curloc',index:'amount', width:140},
+									{name:'status',index:'amount', width:140},
+									{name:'site',index:'amount', width:140},
+									{name:'mins',index:'amount', width:140},
+									{name:'timestart',index:'amount', width:140},
+									{name:'timeend',index:'amount', width:140},
+									{name:'action',index:'amount', width:140},
+								],
+								rowNum:10,
+								rowList:[5,10,20],
+								pager: '#debrief-pager',
+								sortname: 'invdate',
+								viewrecords: true,
+								sortorder: "desc",
+								height: "100%"
+							}).jqGrid('navGrid','#pager',{add:false,edit:false,del:false});
+
+							$("#arrivals-table").jqGrid({
+								datatype: "local",
+								data: mydata,
+								colNames:['Driver', 'Vehicle', 'Route', 'Date', 'ETA', 'PTA', 'Trailer', 'Origin', 'Prev Location', 'Cur Location', 'Status', 'Site', 'Mins Var', 'Time Window Start', 'Time Window End', 'Action'],
+								colModel:[
+									{name:'driver',index:'driver', width:90},
+									{name:'vehicle',index:'vehicle', width:140},
+									{name:'route',index:'amount', width:140},
+									{name:'date',index:'amount', width:140},
+									{name:'eta',index:'amount', width:140},
+									{name:'pta',index:'amount', width:140},
+									{name:'trailer',index:'amount', width:140},
+									{name:'origin',index:'amount', width:140},
+									{name:'prevloc',index:'amount', width:140},
+									{name:'curloc',index:'amount', width:140},
+									{name:'status',index:'amount', width:140},
+									{name:'site',index:'amount', width:140},
+									{name:'mins',index:'amount', width:140},
+									{name:'timestart',index:'amount', width:140},
+									{name:'timeend',index:'amount', width:140},
+									{name:'action',index:'amount', width:140},
+								],
+								rowNum:10,
+								rowList:[5,10,20],
+								pager: '#arrivals-pager',
+								sortname: 'invdate',
+								viewrecords: true,
+								sortorder: "desc",
+								height: "100%"
+							}).jqGrid('navGrid','#pager',{add:false,edit:false,del:false});
+
+							$("#departures-table").jqGrid({
+								datatype: "local",
+								data: mydata,
+								colNames:['Driver', 'Vehicle', 'Route', 'Date', 'ETA', 'PTA', 'Trailer', 'Origin', 'Prev Location', 'Cur Location', 'Status', 'Site', 'Mins Var', 'Time Window Start', 'Time Window End', 'Action'],
+								colModel:[
+									{name:'driver',index:'driver', width:90},
+									{name:'vehicle',index:'vehicle', width:140},
+									{name:'route',index:'amount', width:140},
+									{name:'date',index:'amount', width:140},
+									{name:'eta',index:'amount', width:140},
+									{name:'pta',index:'amount', width:140},
+									{name:'trailer',index:'amount', width:140},
+									{name:'origin',index:'amount', width:140},
+									{name:'prevloc',index:'amount', width:140},
+									{name:'curloc',index:'amount', width:140},
+									{name:'status',index:'amount', width:140},
+									{name:'site',index:'amount', width:140},
+									{name:'mins',index:'amount', width:140},
+									{name:'timestart',index:'amount', width:140},
+									{name:'timeend',index:'amount', width:140},
+									{name:'action',index:'amount', width:140},
+								],
+								rowNum:10,
+								rowList:[5,10,20],
+								pager: '#departures-pager',
+								sortname: 'invdate',
+								viewrecords: true,
+								sortorder: "desc",
+								height: "100%"
+							}).jqGrid('navGrid','#pager',{add:false,edit:false,del:false});
+						});
+					//]]>
+
+					// Loops through stylesheets
+					$('#toggler').bind(
+						'click',
+						function(e)
+						{
+							$.stylesheetToggle();
+							return false;
+						}
+					);
+				});
+			</script>
+	</body>
+</html>

@@ -5,20 +5,92 @@
 <!--[if IE 9 ]><html class="ie9" lang="en"><![endif]-->
 <!--[if !IE]><!--><html lang="en"><!--<![endif]-->
 	<head>
-			<!-- Meta -->
-			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
-			<title>{% if page.title %} {{  page.title  }} | {% endif %} Wayne Moir</title>
+		<!-- Meta -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="The online notebook and blog of Wayne Moir, Professional Web Designer" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-			<!-- Favicons -->
-			<link rel="shortcut icon" href="/img/favicon.ico"/>
+		<title>{% if page.title %} {{  page.title  }} | {% endif %} Wayne Moir</title>
 
-			<!-- CSS -->
-			<link rel="stylesheet" type="text/css" href="/css/style.css" media="all" />
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="/img/favicon.ico"/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/smallerscreen.css" media="only screen and (max-width: 970px)" />
+		<link rel="stylesheet" href="css/mobile.css" media="handheld, only screen and (max-width: 767px)" />
 	</head>
 	<body>
-		
+			<header id="site-header">
+				<div class="container">
+						<h1>
+							<a href="/" title="Wayne Moir" rel="home" id="logo">
+								<img src="images/logo.png" alt="Wayne Moir" />
+							</a>
+						</h1>
+					<nav id="site-nav">
+						<h1>Site Navigation</h1>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/archive/">Archive</a></li>
+							<li><a href="/about/">About</a></li>
+							<li><a href="/contact/">Contact</a></li>
+						</ul>
+					</nav><!-- #site-nav -->
+				</div><!-- .container -->
+			</header><!-- #site-header -->
+			<a href="#additional-nav" id="handheld-nav" title="View Site Navigation">View Site Navigation</a>
+			<div class="container">	
+				
+<section id="content" class="column">
+	<h1 id="content-title">Primary Content</h1>
+	<div id="content-wrapper">
+
 		{{ content }}
 
+	</div><!-- #content-wrapper -->
+</section><!-- #content .column -->
+
+
+
+
+			</div><!-- .container -->
+			<footer id="site-footer">
+				<nav id="categories">
+					<div class="container">
+						<h1>Notebook Categories</h1>
+						<ul>
+							<?php wp_list_categories('show_count=1&title_li=&exclude=33'); ?>
+						</ul>
+					</div><!-- .container -->
+				</nav><!-- #categories -->
+				<div class="container">
+					<nav id="additional-nav">
+						<h1>Additional Navigation</h1>
+						<ul>
+							<li class="handheld"><a href="/" class="btn">Home</a></li>
+							<li class="handheld"><a href="/archive/" class="btn">Archive</a></li>
+							<li class="handheld"><a href="/about/" class="btn">About</a></li>
+							<li class="handheld"><a href="/contact/" class="btn">Contact</a></li>
+							<li><a id="sitemap" href="/site-map/">Site map</a></li>
+							<li><a href="#the-top" id="top" title="Return to the top">Top</a></li>
+						</ul>
+					</nav><!-- #additional-nav -->
+					<p id="copyright"><?php $copyYear = 2005; $curYear = date('Y');echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : ''); ?> <a href="/wp-admin/" title="Wayne Moir">Wayne Moir</a>. All rights reserved.</p>
+				</div><!-- .container -->
+			</footer><!-- #site-footer -->
+		<!--[if lte IE 8]></div><![endif]-->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-9805583-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/equalheight.js"></script>
+		<?php wp_footer(); ?>
 	</body>
 </html>

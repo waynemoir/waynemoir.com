@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML 5 Test Page</title>
+		<style type="text/css">
+			/*	HTML5 Based Reset
+			*/
+				html, body, div, span, object, iframe,
+				h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+				abbr, address, cite, code,
+				del, dfn, em, img, ins, kbd, q, samp,
+				small, strong, sub, sup, var,
+				b, i,
+				dl, dt, dd, ol, ul, li,
+				fieldset, form, label, legend,
+				table, caption, tbody, tfoot, thead, tr, th, td,
+				article, aside, canvas, details, figcaption, figure, 
+				footer, header, hgroup, menu, nav, section, summary,
+				time, mark, audio, video {
+					background: transparent;
+					border: 0;
+					font-size: 100%;
+					margin: 0;
+					outline: 0;
+					padding: 0;
+					vertical-align: baseline;
+				}
+				body {
+					line-height: 1;
+				}
+				article,aside,details,figcaption,figure,
+				footer,header,hgroup,menu,nav,section { 
+					display:block;
+				}
+				nav ul {
+					list-style:none;
+				}
+				blockquote, q {
+					quotes: none;
+				}
+				blockquote:before, blockquote:after,
+				q:before, q:after,
+				footer:before, footer:after {
+					content: '';
+					content: none;
+				}
+				:focus {
+					outline: 0;
+				}
+				ins {
+					text-decoration: none;
+				}
+				mark {
+					font-style:italic;
+					font-weight:bold;
+				}
+
+				del {
+					text-decoration: line-through;
+				}
+				abbr[title], dfn[title] {
+					border-bottom:1px dotted;
+					cursor:help;
+				}
+				table {
+					border-collapse: collapse;
+					border-spacing: 0;
+				}
+				input, select {
+					vertical-align:middle;
+				}
+			/*	Core Styles
+			*/
+				a:link,
+				a:visited {
+					border-bottom: 1px solid #6d9705;
+					color: #6d9705;
+					padding: 0.063em 0.125em;
+					text-decoration: none;
+				}
+				a:focus {
+					outline: 1px dotted #000;
+					text-decoration: none;
+				}
+				a:hover {
+					background: #f1f1f1;
+					text-decoration: none;
+				}
+				a:active {
+					outline: none;
+					position: relative;
+					top: 0.063em;
+				}	
+				abbr {
+					border-bottom: 1px dotted #333;
+					font-variant: normal;
+				}
+				acronym {
+					border-bottom: 1px dotted #333;
+					font-variant: normal;
+				}
+				body {
+					background: #fafaf9;
+					color: #575656;
+					font-family: arial;
+					height: 100%;
+					letter-spacing: 0.05em;
+					line-height: 1.4;
+					margin-bottom: 0.063em;
+				}
+				code {
+					color: #06f;
+					font-family: "Courier New", Courier, monospace;
+					font-size: small;
+				}
+				dd {
+					margin: 0.5em 0 0;
+					padding-left: 0 0 0 1.25em; 
+				}
+				h1, h2, h3, h4, h5, h6 {
+					color: #000;
+					font-family: droid;
+					font-weight: normal;
+					letter-spacing:0.1em;
+				}
+				h1 {
+					font-size: 1.8em;
+				}
+				h2 {
+					font-size: 1.4em;
+				}
+				p {
+					font-size: 1em;
+					padding: 1.25em 0 0;
+				}
+				pre {
+					background: #eee;
+					border: 1px solid #ccc;
+					font-family: "Courier New", Courier, monospace;
+					font-size: small;
+					margin: 0.5em 0;
+					max-height: 21.875em;
+					overflow: auto;
+				}
+			/* Page specific 
+			*/
+				header#site-header {
+					background: #ccc;
+					left:0;
+					height: 100%;
+					padding-top: 20px;
+					position: fixed;
+					text-align: center;
+					width: 220px;
+				}
+				nav {
+					background: #ccc;
+					margin-top: 25px;
+				}
+				nav li {
+					border-bottom: 1px solid #dad7d7;
+					float: left;
+					margin-left: 20px;
+				}
+				nav li a:link,
+				nav li a:visited {
+					border: none;
+					color: #000;
+					display: block;
+					padding: 10px;
+				}
+				nav li:last-child {
+					border: none;
+				}
+				article {
+					float: left;
+					margin-left: 250px;
+					padding-top: 20px;
+					width: 550px;
+				}
+				article header {
+					border-bottom: 1px solid #ccc;
+					padding-bottom: 10px;
+				}
+				time {
+					font-size: 0.7em;
+					font-style: italic;	
+				}
+				figure {
+					padding-bottom: 10px;
+				}
+				command {
+					background-color: #ccc;
+					border: 1px solid #000;
+					color: #000;
+					cursor: pointer;
+					padding: 2px 6px;
+					text-align: center;
+				}
+				command:hover {
+					background-color: #fff;
+				}
+				aside {
+					margin-left: 840px;
+					padding-top: 20px;
+					width: 240px;
+				}
+				footer {
+					border-top: 1px solid #ccc;
+					clear: both;
+					float: left;
+					margin: 30px 0 0 250px;
+					padding: 10px 0 20px;
+					width: 790px;
+				}
+		</style>
+	</head>
+	<body>
+		<header id="site-header">
+			<hgroup>
+				<h1>HTML5 Test</h1>
+				<h2>Fingers crossed</h2>
+			</hgroup>
+			<nav>
+				<ul>
+					<li><a href="#">Navigation Link 1</a></li>
+					<li><a href="#">Navigation Link 2</a></li>
+					<li><a href="#">Navigation Link 3</a></li>
+				</ul>
+			</nav>
+		</header>
+		<article>
+			<header>
+				<h1>Testing HTML5 structure across browsers</h1>
+				<time datetime="2011-01-14" pubdate>January 14th 2011</time>
+			</header>
+			<section id="intro">
+				<p>The purpose of this page is to test HTML 5 elements across different browsers. This page contains all the structural elements that are new in HTML as of the 14<sup>th</sup> of January 2011. As the HTML specification has not been finalised there is a possibility that new elements could be added so this should not be seen as an exhaustive list.</p>
+				<p>The elements present on this page include:</p>
+				<pre>
+					&lt;article&gt;
+					&lt;aside&gt;
+					&lt;command&gt;
+					&lt;figure&gt;
+					&lt;footer&gt;
+					&lt;header&gt;
+					&lt;hgroup&gt;
+					&lt;menu&gt;
+					&lt;nav&gt;
+					&lt;section&gt;
+					&lt;time&gt;
+				</pre>
+			</section>
+			<section id="html5-elements">
+				<figure>
+					<h1>The W3C</h1>
+					<p>The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential. Contact W3C for more information.</p>
+				</figure>
+				<menu>
+					<command onclick="alert('Hello World')">Click Me!</command>
+				</menu>
+			</section>
+			<section id="dummy-content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lorem eros, fringilla eu ornare tempus, dapibus a lacus. Vivamus quis diam turpis. Nullam aliquam rutrum nisl nec feugiat. Quisque odio odio, suscipit a mollis in, pretium et lorem. Suspendisse sit amet ultricies dui. Donec tristique ligula ut sem vehicula quis malesuada quam tempor. Fusce pulvinar malesuada ipsum et congue. Pellentesque eget odio metus, quis sodales purus. Pellentesque pellentesque, odio eget facilisis imperdiet, eros sem faucibus tellus, id viverra diam diam id risus. Vestibulum tempus velit vel eros varius at eleifend quam interdum.</p>
+			</section>
+		</article>
+		<aside>
+			<h1>Sidebar Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus pharetra erat, quis congue enim sagittis vel. Aenean vel orci felis. Praesent et lobortis velit. Sed gravida, eros eu tincidunt dapibus, nisi enim aliquam libero, non molestie libero turpis nec mi. Maecenas eu purus urna.</p>
+			<p>Aenean vitae sem volutpat velit egestas aliquam. Donec ut urna vitae dolor tempus varius ut a sapien. Donec nec mauris eros. Mauris eu nulla vitae mi commodo mollis quis quis nunc. Phasellus turpis nisl, vehicula quis faucibus vel, adipiscing a velit. Mauris tempus consequat aliquam. Nulla facilisi.</p>
+			<p>Quisque in semper erat. Nullam fringilla sem in leo auctor sed pharetra felis tincidunt. Morbi porta purus eget nibh luctus eu convallis risus ornare. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam adipiscing lacinia enim, ut ornare est adipiscing sed. Etiam sem justo, convallis eu elementum sit amet, sodales vitae nulla.</p>			
+		</aside>
+		<footer>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae arcu vel sapien tincidunt tristique ac dictum libero. Phasellus vel purus imperdiet tellus convallis mattis. Cras sit amet sapien dolor, sit amet scelerisque lectus. Nullam sit amet orci nibh, eu vehicula erat. Donec non sapien quis lacus malesuada lacinia. Duis sit amet metus orci, at dignissim leo. Cras leo metus, aliquam sed semper vel, fringilla vel magna. Morbi quam odio, vestibulum a tincidunt sed, imperdiet non lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt risus eget sem consectetur luctus. Duis felis lacus, blandit vitae rutrum sed, euismod venenatis magna. Pellentesque vestibulum rhoncus dapibus.</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="new ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="new ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="new ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="new" lang="en"><!--<![endif]-->	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Force IE to use the latest rendering engine or Chrome Frame (if available) -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+		<!-- Page Info -->
+		<title>Javascript Plugins | Microlise Bootstrap</title>
+		<meta name="description" content="Generic description of the application goes here."/>
+		<meta name="author" content="Microlise Ltd."/>
+		<meta name="copyright" content="Copyright (c) 2012 Microlise Ltd." />
+
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+
+		<!-- Global CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+		<!--[if lte IE 7]>
+			<link rel="stylesheet" type="text/css" href="ie.css" media="all" />
+		<![endif]-->
+
+		<!-- Themes -->
+		<link rel="alternate stylesheet" type="text/css" href="css/dummy.css" title="dummy" media="screen" disabled="">
+		<link rel="alternate stylesheet" type="text/css" href="css/jcb.css" title="jcb" media="screen" disabled="">
+
+		<script type="text/javascript" src="js/modernizr.min.js"></script>
+		<!-- Other Javascript goes at the bottom of the page, to improve page load-times. -->
+	</head>
+	<body onload="prettyPrint()">
+
+		<a href="#content" class="skiplink">Skip Navigation</a>
+
+		<div class="skipnavigation">
+			<a href="#content" accesskey="S">Skip over navigation</a>
+		</div><!-- /#skipnavigation -->
+
+		<div class="session">
+			<div class="container">
+				<p class="session-powered">Powered by <a href="http://microlise.com/" class="icon-microlise"> microlise</a></p>
+				<ul class="session-actions">
+					<li>Signed in as <strong>Ben Jenkinson</strong> to <strong>JCB Customer Experience</strong> <a href="#" title="Change the current tenancy">(Change)</a></li>
+					<li><a href="#" rel="help">Help</a>
+					<li><a href="#" >Account</a>
+					<li><a href="#">Customise</a></li>
+					<li><a href="#">Sign out</a>
+				</ul>
+			</div><!-- /.container -->
+		</div><!-- /.session -->
+
+		<header class="site-header">
+			<div class="nav nav-main">
+				<div class="container">
+					<div class="logo">Microlise</div>
+					<ul>
+						<li><a href="index.html">Overview</a></li>
+						<li><a href="html.html">HTML</a></li>
+						<li><a href="base.html">Base</a></li>
+						<li><a href="grid.html">Grid</a></li>
+						<li class="active"><a href="javascript.html">Javascript Plugins</a></li>
+						<li><a href="examples/index.html">Examples</a></li>
+						<li><a href="accessibility.html">Accessibility</a></li>
+					</ul>
+				</div><!-- /.container -->
+			</div><!-- /.main -->
+			<div class="nav nav-sub">
+				<div class="container">
+					<ul>
+						<li class="active"><a href="#accordion">Accordion</a></li>
+						<li><a href="#datepicker">Date Picker</a></li>
+						<li><a href="#module-tabs">Module Tabs</a></li>
+						<li><a href="#slider">Slider</a></li>
+						<li><a href="#jqgrid">jqGrid</a></li>
+                        <li><a href="#multiselect">Multiselect</a></li>
+						<li><a href="#tooltips">Tooltips</a></li>
+					</ul>
+				</div><!-- /.container -->
+			</div><!-- /.subnav -->
+		</header>
+
+		<div id="content">
+			<div class="container">
+				<h1>Javascript Plugins</h1>
+
+				<section id="accordion">
+					<h2 class="element-header">Accordion</h2>
+					<div class="row">
+						<div class="span6">
+							<h3>What it is</h3>
+							<p>An accordion is a grouped set of collapsible panels that provides access to a large number of links or other selectable items in a constrained space.</p>
+							<p>Each inlaid panel may be individually expanded (leaving the rest collapsed) by hovering on or clicking the title of (or an expand/collapse element on) the specific panel, to display a single subset of the options.</p>
+
+							<h3>What Problem Does This Solve?</h3>
+							<p>When there are too many items to fit into a limited space or when the number of items, if displayed all at once, would overwhelm the user, then the question is how to give the user access to all of the items in digestible chunks and without requiring scrolling, which can remove the user from the context or page position they may prefer.</p>
+
+							<h3>When to use it</h3>
+							<p>Use when the number of options is large, the space is constrained, and the list of items can be logically grouped into smaller, roughly equal sized chunks.</p>
+						</div>
+						<div class="span6">
+							<h3>Example use</h3>
+							<div id="ui-accordion">
+								<div>
+									<h3><a href="#">First</a></h3>
+									<div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+								</div>
+								<div>
+									<h3><a href="#">Second</a></h3>
+									<div>Phasellus mattis tincidunt nibh.</div>
+								</div>
+								<div>
+									<h3><a href="#">Third</a></h3>
+									<div>Nam dui erat, auctor a, dignissim quis.</div>
+								</div>
+							</div>
+
+							<h3>Markup</h3>
+							<pre class="well"><code class="prettyprint">&lt;div id="ui-accordion"&gt;<br>        &lt;div&gt;<br>                &lt;h3&gt;&lt;a href="#"&gt;First&lt;/a&gt;&lt;/h3&gt;<br>                &lt;div&gt;Lorem ipsum dolor&hellip;&lt;/div&gt;<br>        &lt;/div&gt;<br>        &lt;div&gt;<br>                &lt;h3&gt;&lt;a href="#"&gt;Second&lt;/a&gt;&lt;/h3&gt;<br>                &lt;div&gt;Phasellus mattis tincidunt nibh.&lt;/div&gt;<br>        &lt;/div&gt;<br>        &lt;div&gt;<br>                &lt;h3&gt;&lt;a href="#"&gt;Third&lt;/a&gt;&lt;/h3&gt;<br>                &lt;div&gt;Nam dui erat, auctor a, dignissim quis.&lt;/div&gt;<br>        &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+						</div>
+					</div>
+					<div class="row">
+						<div class="span12">
+							<h3>Best practices</h3>
+							<ul>
+								<li>Have the most important panel open by default, both to expose the important choices and to demonstrate the fact that each collapsed list can be individually opened.</li>
+								<li>Avoid nesting accordions inside of other accordions.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section id="datepicker">
+					<h2 class="element-header">Date Picker</h2>
+					<div class="row">
+						<div class="span6">
+							<h3>What it is</h3>
+							<p>Date pickers provide a familiar calendar metaphor that resonates with most people and it helps them to think about dates in terms of where they are in the month and week. They help structure the date input in a way that your system can interpret reliably, thereby reducing validation errors caused by unrecognized date formats.</p>
+
+							<h3>When to use it</h3>
+							<p>Use this pattern when the person interacting with the application or experience would want to easily apply a date or date range to an item. This includes contexts where the application itself needs to apply date metadata ("date-stamp") a piece of information in order to track, filter, and sort items by by date or date order.</p>
+							<p>Common scenarios include events, tasks, and appointments.</p>
+						</div>
+						<div class="span6">
+							<h3>Example  use</h3>
+							<div id="ui-datepicker"></div>
+
+							<h3>Markup</h3>
+							<pre class="well"><code class="prettyprint">&lt;div id="ui-datepicker"&gt;&lt;/div&gt;</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section id="timepicker">
+					<h2 class="element-header">Time Picker</h2>
+					<div class="row">
+						<div class="span6">
+							<h3>What it is</h3>
+							<p>Time picker allows the user to adjust the time or date</p>
+
+							<h3>When to use it</h3>
+							<p>Use this pattern when the person interacting with the application or experience would want to easily apply a time or time range to an item. This includes contexts where the application itself needs to apply time metadata ("date-stamp") a piece of information in order to track, filter, and sort items by by time or time order.</p>
+							<p>Common scenarios include events, tasks, and appointments.</p>
+						</div>
+						<div class="span6">
+							<h3>Example  use</h3>
+							<div id="timePicker1" class="time-date-picker">
+
+								<span class="time-input-wrapper">
+									<input class="time-input" id="TimePart" name="TimePart" type="text" value="" />
+								</span>
+
+								<div class="time-date-details" style="display: none;">
+									<div class="time-picker-wrapper">
+										<div class="time-spinner">
+											<input type="text" class="spinner-hour" /> 
+											<input type="text" class="spinner-minutes" /> 
+										</div>
+										<dl>
+											<dd><input type="radio" value="True" name="SiteVisitSearchGrid_ConfirmedArrival_IsAm" class="am"> AM</dd>
+											<dd><input type="radio" value="False" name="SiteVisitSearchGrid_ConfirmedArrival_IsAm" class="pm" checked="checked"> PM</dd>
+										</dl>
+									</div>
+									<div class="date-picker-wrapper">
+										<input class="date-input" id="DatePart" name="DatePart" type="text" value="" />
+									</div>
+								</div>
+							</div>
+
+							<h3>Markup</h3>
+							<pre class="well"><code class="prettyprint">&lt;div id="ui-datepicker"&gt;&lt;/div&gt;</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section id="module-tabs">
+					<h2 class="element-header">Module Tabs</h2>
+					<div class="row">
+						<div class="span6">
+							<h3>What it is</h3>
+							<p>Tabbed navigation builds on the physical metaphor of a folders in a filing cabinet and is in tune with the typical users mental model.</p>
+							<p>Tabs provide a clear visual indication of what content can be found on a website and places the current location in context.</p>
+
+							<h3>When to use it</h3>
+							<p>When the user needs to navigate through one or more stacked panes of local content without refreshing the page.</p>
+
+							<h3>Best practices</h3>
+							<ul>
+								<li>Never stack multiple rows of tabs to control a single piece of content.</li>
+								<li>Always show one tab as selected with its content visible.</li>
+								<li>The content should be visually connected to the tab it is associated with and be visually bounded (usually by a box).</li>
+								<li>Only one content area may be visible at a time.</li>
+								<li>Tabs should appear in the same location as the user clicks from one tab to another.</li>
+								<li>Selecting a tab will not affect other parts of the page.</li>
+								<li>Selecting a tab will not navigate to a different page or perform an action (beyond switching the visible content.</li>
+							</ul>
+						</div>
+						<div class="span6">
+							<h3>Example Use</h3>
+							<div id="tabs">
+								<ul>
+									<li><a href="#tabs-1">First</a></li>
+									<li><a href="#tabs-2">Second</a></li>
+									<li><a href="#tabs-3">Third</a></li>
+								</ul>
+								<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+								<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+								<div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
+							</div>
+							<h3>Markup</h3>
+							<pre class="well"><code class="prettyprint">&lt;div id="tabs"&gt;<br>        &lt;ul&gt;<br>                &lt;li&gt;&lt;a href="#tabs-1"&gt;First&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a href="#tabs-2"&gt;Second&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a href="#tabs-3"&gt;Third&lt;/a&gt;&lt;/li&gt;<br>        &lt;/ul&gt;<br>        &lt;div id="tabs-1"&gt;Lorem ipsum&hellip;&lt;/div&gt;<br>        &lt;div id="tabs-2"&gt;Phasellus mattis&hellip;&lt;/div&gt;<br>        &lt;div id="tabs-3"&gt;Nam dui erat&hellip;&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section id="slider">
+					<h2 class="element-header">Slider</h2>
+					<div class="row">
+						<div class="span6">
+							<h3>What it is</h3>
+							<p>A control which enables the user to choose one distinct value within a finite range by dragging one or more sliders along a single axis.</p>
+							<h3>When to use it</h3>
+							<p>The user’s mental model of a series of values is closely tied to an increasing or decreasing scale and limited amount of discrete values. E.g. Controls to increase/decrease brightness, contrast, intensity or volume.</p>
+						</div>
+						<div class="span6">
+							<h3>Example Use</h3>
+							<div id="ui-slider"></div>
+							<pre class="well"><code class="prettyprint">&lt;div id="ui-slider"&gt;&lt;/div&gt;</code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section id="jqgrid">
+					<h2 class="element-header">jqGrid</h2>
+					<div class="row">
+						<div class="span6">
+							<h3>What it is</h3>
+							<p>jqGrid provides a solution for representing and manipulating tabular data. jqGrid also provides a means for the user to customise and save the output of the data.</p>
+
+							<h3>When to use it</h3>
+							<p>jqGrid should be used whereever tabular data is present in the system.</p>
+
+							<h3>Markup</h3>
+							<pre class="well"><code class="prettyprint">&lt;table id="list"&gt;&lt;tr&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;<br/>&lt;div id="pager"&gt;&lt;/div&gt;</code></pre>
+						</div>
+						<div class="span6">
+							<h3>Example Use</h3>
+							<table id="list"><tr><td></td></tr></table>
+							<div id="pager"></div>
+						</div>
+					</div>
+				</section>
+
+				<section id="multiselect">
+					<h2 class="element-header">Multiselect</h2>
+					<div class="row">
+						<div class="span6">
+							<h3>What it is</h3>
+							<p>Multiselect is a control that allows you to choose from a list of items. This JQuery control adds the ability to sort that list and to filter from the possible options to help make it easier to find what is wanted from a long list.</p>
+
+							<h3>What Problem Does This Solve?</h3>
+							<p>It removes the need for seperate selection controls for ordering and selecting. It adds a more intuative drag and drop interface for selecting and ordering. The search box makes it easier to find the item that is desired from a long list of possible items.</p>
+
+							<h3>When to use it</h3>
+							<p>Use when selecting and ordering from a long list of posible options. Particularly useful for when choosing and ordering columns for JqGrid.</p>
+						</div>
+					  <div class="span6">
+							<h3>Example use</h3>
+							<select id="countries" class="multiselect" multiple="multiple" name="countries[]">
+								<option value="AFG">Afghanistan</option>
+								<option value="ALB">Albania</option>
+								<option value="DZA">Algeria</option>
+								<option value="AND">Andorra</option>
+								<option value="ARG">Argentina</option>
+								<option value="ARM">Armenia</option>
+								<option value="ABW">Aruba</option>
+								<option value="AUS">Australia</option>
+								<option value="AUT" selected="selected">Austria</option>
+								<option value="AZE">Azerbaijan</option>
+								<option value="BGD">Bangladesh</option>
+								<option value="BLR">Belarus</option>
+								<option value="BEL">Belgium</option>
+								<option value="BIH">Bosnia and Herzegovina</option>
+								<option value="BRA">Brazil</option>
+								<option value="BRN">Brunei</option>
+								<option value="BGR">Bulgaria</option>
+								<option value="CAN">Canada</option>
+								<option value="CHN">China</option>
+								<option value="COL">Colombia</option>
+								<option value="HRV">Croatia</option>
+								<option value="CYP">Cyprus</option>
+								<option value="CZE">Czech Republic</option>
+								<option value="DNK">Denmark</option>
+								<option value="EGY">Egypt</option>
+								<option value="EST">Estonia</option>
+								<option value="FIN">Finland</option>
+								<option value="FRA" class="mandatory" selected="selected">France</option>
+								<option value="GEO">Georgia</option>
+								<option value="DEU" selected="selected">Germany</option>
+								<option value="GRC">Greece</option>
+								<option value="HKG">Hong Kong</option>
+								<option value="HUN">Hungary</option>
+								<option value="ISL">Iceland</option>
+								<option value="IND">India</option>
+								<option value="IDN">Indonesia</option>
+								<option value="IRN">Iran</option>
+								<option value="IRL">Ireland</option>
+								<option value="ISR">Israel</option>
+								<option value="ITA" class="mandatory" selected="selected">Italy</option>
+								<option value="JPN">Japan</option>
+								<option value="JOR">Jordan</option>
+								<option value="KAZ">Kazakhstan</option>
+								<option value="KWT">Kuwait</option>
+								<option value="KGZ">Kyrgyzstan</option>
+								<option value="LVA">Latvia</option>
+								<option value="LBN">Lebanon</option>
+								<option value="LIE">Liechtenstein</option>
+								<option value="LTU">Lithuania</option>
+								<option value="LUX">Luxembourg</option>
+								<option value="MAC">Macau</option>
+								<option value="MKD">Macedonia</option>
+								<option value="MYS">Malaysia</option>
+								<option value="MLT">Malta</option>
+								<option value="MEX">Mexico</option>
+								<option value="MDA">Moldova</option>
+								<option value="MNG">Mongolia</option>
+								<option value="NLD" selected="selected">Netherlands</option>
+								<option value="NZL">New Zealand</option>
+								<option value="NGA">Nigeria</option>
+								<option value="NOR">Norway</option>
+								<option value="PER">Peru</option>
+								<option value="PHL">Philippines</option>
+								<option value="POL">Poland</option>
+								<option value="PRT">Portugal</option>
+								<option value="QAT">Qatar</option>
+								<option value="ROU">Romania</option>
+								<option value="RUS">Russia</option>
+								<option value="SMR">San Marino</option>
+								<option value="SAU">Saudi Arabia</option>
+								<option value="CSG">Serbia and Montenegro</option>
+								<option value="SGP">Singapore</option>
+								<option value="SVK">Slovakia</option>
+								<option value="SVN">Slovenia</option>
+								<option value="ZAF">South Africa</option>
+								<option value="KOR">South Korea</option>
+								<option value="ESP">Spain</option>
+								<option value="LKA">Sri Lanka</option>
+								<option value="SWE">Sweden</option>
+								<option value="CHE">Switzerland</option>
+								<option value="SYR">Syria</option>
+								<option value="TWN">Taiwan</option>
+								<option value="TJK">Tajikistan</option>
+								<option value="THA">Thailand</option>
+								<option value="TUR">Turkey</option>
+								<option value="TKM">Turkmenistan</option>
+								<option value="UKR">Ukraine</option>
+								<option value="ARE">United Arab Emirates</option>
+								<option value="GBR" selected="selected" class="mandatory">United Kingdom</option>
+								<option value="USA" selected="selected">United States</option>
+								<option value="UZB">Uzbekistan</option>
+								<option value="VAT">Vatican City</option>
+								<option value="VNM">Vietnam</option>
+							</select>
+							<h3>Markup</h3>
+							<pre class="well"> &lt;select id=&quot;countries&quot; class=&quot;multiselect&quot; multiple=&quot;multiple&quot; name=&quot;countries[]&quot;&gt;<br>        &lt;option value=&quot;AFG&quot;&gt;Afghanistan&lt;/option&gt;<br>        &lt;option value=&quot;ALB&quot;&gt;Albania&lt;/option&gt;<br>        &lt;option value=&quot;DZA&quot;&gt;Algeria&lt;/option&gt;<br>        &lt;option value=&quot;AND&quot;&gt;Andorra&lt;/option&gt;<br>        &lt;option value=&quot;ARG&quot;&gt;Argentina&lt;/option&gt;<br>        &lt;option value=&quot;ARM&quot;&gt;Armenia&lt;/option&gt;<br>        &lt;option value=&quot;AUT&quot; selected=&quot;selected&quot;&gt;Austria&lt;/option&gt;<br>        &lt;option value=&quot;FRA&quot; class=&quot;mandatory&quot; selected=&quot;selected&quot;&gt;France&lt;/option&gt;<br>        &lt;option value=&quot;GEO&quot;&gt;Georgia&lt;/option&gt;<br>        &lt;option value=&quot;DEU&quot; selected=&quot;selected&quot;&gt;Germany&lt;/option&gt;<br>        &lt;option value=&quot;ISL&quot;&gt;Iceland&lt;/option&gt;<br>        &lt;option value=&quot;IND&quot;&gt;India&lt;/option&gt;<br>        &lt;option value=&quot;IDN&quot;&gt;Indonesia&lt;/option&gt;<br>&lt;/select&gt;</pre>
+						</div>
+					</div>
+					<div class="row">
+					  <div class="span12">
+						<h3>Best practices</h3>
+						  <ul>
+							  <li>Choose sensible defaults for selected items</li>
+							  <li>Avoid mandatory fields unless necessary</li>
+								<li>If it is a short list consider checkboxes for selection</li>
+						  </ul>
+						</div>
+					</div>
+				</section>
+
+
+				<section id="tooltips">
+					<h2 class="element-header">Tooltips <small>tooltipsy.js</small></h2>
+					<div class="row">
+						<div class="span6">
+							<h3>Include</h3>
+							<p>For performance reasons tooltips are opt-in, if you would like to use them you will need to include <a href="js/tooltipsy.js" target="_blank">tooltipsy.js</a>.
+							<pre class="well"><code class="prettyprint">&lt;script type="text/javascript" src="js/tooltipsy.js"&gt;&lt;/script&gt;</code></pre>
+
+							<h3>Markup</h3>
+							<pre class="well"><code class="prettyprint">&lt;a class="hastip" title="Tooltip title"&gt;Link text&lt;/a&gt;</code></pre>
+
+							<h3>Binding</h3>
+							<pre class="well"><code class="prettyprint">$('.hastip').tooltipsy();</code></pre>
+						</div>
+						<div class="span6">
+							<h3>Example Use</h3>
+							<div class="well">
+								<p>Lorem ipsum dolor sit amet, nullam bibendum nisi quis elit <a href="#" class="hastip" title="First tooltip">malesuada</a> cursus gravida nisl lacinia. Suspendisse potenti. Ut rutrum mi quis sapien viverra vitae fringilla nibh hendrerit.</p>
+								<p>In sed nisl nisi. Aliquam molestie nisi nec nibh fermentum lobortis. Nulla accumsan dui sed elit dignissim et fringilla est <a href="#" class="hastip" title="Second tooltip">dapibus</a>. Proin facilisis varius accumsan. Duis euismod elit ac <a href="#" class="hastip" title="Third tooltip">justo luctus</a> id lobortis urna dictum.</p>
+								<button class="btn btn-primary hastip" title="Button based tooltip">Button</button>
+							</div>
+							<p>For further options and information visit the <a href="http://tooltipsy.com/">tooltipsy</a> source page.</p>
+						</div>
+					</div>
+				</section>
+
+			</div><!-- /#content -->
+		</div><!-- /.container -->
+
+		<footer>
+			<div class="container">
+				<a href="#" id="toggler">Toggle stylesheet</a>
+			</div>
+		</footer>
+
+		<!-- Required, on all pages: -->
+			<!-- JQuery -->
+			<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+			<!-- Modernizer polyfill -->
+			<script type="text/javascript" src="js/initialize.js"></script>
+			<!-- jqGrid -->
+			<script type="text/javascript" src="js/jqgrid/grid.locale-en.js"></script>
+			<script type="text/javascript" src="js/jqgrid/jquery.jqGrid.min.js"></script>
+		<!-- Optional, for plugins: -->
+			<!-- jQuery UI -->
+			<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+			<!-- Tooltipsy -->
+			<script type="text/javascript" src="js/tooltipsy.js"></script>
+			<!-- Multiselect-->
+			<script type="text/javascript" src="js/plugins/localisation/jquery.localisation-min.js"></script>
+			<script type="text/javascript" src="js/plugins/scrollTo/jquery.scrollTo-min.js"></script>
+			<script type="text/javascript" src="js/ui.multiselect.js"></script>
+            <!-- Timepicker -->
+            <script type="text/javascript" src="js/timepicker.js"></script>
+			<script type="text/javascript" src="js/timeinput/jquery.timeentry.js"></script>
+        	<!-- Spinner -->
+    		<script type="text/javascript" src="js/ui.spinner.min.js"></script>
+
+		<!-- Not required, Bootstrap demo data -->
+			<script type="text/javascript">
+				$(function(){
+
+					// Accordion
+					$("#ui-accordion").accordion({ header: "h3" });
+
+					// Tabs
+					$('#tabs').tabs();
+
+					// Datepicker
+					$('#ui-datepicker').datepicker({
+						inline: true
+					});
+
+					// Slider
+					$('#ui-slider').slider({
+						range: true,
+						values: [17, 67]
+					});
+
+					// JQGrid
+					//<![CDATA[
+						jQuery(document).ready(function () {
+							var mydata = [
+								{id:"1", invdate:"2007-10-01",name:"test",  note:"note",  amount:"200.00",tax:"10.00",total:"210.00"},
+								{id:"2", invdate:"2007-10-02",name:"test2", note:"note2", amount:"300.00",tax:"20.00",total:"320.00"},
+								{id:"3", invdate:"2007-09-01",name:"test3", note:"note3", amount:"400.00",tax:"30.00",total:"430.00"},
+								{id:"4", invdate:"2007-10-04",name:"test4", note:"note4", amount:"200.00",tax:"10.00",total:"210.00"},
+								{id:"5", invdate:"2007-10-05",name:"test5", note:"note5", amount:"300.00",tax:"20.00",total:"320.00"},
+								{id:"6", invdate:"2007-09-06",name:"test6", note:"note6", amount:"400.00",tax:"30.00",total:"430.00"},
+								{id:"7", invdate:"2007-10-04",name:"test7", note:"note7", amount:"200.00",tax:"10.00",total:"210.00"},
+								{id:"8", invdate:"2007-10-03",name:"test8", note:"note8", amount:"300.00",tax:"20.00",total:"320.00"},
+								{id:"9", invdate:"2007-09-01",name:"test9", note:"note9", amount:"400.00",tax:"30.00",total:"430.00"},
+								{id:"10",invdate:"2007-09-08",name:"test10",note:"note10",amount:"500.00",tax:"30.00",total:"530.00"},
+								{id:"11",invdate:"2007-09-08",name:"test11",note:"note11",amount:"500.00",tax:"30.00",total:"530.00"},
+								{id:"12",invdate:"2007-09-10",name:"test11",note:"note12",amount:"500.00",tax:"30.00",total:"530.00"}
+							];
+							$("#list").jqGrid({
+								datatype: "local",
+								data: mydata,
+								colNames:['Inv No','Date', 'Client', 'Amount','Tax','Total','Notes'],
+								colModel:[
+									{name:'id',index:'id', width:65, sorttype: 'int'},
+									{name:'invdate',index:'invdate', width:120, align:'center', sorttype:'date', formatter:'date', formatoptions: {newformat:'d-M-Y'}},
+									{name:'name',index:'name', width:90},
+									{name:'amount',index:'amount', width:70, formatter:'number', align:"right"},
+									{name:'tax',index:'tax', width:60, formatter:'number', align:"right"},
+									{name:'total',index:'total', width:60, formatter:'number',align:"right"},
+									{name:'note',index:'note', width:100, sortable:false}
+								],
+								rowNum:10,
+								rowList:[5,10,20],
+								pager: '#pager',
+								sortname: 'invdate',
+								viewrecords: true,
+								sortorder: "desc",
+								height: "100%"
+							}).jqGrid('navGrid','#pager',{add:false,edit:false,del:false});
+						});
+					//]]>
+
+					//hover states on the static widgets
+					$('#dialog_link, ul#icons li').hover(
+						function() { $(this).addClass('ui-state-hover'); },
+						function() { $(this).removeClass('ui-state-hover'); }
+					);
+					
+					
+					//Multiselect
+					$(function(){
+						$.localise('ui-multiselect', {/*language: 'en',*/ path: 'js/locale/'});
+						$(".multiselect").multiselect({
+							selectedContainerOnRight: false,
+							dividerLocation: 0.5
+						});
+						//$('#switcher').themeswitcher();
+					});
+
+					//ToolTipsy
+					 $('.hastip').tooltipsy();
+				});
+				
+				//Timepicker
+					  $(document).ready(function () {
+	
+				if ($.globalTimePickerSettings.initialise == 'true') {
+	
+					// Configure the Time Picker.
+					$("#timePicker1").timePicker({ 'time': '15:30', 'date': '27/06/2012', 'show24Hours': 'true' });
+				}
+	
+			});
+	
+			</script>
+			<script type="text/javascript" src="js/google-code-prettify/prettify.js"></script>
+			<script type="text/javascript" src="js/stylesheet-toggle.min.js"></script>
+			<script type="text/javascript">
+				$(function(){
+					// Call stylesheet init so that all stylesheet changing functions will work
+					$.stylesheetInit();
+
+					// Loops through stylesheets
+					$('#toggler').bind(
+						'click',
+						function(e)
+						{
+							$.stylesheetToggle();
+							return false;
+						}
+					);
+				});
+			</script>
+	</body>
+</html>

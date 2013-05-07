@@ -1,0 +1,29 @@
+// ======================================= */
+/* ================ STATE ================ */
+/* A state is something that augments    = */
+// and overrides all other styles.       = */
+// ======================================= */
+
+// State for buttons user doesn't have permission to use
+	.declined {
+		display :none;
+	}
+
+// Sites can have a flag such as new customer
+	.accountflag {
+		padding-left:20px;
+		.red {
+			color:@scarlet;
+		}
+		.orange {
+			color:@orange;
+		}
+		.green {
+			color:@green;
+		}
+	}
+
+// Hiding things, eg Widgets
+	.new .collapsed {
+		display: none;
+	}

@@ -1,0 +1,259 @@
+// ============================================== */
+// ==================== Forms =================== */
+// ============================================== */
+
+// we could use a class on the form to offer seperate styling for vertical forms vs left hand side labels.
+
+// Basic elements
+	.new form {
+		div {
+			.clearfix();
+			margin-bottom: @baseline/2;
+		}
+	}
+	.new fieldset {
+		border: 1px solid @slategrey;
+		margin-bottom: @baseline;
+		padding: @gutter;
+	}
+	.new legend {
+		color: @slategrey;
+		.font-size(18);
+		font-weight: bold;
+		padding: 0 1em;
+	}
+	.new .checkbox p,
+	.new .radio p,
+	.new label {
+		float: left;
+		margin-top: 0;
+		.span3(); // TODO: This needs to be flexible depending on label length and page width
+		text-align: right;
+	}
+	.new .radio p,
+	.new label,
+	.new form .icon-calendar {
+		padding-top: 4px;
+	}
+	.new form .icon-calendar {
+		float: left;
+		margin-left: 5px;
+	}
+	.new input, 
+	.new select, 
+	.new textarea {
+		border: 1px solid @50grey;  
+		.border-radius(3px);
+		.box-shadow(1px 1px 0, @darkwhite);
+		float: left;
+		margin: 3px 0 3px @gutter/2;
+		outline: none;
+		padding: 3px;
+		text-shadow: 0px 1px 0px @white; 
+		&:focus {
+			border: 1px solid @aqua;
+			.box-shadow(0 0 5px);
+		}
+	}
+	.new input {
+		&[type=text] {
+			border: 1px solid @50grey;  
+			padding: 3px;
+		}
+		&[type=checkbox] {
+			margin-top: 5px;
+		}
+		&[type=radio] {
+			margin-top: 8px;
+		}
+
+		&[type=checkbox] + label {
+			padding-top: 0;
+		}
+	}
+	.new .ie8 input {
+		&[type=checkbox] {
+			margin-top: 0;
+		}
+		&[type=radio] {
+			margin-top: 0;
+		}
+		&[type=radio] + label{
+			padding-top: 0;
+		}
+	}
+	.new .radio, 
+	.new .checkbox {
+		div {
+			float: left;
+			margin-bottom: 0;
+		}
+		span {
+			clear: left;
+		}
+		label {
+			text-align: left; 
+			width: auto;
+		}
+		input {
+			border: none !important; // Force over-ride of error styling
+			box-shadow: none !important; // Force over-ride of error styling
+			clear: left;
+			float: left;
+			margin-right: 5px;
+		}
+		
+	}
+	.new .checkbox > label{
+		padding-top: 0;
+	}
+	.new .form-actions {
+		margin-left: @fluidSpan3Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan3WidthIE + @fluidMarginLeftIE;
+	}
+    
+// Horizontal forms
+    form.hform{
+        .validationError{
+            margin-left: 0;
+        }
+        .form-actions{
+            margin-left: 0;
+        }
+    }
+
+// Extended controls
+	.new .input-prepend,
+	.new .input-append {
+		input {
+			float: left;
+		}
+		.add-on {
+			background-color: #ccc;
+			border: 1px solid @50grey;  
+			.box-shadow(1px 1px 0, @darkwhite);
+			display: inline-block;
+			float: left;
+			margin-top: 3px;
+			min-width: 16px;
+			padding: 1px 4px;
+			text-align: center;
+			text-shadow: 0 1px 0 white;
+		}
+		.ie7 .add-on {
+			display: inline;
+		}
+	}
+	.new .input-prepend {
+		input {
+			.border-radius(0 3px 3px 0);
+			margin-left: 0;
+		}
+		.add-on {
+		margin-left: @gutter/2;
+			.border-radius(3px 0 0 3px);
+		}
+	}
+	.new .input-append {
+		input {
+			.border-radius(3px 0 0 3px);
+			border-right: none;
+		}
+		.add-on {
+			.border-radius(0 3px 3px 0);
+		}
+	}
+	.new .input-prepend.input-append {
+		input {
+			.border-radius(0);
+			border-left: none;
+		}
+		.add-on {
+			margin-left: 0;
+			&:first-child {
+				.border-radius(3px 0 0 3px);
+				margin-left: @gutter/2;
+			}
+		}
+	}
+
+// Disabled states
+	.new button[disabled], .new  button[disabled]:hover, 
+	 .new input[disabled],.new  input[disabled]:hover, 
+	.new select[disabled], .new  select[disabled]:hover, 
+	.new textarea[disabled], .new  textarea[disabled]:hover, 
+	.new .btn.disabled, .new .btn.disabled:hover, 
+	.new .disabled, .new .disabled:hover {
+		background-color: #eee;
+		background-image: none;
+		border-color: #ddd;
+		box-shadow: none;
+		color: @slategrey;
+		cursor: not-allowed;
+		font-weight: normal;
+		text-shadow: none;
+	}
+	.new input[type=checkbox][disabled],
+	.new input[type=radio][disabled] {
+		background-color: transparent;
+	}
+	.new .disabled label{
+		color: @slategrey;
+	}
+
+// Form Validation
+	.new .error {
+
+		input, 
+		select, 
+		textarea {
+			border: 1px solid @scarlet;
+			.box-shadow(0 0 5px, @scarlet);
+		}
+
+		.error-msg {
+			clear: both;
+			color: @scarlet;
+			font-weight: bold;
+			margin-left: @fluidSpan3Width; *margin-left: @fluidSpan3WidthIE; // Copied from .span3 in grid. TODO: should be calculated
+			padding-left: 10px; // Copied from input width. TODO: should be calculated
+		}
+	}
+
+// Required state
+	.new .required {
+		color: @warning;
+		label,
+		p {
+			color: @black;
+			&:after {
+				color: @warning;
+				content: " *";
+			}
+		}
+		&.radio,
+		&.checkbox {
+			div label:after {
+				content: "";
+			}
+		}
+	}
+ 
+// Labels and values outside of a form
+	.new dl.datalist {
+		margin: 1em 0;
+		padding: 0;
+        line-height: 1.8em;
+		dt {
+			clear: left;
+			float: left;
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			width: 10em; //200px; // TODO this needs to be flexible
+		}
+		dd {
+			margin: 0 0 0 11em;//210px; // TODO This needs to be flexible.
+			padding: 0;
+		}
+	}

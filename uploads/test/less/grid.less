@@ -1,0 +1,249 @@
+// ==================== */
+// ======= Grid ======= */
+// ==================== */
+
+// Mixins
+	@fluidMarginLeft: 2.127659574%;
+	@fluidMarginLeftIE: 2.0744680846382977%;
+	// Span12
+	@fluidSpan12Width: 99.99999998999999%;
+	@fluidSpan12WidthIE: 99.94680850063828%;
+	// Span11
+	@fluidSpan11Width: 91.489361693%;
+	@fluidSpan11WidthIE: 91.4361702036383%;
+	// Span10
+	@fluidSpan10Width: 82.97872339599999%;
+	@fluidSpan10WidthIE: 82.92553190663828%;
+	// Span9
+	@fluidSpan9Width: 74.468085099%;
+	@fluidSpan9WidthIE: 74.4148936096383%;
+	// Span8
+	@fluidSpan8Width: 65.95744680199999%;
+	@fluidSpan8WidthIE: 65.90425531263828%;
+	// Span7
+	@fluidSpan7Width: 57.446808505%;
+	@fluidSpan7WidthIE: 57.3936170156383%;
+	// Span6
+	@fluidSpan6Width: 48.93617020799999%;
+	@fluidSpan6WidthIE: 48.88297871863829%;
+	// Span5
+	@fluidSpan5Width: 40.425531911%;
+	@fluidSpan5WidthIE: 40.3723404216383%;
+	// Span4
+	@fluidSpan4Width: 31.914893614%;
+	@fluidSpan4WidthIE: 31.8617021246383%;
+	// Span3
+	@fluidSpan3Width: 23.404255317%;
+	@fluidSpan3WidthIE: 23.3510638276383%;
+	// Span2
+	@fluidSpan2Width: 14.89361702%;
+	@fluidSpan2WidthIE: 14.8404255306383%;
+	// Span1
+	@fluidSpan1Width: 6.382978723%;
+	@fluidSpan1WidthIE: 6.329787233638298%;
+
+	.container {
+		margin: 0 auto;
+		min-width: 960px;
+		padding-left: 20px;
+		padding-right: 20px;
+		*zoom: 1;
+	}
+	.constrained .container {
+		max-width: 1140px;
+	}
+	.container:before,
+	.container:after {
+		content: "";
+		display: table;
+	}
+	.container:after {
+		clear: both;
+	} 
+	.row {
+		min-width: 960px;
+		width: 100%;
+		*zoom: 1;
+	}
+	.row:before, .ie6 .row-before,
+	.row:after, .ie6 .row-after {
+		display: table;
+		content: "";
+	}
+	.row:after, .ie6 .row-after {
+		clear: both;
+	}
+
+// Spans
+	.spanMixin {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+		display: block;
+		float: left;
+		margin-left: @fluidMarginLeft;
+		*margin-left: @fluidMarginLeftIE;
+		min-height: 28px;
+	}
+	.ie6 .span12, .ie6 .span11, .ie6 .span10, .ie6 .span9, 
+	.ie6 .span8, .ie6 .span7, .ie6 .span6, .ie6 .span5, 
+	.ie6 .span4, .ie6 .span3, .ie6 .span2, .ie6 .span1 {
+		.spanMixin();
+		display: inline !important; // Fixes IE6 double margin float bug
+	}
+	[class*="span"] {
+		.spanMixin();
+	}
+
+	.ie6 .span-first-child {
+		margin-left: 0;
+	}
+	[class*="span"]:first-child {
+		margin-left: 0;
+	}
+
+	.span12 {
+		width: @fluidSpan12Width;
+		*width: @fluidSpan12WidthIE;
+	}
+	.span11 {
+		width: @fluidSpan11Width;
+		*width: @fluidSpan11WidthIE;
+	}
+	.span10 {
+		width: @fluidSpan10Width;
+		*width: @fluidSpan10WidthIE;
+	}
+	.span9 {
+		width: @fluidSpan9Width;
+		*width: @fluidSpan9WidthIE;
+	}
+	.span8 {
+		width: @fluidSpan8Width;
+		*width: @fluidSpan8WidthIE;
+	}
+	.span7 {
+		width: @fluidSpan7Width;
+		*width: @fluidSpan7WidthIE;
+	}
+	.span6 {
+		width: @fluidSpan6Width;
+		*width: @fluidSpan6WidthIE;
+	}
+	.span5 {
+		width: @fluidSpan5Width;
+		*width: @fluidSpan5WidthIE;
+	}
+	.span4 {
+		width: @fluidSpan4Width;
+		*width: @fluidSpan4WidthIE;
+	}
+	.span3 {
+		width: @fluidSpan3Width;
+		*width: @fluidSpan3WidthIE;
+	}
+	.span2 {
+		width: @fluidSpan2Width;
+		*width: @fluidSpan2WidthIE;
+	}
+	.span1 {
+		width: @fluidSpan1Width;
+		*width: @fluidSpan1WidthIE;
+	}
+
+// Offsetting
+	.offset11, 
+	.offset11:first-child {
+		margin-left: @fluidSpan11Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan11WidthIE + @fluidMarginLeftIE !important;
+	}
+	.offset10, 
+	.offset10:first-child {
+		margin-left: @fluidSpan10Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan10WidthIE + @fluidMarginLeftIE !important;
+	}
+	.offset9, 
+	.offset9:first-child {
+		margin-left: @fluidSpan9Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan9WidthIE + @fluidMarginLeftIE !important;
+	}
+	.offset8, 
+	.offset8:first-child {
+		margin-left: @fluidSpan8Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan8WidthIE + @fluidMarginLeftIE !important;
+	}
+	.offset7, 
+	.offset7:first-child {
+		margin-left: @fluidSpan7Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan7WidthIE + @fluidMarginLeftIE !important;
+	}
+	.offset6, 
+	.offset6:first-child {
+		margin-left: @fluidSpan6Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan6WidthIE + @fluidMarginLeftIE !important;
+	}
+	.offset5, 
+	.offset5:first-child {
+		margin-left: @fluidSpan5Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan5WidthIE + @fluidMarginLeftIE !important;
+	}
+	.offset4, 
+	.offset4:first-child {
+		margin-left: @fluidSpan4Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan4WidthIE + @fluidMarginLeftIE !important;
+	}
+	.offset3, 
+	.offset3:first-child {
+		margin-left: @fluidSpan3Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan3WidthIE + @fluidMarginLeftIE !important;
+	}
+	.offset2, 
+	.offset2:first-child {
+		margin-left: @fluidSpan2Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan2WidthIE + @fluidMarginLeftIE !important;
+	}
+	.offset1, 
+	.offset1:first-child {
+		margin-left: @fluidSpan1Width + @fluidMarginLeft;
+		*margin-left: @fluidSpan1WidthIE + @fluidMarginLeftIE !important;
+	}
+
+// Vertical Spacing
+	.align-v {
+		margin-bottom: @fluidMarginLeft;
+		*margin-bottom: @fluidMarginLeftIE;
+	}
+	
+
+// Alignment
+	.align-l {
+		float: left;
+	}
+	.align-r {
+		float: right !important;
+	}
+
+// Convert an object to and inline one
+	.inline {
+		float: left;
+		margin-bottom: 0;
+		label {
+			float: none;
+			padding: 0;
+			width: auto;
+		}
+		select {
+			padding: 0;
+			margin: 0;
+		}
+		li {
+			float: left;
+			list-style-type: none;
+			margin-left: 1em;
+		}
+		dt,
+		dd {
+			float: left;
+		}
+	}

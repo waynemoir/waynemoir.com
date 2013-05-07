@@ -1,0 +1,131 @@
+// ============================================== */
+// ================ BASE Rules ================== */
+// =	A Base rule is applied to an element	= */
+// =	using an element selector, a 			= */
+// =	descendent selector, or a child 		= */
+// =	selector, along with any 				= */
+// =	pseudo-classes. 						= */
+// ============================================== */
+	body, html {
+		background-color: @white;
+		color: @black;
+		#font > .sans-serif(normal);
+		min-height: 100%;
+	}
+
+	// Links
+		@linkcolour: @blue;
+		.new a {
+			color: @linkcolour;
+			cursor: pointer;
+			font-weight: bold;
+			text-decoration: none;
+			.transition(all linear .2s);
+			&:visited {
+				color: @linkcolour;
+			}
+			&:hover {
+				color:darken(@linkcolour, 10);
+				text-decoration: underline;
+			}
+			img{
+				border: none;
+				outline: none;
+			}
+		}
+
+	// Typography
+		.new h1, .new h2, .new h3, .new h4, .new h5, .new h6 {
+			font-weight: bold;
+		//	margin-bottom: @baseline;
+		}
+		h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+			color: #999;
+			font-size: 0.8em;
+			font-weight: normal;
+		}
+		.new p, .new blockquote, 
+		.new td, .new th {
+			.font-size(16);
+		}
+		.new p {
+			margin-bottom: 1em;
+		}
+		.new ol, .new ul {
+			margin-bottom: @baseline;
+			margin-left: @gutter;
+		}
+		.new ol {
+			list-style: decimal;
+		}
+		.new ul { 
+			list-style: disc;
+		}
+		.new strong {
+		  font-weight:bold;
+		}
+		.new em {
+		  font-style: italic;
+		}
+		p, blockquote, td, th {
+			.font-size(16);
+		}
+		p {
+			line-height: 1.2;
+		}
+		th {
+			font-weight: bold;
+			text-align: left;
+		}
+		footer {
+			margin: 2em 0;
+		}
+		pre {
+			overflow-x: scroll;
+		}
+
+		// Calulations
+		// =======================================*/
+
+			@ratio: 1.07;
+
+			@h1Calc: @h2Calc * (@ratio*1.1);
+			@h2Calc: @h3Calc * @ratio;
+			@h3Calc: @h4Calc * @ratio;
+			@h4Calc: @h5Calc * @ratio;
+			@h5Calc: @h6Calc * @ratio;
+			@h6Calc: 16px;
+
+			.line-height(@base) {
+				@lineHeight: @base * (@ratio*1.1);
+				line-height:~"@{lineHeight}px";
+			}
+
+		// Set styles
+		// =======================================*/
+		.new {
+			h1, .h1 { 
+				.font-size(@h1Calc); 
+				.line-height(@h1Calc);
+			}
+			h2, .h2 { 
+				.font-size(@h2Calc); 
+				.line-height(@h2Calc);
+			}
+			h3, .h3 { 
+				.font-size(@h3Calc); 
+				.line-height(@h3Calc);
+			}
+			h4, .h4 { 
+				.font-size(@h4Calc); 
+				.line-height(@h4Calc);
+			}
+			h5, .h5 { 
+				.font-size(@h5Calc); 
+				.line-height(@h5Calc);
+			}
+			h6, .h6 { 
+				.font-size(@h6Calc); 
+				.line-height(@h6Calc);
+			}
+		}

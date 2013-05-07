@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="new ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="new ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="new ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="new" lang="en"><!--<![endif]-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Force IE to use the latest rendering engine or Chrome Frame (if available) -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+		<!-- Page Info -->
+		<title>Layout | Microlise Bootstrap</title>
+		<meta name="description" content="Generic description of the application goes here."/>
+		<meta name="author" content="Microlise Ltd."/>
+		<meta name="copyright" content="Copyright (c) 2012 Microlise Ltd." />
+
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+
+		<!-- Global CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+		<!--[if lte IE 7]>
+			<link rel="stylesheet" type="text/css" href="ie.css" media="all" />
+		<![endif]-->
+
+		<!-- Themes -->
+		<link rel="alternate stylesheet" type="text/css" href="css/dummy.css" title="dummy" media="screen" disabled="">
+		<link rel="alternate stylesheet" type="text/css" href="css/jcb.css" title="jcb" media="screen" disabled="">
+
+		<script type="text/javascript" src="js/modernizr.min.js"></script>
+		<!-- Other Javascript goes at the bottom of the page, to improve page load-times. -->
+	</head>
+	<body onload="prettyPrint()" class="unconstrained">
+
+		<a href="#content" class="skiplink">Skip Navigation</a>
+
+		<div class="skipnavigation">
+			<a href="#content" accesskey="S">Skip over navigation</a>
+		</div><!-- /#skipnavigation -->
+
+		<div class="session">
+			<div class="container">
+				<p class="session-powered">Powered by <a href="http://microlise.com/" class="icon-microlise"> microlise</a></p>
+				<ul class="session-actions">
+					<li>Signed in as <strong>Ben Jenkinson</strong> to <strong>JCB Customer Experience</strong> <a href="#" title="Change the current tenancy">(Change)</a></li>
+					<li><a href="#" rel="help">Help</a>
+					<li><a href="#" >Account</a>
+					<li><a href="#">Customise</a></li>
+					<li><a href="#">Sign out</a>
+				</ul>
+			</div><!-- /.container -->
+		</div><!-- /.session -->
+
+		<header class="site-header">
+			<div class="nav nav-main">
+				<div class="container">
+					<div class="logo">Microlise</div>
+					<ul>
+						<li><a href="index.html">Overview</a></li>
+						<li><a href="html.html">HTML</a></li>
+						<li><a href="base.html">Base</a></li>
+						<li class="active"><a href="grid.html">Grid</a></li>
+						<li><a href="javascript.html">Javascript Plugins</a></li>
+						<li><a href="examples/index.html">Examples</a></li>
+						<li><a href="accessibility.html">Accessibility</a></li> 
+					</ul>
+				</div><!-- /.container -->
+			</div><!-- /.main -->
+			<div class="nav nav-sub">
+				<div class="container">
+					<ul>
+						<li class="active"><a href="#default">Default Grid</a></li>
+						<li><a href="#nesting">Nesting columns</a></li>
+						<li><a href="#offsetting">Offsetting columns</a></li>
+						<li><a href="#constrained">Limiting page width</a></li>
+					</ul>
+				</div><!-- /.container -->
+			</div><!-- /.subnav -->
+		</header>
+
+		<div id="content">
+			<div class="container">
+				<h1>Grid System</h1>
+
+				<section id="default">
+					<h2 class="element-header">Default grid <small>12 columns on a responsive grid</small></h2>
+
+					<div class="row show-grid">
+						<div class="span1">1</div>
+						<div class="span1">1</div>
+						<div class="span1">1</div>
+						<div class="span1">1</div>
+						<div class="span1">1</div>
+						<div class="span1">1</div>
+						<div class="span1">1</div>
+						<div class="span1">1</div>
+						<div class="span1">1</div>
+						<div class="span1">1</div>
+						<div class="span1">1</div>
+						<div class="span1">1</div>
+					</div><!-- /.row -->
+					<div class="row show-grid">
+						<div class="span2">2</div>
+						<div class="span2">2</div>
+						<div class="span2">2</div>
+						<div class="span2">2</div>
+						<div class="span2">2</div>
+						<div class="span2">2</div>
+					</div><!-- /.row -->
+					<div class="row show-grid">
+						<div class="span4">4</div>
+						<div class="span8">8</div>
+					</div><!-- /.row -->
+					<div class="row show-grid">
+						<div class="span6">6</div>
+						<div class="span6">6</div>
+					</div><!-- /.row -->
+					<div class="row show-grid">
+						<div class="span3">3</div>
+						<div class="span9">9</div>
+					</div><!-- /.row -->
+					<div class="row show-grid">
+						<div class="span12">12</div>
+					</div><!-- /.row -->
+
+					<div class="row">
+						<div class="span4">
+							<h3>Percentage based</h3>
+							<p>The fluid grid system uses percents for column widths instead of fixed pixels. It is based on the column ratios from 960gs to allow for correct proportions for all resolutions and devices.</p>
+						</div><!-- /.span -->
+						<div class="span4">
+							<h3>Markup</h3>
+							<pre class="well"><code class="prettyprint">&lt;div class="row"&gt;<br/>        &lt;div class="span4"&gt;4&lt;/div&gt;<br/>        &lt;div class="span8"&gt;8&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+						</div><!-- /.span -->
+						<div class="span4">
+							<h3>Basic layout</h3>
+							<p>As shown here, a basic layout can be created with two "columns", each spanning a number of the 12 foundational columns we defined as part of our grid system.</p>
+						</div><!-- /.span -->
+					</div><!-- /.row -->
+				</section>
+
+				<section id="nesting">
+					<h2 class="element-header">Nesting columns</h2>
+
+					<div class="row">
+						<div class="span8">
+							<p>To nest your content, just add a new .row and set of .span* columns within an existing .span* column.</p>
+							<p>The number of columns is reset at each level so that each row takes up 100% of the parent column. For example, two nested .span6 columns could be placed within a .span4.</p>
+
+							<h3>Example</h3>
+							<div class="row show-grid">
+								<div class="span12">
+									Level 1
+									<div class="row show-grid">
+										<div class="span8">
+											Level 2
+											<div class="row show-grid">
+												<div class="span3">Level 3</div>
+												<div class="span7">Level 3</div>
+												<div class="span2">Level 3</div>
+											</div><!-- /.row -->
+										</div><!-- /.span -->
+										<div class="span4">
+											Level 2
+											<div class="row show-grid">
+												<div class="span6">Level 3</div>
+												<div class="span6">Level 3</div>
+											</div><!-- /.row -->
+										</div><!-- /.span -->
+									</div><!-- /.row -->
+								</div><!-- /.span -->
+							</div><!-- /.row -->
+						</div><!-- /.span -->
+
+						<div class="span4">
+							<h3>Markup</h3>
+							<pre class="well"><code class="prettyprint">&lt;div class="span4"&gt;<br/>        Level 2<br/>        &lt;div class="row"&gt;<br/>                &lt;div class="span6"&gt;Level 3&lt;/div&gt;<br/>                &lt;div class="span6"&gt;Level 3&lt;/div&gt;<br/>        &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+						</div><!-- /.span -->
+					</div><!-- /.row -->
+				</section>
+
+				<section id="offsetting">
+					<h2 class="element-header">Offsetting columns</h2>
+
+					<div class="row">
+						<div class="span4">
+							<div class="well">
+								<div class="row show-grid">
+									<div class="span1">1</div>
+									<div class="span1">1</div>
+									<div class="span1">1</div>
+									<div class="span1">1</div>
+									<div class="span1">1</div>
+									<div class="span1">1</div>
+									<div class="span1">1</div>
+									<div class="span1">1</div>
+									<div class="span1">1</div>
+									<div class="span1">1</div>
+									<div class="span1">1</div>
+									<div class="span1">1</div>
+								</div><!-- /.row -->
+								<div class="row show-grid">
+									<div class="span2 offset2">2</div>
+								</div><!-- /.row -->
+								<div class="row show-grid">
+									<div class="span4 offset4">4</div>
+								</div><!-- /.row -->
+								<div class="row show-grid">
+									<div class="span3 offset3">3</div>
+								</div><!-- /.row -->
+							</div><!-- /.well -->
+						</div><!-- /.span -->
+
+						<div class="span4">
+							<div class="well">
+								<div class="row show-grid">
+									<div class="span4 offset4">4</div>
+								</div><!-- /.row -->
+								<div class="row show-grid">
+									<div class="span5 offset6">5</div>
+								</div><!-- /.row -->
+								<div class="row show-grid">
+									<div class="span2 offset9">2</div>
+								</div><!-- /.row -->
+								<div class="row show-grid">
+									<div class="span1 offset11">1</div>
+								</div><!-- /.row -->
+							</div><!-- /.well -->
+						</div><!-- /.span -->
+
+						<div class="span4">
+							<h3>Markup</h3>
+							<pre class="well"><code class="prettyprint">&lt;div class="row"&gt;<br/>        &lt;div class="span4 offset4"&gt;...&lt;/div&gt;<br/>&lt;/div&gt;<br/>&lt;div class="row"&gt;<br/>        &lt;div class="span5 offset6"&gt;...&lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+						</div><!-- /.span -->
+					</div><!-- /.row -->
+				</section>
+
+				<section id="constrained">
+					<h2 class="element-header">Limiting page width <small>Controlling the grid</small></h2>
+					
+					<div class="row">
+						<div class="span4">
+							<p>To make the most of the users display, by default the page width uses the entire width of the browser.</p>
+							<p>As is the nature with these things there may be times in which the design demands the page width be limited. Achieving this is as simple as adding the <code>.constrained</code> class to the <code>body</code>. This works by setting a <code>max-width</code> to ensure consistancy throughout the application.</p>
+						</div><!-- /.span -->
+						<div class="span4">
+							<h3>Markup</h3>
+							<pre class="well"><code class="prettyprint">&lt;body class="constrained"&gt;</code></pre>
+						</div><!-- /.span -->
+						<div class="span4">
+							<h3>Heads up!</h3>
+							<p>The <code>max-width</code> property is not supported in Internet Explorer 6, users of this browser will always recieve a full screen layout.</p>
+						</div><!-- /.span -->
+					</div><!-- /.row -->
+				</section>
+
+			</div><!-- /.container -->
+		</div><!-- /#content -->
+
+		<footer>
+			<div class="container">
+				<a href="#" id="toggler">Toggle stylesheet</a>
+			</div>
+		</footer>
+
+		<!-- Required, on all pages: -->
+			<!-- JQuery -->
+			<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+			<!-- Modernizer polyfill -->
+			<script type="text/javascript" src="js/initialize.js"></script>
+			<!-- jqGrid -->
+			<script type="text/javascript" src="js/jqgrid/grid.locale-en.js"></script>
+			<script type="text/javascript" src="js/jqgrid/jquery.jqGrid.min.js"></script>
+
+		<!-- Not required, Bootstrap demo data -->
+			<script type="text/javascript" src="js/google-code-prettify/prettify.js"></script>
+			<script type="text/javascript" src="js/stylesheet-toggle.min.js"></script>
+			<script type="text/javascript">
+				$(function(){
+					// Call stylesheet init so that all stylesheet changing functions will work
+					$.stylesheetInit();
+
+					// Loops through stylesheets
+					$('#toggler').bind(
+						'click',
+						function(e)
+						{
+							$.stylesheetToggle();
+							return false;
+						}
+					);
+				});
+			</script>
+	</body>
+</html>

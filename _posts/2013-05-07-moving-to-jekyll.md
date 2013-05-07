@@ -1,6 +1,6 @@
 ---
 date: 2013-05-07 11:17:25
-layout: post
+layout: default
 slug: moving-to-jekyll
 title: Moving to jekyll
 categories:

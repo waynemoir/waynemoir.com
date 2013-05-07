@@ -1,0 +1,172 @@
+// ====================== */
+// ======= Mixins ======= */
+// ====================== */
+	// Gradients 
+		.button-gradient(@highlight:@blue, @lowlight:@darkblue){
+			background: @highlight; /* Old browsers */
+			background: -moz-linear-gradient(top, @highlight 0%, @highlight 50%, @lowlight 50%, @lowlight 100%); // FF3.6+
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@highlight), color-stop(50%,@highlight), color-stop(50%,@darkblue), color-stop(100%,@darkblue)); // Chrome,Safari4+
+			background: -webkit-linear-gradient(top, @highlight 0%,@highlight 50%,@lowlight 50%,@lowlight 100%); // Chrome10+,Safari5.1+
+			background: -o-linear-gradient(top, @highlight 0%,@highlight 50%,@lowlight 50%,@lowlight 100%); // Opera 11.10+
+		// background: -ms-linear-gradient(top, @highlight 0%,@highlight 50%,@lowlight 50%,@lowlight 100%); // IE10+
+			background: linear-gradient(top, @highlight 0%,@highlight 50%,@lowlight 50%,@lowlight 100%); // W3C
+			/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{highlight}', endColorstr=@lowlight,GradientType=0 ); // IE6-9
+			filter: e(%("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d,endColorstr=%d)", @highlight, @lowlight)); // From http://snipplr.com/view/46350/ need to understand this better */
+		}
+
+		.gradient(@start:0%, @end:100%, @colour1:@blue, @colour2:@darkblue){
+			background: linear-gradient(top, @colour1 @start, @colour2 @end);
+			background-image: -o-linear-gradient(top, @colour1 @start, @colour2 @end);
+			background-image: -moz-linear-gradient(top, @colour1 @start, @colour2 @end);
+			background-image: -webkit-linear-gradient(top, @colour1 @start, @colour2 @end);
+			background-image: -ms-linear-gradient(top, @colour1 @start, @colour2 @end);
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(@colour1,) color-stop(@colour2));  
+		}
+
+		.box-shadow(@shadow: 0, @shadowColour:@aqua){
+			-webkit-box-shadow: @arguments; 
+			-moz-box-shadow: @arguments; 
+			box-shadow: @arguments; 
+		}
+
+		.inner-glow(@glow:0, @glowColour:@aqua){
+			-webkit-box-shadow: inset @arguments; 
+			-moz-box-shadow: inset @arguments; 
+			box-shadow: inset @arguments;
+		}
+
+	// CSS sprites
+	//	.sprite(@spriteURL:"../img/session.microlise.bg.png", @bkgrdposX:0, @bkgrdposY:0){
+	//		background-image: url(@spriteURL);
+	//		background-position: @bkgrdposX @bkgrdposY;
+	//	}
+
+	// Transitions
+		.transition(@transition) {
+			-webkit-transition: @transition;
+			-moz-transition: @transition;
+			transition: @transition;
+		}
+
+	// Rounded Corners 
+		.border-radius(@radius: 5px) {
+			-webkit-border-radius: @radius;
+			-moz-border-radius: @radius;
+            -khtml-border-radius: @radius;
+			border-radius: @radius;
+		}
+//TODO replace this with corner styles?
+		.tab-radius(@radius: 5px) {
+			-webkit-border-top-left-radius: @radius;
+			-webkit-border-top-right-radius: @radius;
+			-moz-border-radius-topleft: @radius;
+			-moz-border-radius-topright: @radius;
+			border-top-left-radius: @radius;
+			border-top-right-radius: @radius;
+		}
+
+        .border-radius-tl(@radius: 5px) {
+            -moz-border-radius-topleft: @radius; 
+		    -webkit-border-top-left-radius: @radius; 
+		    -khtml-border-top-left-radius: @radius; 
+		    border-top-left-radius: @radius;
+        }
+        
+        .border-radius-tr(@radius: 5px) {
+        	-moz-border-radius-topright: @radius;
+    		-webkit-border-top-right-radius: @radius; 
+    		-khtml-border-top-right-radius: @radius; 
+    		border-top-right-radius: @radius;
+        }
+
+        .border-radius-bl(@radius: 5px) {      
+        	-moz-border-radius-bottomleft: @radius; 
+    		-webkit-border-bottom-left-radius: @radius; 
+    		-khtml-border-bottom-left-radius: @radius; 
+    		border-bottom-left-radius: @radius;            
+        }
+        
+       .border-radius-br(@radius: 5px) {
+           	-moz-border-radius-bottomright: @radius; 
+		    -webkit-border-bottom-right-radius: @radius; 
+		    -khtml-border-bottom-right-radius: @radius; 
+		    border-bottom-right-radius: @radius;
+       }
+        
+        
+// ========================== */
+// ======= Font Stack ======= */
+// ========================== */
+	@baseline: 20px;
+	@gutter: @baseline;
+
+	// TO DO: We should be able to calculate the vertical rhythm with LESS */
+	// From: http://www.johnfaulds.com.au/journal/less-baseline-grid-calculator/
+
+	//	@defaultfontsize: 16;
+	//	@defaultlineheight: @defaultfontsize*1.5;
+
+	//	.font(@fontsize:16,@lineheight:24,@multiplier:1,@lineheightreducer:1) { // multiplier is for font sizes that require double lines space, 
+	//		lineheightreducer works the same way for fonts that are smaller and would look over leaded
+	//		font-size: (@fontsize/@defaultfontsize)*1em;
+	//		line-height: @lineheight/@fontsize/@lineheightreducer;
+	//		margin: (@lineheight/@fontsize*(@multiplier/(@lineheight/@defaultlineheight)))*1em 0 0;
+	//	}
+
+	//	.boxes(@paddingtop:1, @paddingbottom:1, @bordertop:0, @borderbottom:0) {
+	//		@border-top-width: @bordertop*1px;
+	//		@border-bottom-width: @borderbottom*1px;
+	//		padding-top: e(%("%sem%s", (((@paddingtop*@defaultlineheight)-@bordertop)/@defaultfontsize), `@{bordertop}>=1?'; border-top-width: @{border-top-width}':''` ));	
+	//		padding-bottom: e(%("%sem%s", (((@paddingbottom*@defaultlineheight)-@borderbottom)/@defaultfontsize)*1, `@{borderbottom}>=1?'; border-bottom-width: @{border-bottom-width}':''` ));
+	//	}
+	//
+
+
+// Sizing fonts in rems and px fallback
+	@defaultfontsize: 16; // Default browser font size is 16
+	@defaultlineheight: 20;
+
+	.font-size(@sizeValue, @linemultiplier:1, @linereducer:1){
+		@pxValue: @sizeValue;
+		@remValue: (@sizeValue /@defaultfontsize); 
+		font-size: ~"@{pxValue}px"; // px fallback for browsers that do not support rem
+		font-size: ~"@{remValue}rem";
+	}
+
+	#font {
+		.shorthand(@weight: normal, @lineHeight: @baseline) {
+			font-weight: @weight;
+			line-height: @lineHeight;
+		}
+
+		.sans-serif(@weight: normal, @lineHeight: @baseline) {
+			font-family: "Segoe UI", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight: @weight;
+			line-height: @lineHeight;
+		}
+
+		.serif(@weight: normal, @lineHeight: @baseline) {
+			font-family: "Georgia", Times New Roman, Times, sans-serif;
+			font-weight: @weight;
+			line-height: @lineHeight;
+		}
+
+		.monospace(@weight: normal, @lineHeight: @baseline) {
+			font-family: "Monaco", Courier New, monospace;
+			font-weight: @weight;
+			line-height: @lineHeight;
+		}
+	}
+
+// Clearfix
+	.clearfix {
+		*zoom: 1;
+		&:before,
+		&:after {
+			content: "";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
