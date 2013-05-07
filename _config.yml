@@ -1,0 +1,2 @@
+auto: true
+exclude: [build.bat,README.md]
