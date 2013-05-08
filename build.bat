@@ -12,6 +12,6 @@ if exist .\_site (
 
 mkdir .\_site
 
-call jekyll --no-auto
+call jekyll build
 
-start "Watching HTML..." /min jekyll
+start "Watching HTML..." /min jekyll build --watch
