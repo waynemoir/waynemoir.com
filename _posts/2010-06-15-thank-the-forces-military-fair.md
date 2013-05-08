@@ -7,7 +7,7 @@ categories:
 tags:
 - Charity Event
 ---
-# 
+# Thank The Forces Military Fair
 
 On Sunday the 20th June 2010 I will be helping out at the [Thank The Forces Military Fair][1] in Hailsham, East Sussex. Why not come along? All are welcome and there is no entrance fee.
 
