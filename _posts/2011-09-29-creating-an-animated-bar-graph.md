@@ -1,13 +1,14 @@
 ---
 title: Creating An Animated Bar Graph
-author: wayne.moir
 layout: default
 categories:
+- Web development
+tags:
 - HTML
 - JavaScript
 - Snippets
 ---
-# 
+# Creating An Animated Bar Graph
 
 The true value of software lies in the ability of end users to input and extract data. Data input is commonly handled by forms and to a degree creative freedom is often limited to simply keeping the interface out of the way of the user; for me the really fun part is in the output of the data, where far greater creative freedom exists.
 

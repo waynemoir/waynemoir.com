@@ -1,14 +1,13 @@
 ---
-title: 'Whats In Your Refrigerator?'
-author: wayne.moir
+title: Whats In Your Refrigerator?
 layout: default
 categories:
-- Photography
+- Personal
 tags:
 - Competition
 - Photography
 ---
-# 
+# Whats In Your Refrigerator?
 
 ![What's in your refrigerator?][1]  
 Image Details: Nikon D3000, Exposure: 1/500, Aperture: f/5.6, Focal Length: 55mm, ISO Speed: 200

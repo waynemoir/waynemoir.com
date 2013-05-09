@@ -1,13 +1,12 @@
 ---
 title: JavaScript Exercises
-author: wayne.moir
 layout: default
 categories:
-- JavaScript
+- Web development
 tags:
 - JavaScript
 ---
-# 
+# JavaScript Exercises
 
 Lately I have been focusing on developing my knowledge of JavaScript as I feel that the ability to write custom JavaScript is the weak spot in my skill set. Whilst doing so I have found [books][1] and [online resources][2] to be an excellent source of knowledge. However one area that I have found both these resources to be lacking in is the reinforcement of this knowledge through practical application. To help me practice and further develop my skills I have been setting myself exercises. I am posting both these and my solutions here for future reference and to aid anyone else that may wish to practice.
 
@@ -172,17 +171,3 @@ Display a greeting based on the time of day. For example; Good Morning if it is 
 *   [Toggle solution][4]
 
  [8]: http://www.waynemoir.com/wp-content/uploads/2010/11/javascript-exercises/javascript-exercise-1.5.html
-
-    
-    
-    
-    	
-    		
-    		JavaScript Exercise
-    	
-    	
-    		Good
-    			
-    				var currentTime = new Date();
-    				var hour = currentTime.getHours();
-    				if (hour >= 6 && hour = 13 && hour = 18 && hour 

@@ -1,15 +1,14 @@
 ---
 title: HTML5 Elements in Internet Explorer
-author: wayne.moir
 layout: default
 categories:
-- HTML
+- Web development
 tags:
 - HTML
 - JavaScript
 - Tools
 ---
-# 
+# HTML5 Elements in Internet Explorer
 
 The HTML5 specification is still a working draft and it is estimated that it could be 2022 before it becomes a W3C Recommendation, however **HTML5 is ready to use today!**
 

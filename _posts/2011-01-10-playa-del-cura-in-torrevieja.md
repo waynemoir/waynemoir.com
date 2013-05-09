@@ -1,11 +1,12 @@
 ---
 title: Playa Del Cura in Torrevieja
-author: wayne.moir
 layout: default
 categories:
+- Personal
+tags:
 - Photography
 ---
-# 
+# Playa Del Cura in Torrevieja
 
 ![Playa del Cura in Torrevieja][1]  
 Image Details: Nikon D3000, Exposure: 1/200 Sec, Aperture: f/4.5, Focal Length: 38mm, ISO Speed: 50

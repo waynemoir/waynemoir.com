@@ -1,15 +1,14 @@
 ---
 title: Split Page Scrolling Without Frames
-author: wayne.moir
 layout: default
 categories:
-- Snippets
+- Web development
 tags:
 - CSS
 - HTML
 - JavaScript
 ---
-# 
+# Split Page Scrolling Without Frames
 
 Recently I was asked to develop a solution to the problem of displaying two independently scrollable content areas side by side in the browser window. 
 

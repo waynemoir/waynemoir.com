@@ -1,13 +1,12 @@
 ---
 title: Hate Photoshops Pen Tool?
-author: wayne.moir
 layout: default
 categories:
-- Asides
+- Web development
 tags:
 - Asides
 ---
-# 
+# Hate Photoshops Pen Tool?
 
 For many Photoshop users the pen tool is one of the most difficult and frustrating tools to master, its reputation is infamous and many users avoid it entirely because of this.
 

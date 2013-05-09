@@ -1,11 +1,12 @@
 ---
 title: Negative Space in Design
-author: wayne.moir
 layout: default
 categories:
+- Web development
+tags:
 - Asides
 ---
-# 
+# Negative Space in Design
 
 Negative space, or whitespace, is a powerful design element which impacts both the aesthetics and usability of a website; too little and the design feels cramped, too much and related page elements can become disconnected. 
 

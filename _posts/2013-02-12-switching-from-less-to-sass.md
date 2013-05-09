@@ -1,11 +1,14 @@
 ---
 title: Switching from LESS to Sass
-author: wayne.moir
 layout: default
 categories:
+- Web development
+tags:
 - CSS
+- LESS
+- SASS
 ---
-# 
+# Switching from LESS to Sass
 
 At work we currently use the LESS preprocessor to build our CSS framework and have been finding lots of situations where Sass @extend would help us better optimise our outputted CSS. This is a short write up of the pros and cons of each for our context:
 

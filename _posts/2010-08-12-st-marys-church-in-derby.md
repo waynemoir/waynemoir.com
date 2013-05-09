@@ -1,13 +1,12 @@
 ---
-title: 'St Mary&#8217;s Church in Derby'
-author: wayne.moir
+title: St Marys Church in Derby
 layout: default
 categories:
-- Photography
+- Personal
 tags:
 - Photography
 ---
-# 
+# St Marys Church in Derby
 
 ![St Marys Church in Derby][1]  
 Image Details: Nikon D3000 , Exposure: 1.6 Sec , Aperture: f/4.5, Focal Length: 30mm, ISO Speed: 100

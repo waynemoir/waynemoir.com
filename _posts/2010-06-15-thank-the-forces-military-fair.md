@@ -1,6 +1,5 @@
 ---
 title: Thank The Forces Military Fair
-author: wayne.moir
 layout: default
 categories:
 - Personal

@@ -1,13 +1,12 @@
 ---
 title: Eastbourne Pier
-author: wayne.moir
 layout: default
 categories:
-- Photography
+- Personal
 tags:
 - Photography
 ---
-# 
+# Eastbourne Pier
 
 ![Eastbourne Pier in East Sussex][1]  
 Image Details: Nikon D3000, Exposure: 1/20, Aperture: f/5.6, Focal Length: 55mm, ISO Speed: 400

@@ -1,11 +1,12 @@
 ---
 title: Font Icons
-author: wayne.moir
 layout: default
 categories:
+- Web development
+tags:
 - Icons
 ---
-# 
+# ont Icons
 
 Ever since [Chris Coyer][1] opened my eyes to the advantages of using fonts for icons, I have been a firm believer that icon fonts are the way forward for creating beautiful resolution independent interfaces.
 

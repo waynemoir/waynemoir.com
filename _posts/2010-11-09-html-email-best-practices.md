@@ -1,14 +1,13 @@
 ---
-title: 'HTML E-mail: Best Practices'
-author: wayne.moir
+title: HTML E-mail Best Practices
 layout: default
 categories:
-- E-mail
+- Web development
 tags:
 - HTML Email
 - Tools
 ---
-# 
+# HTML E-mail Best Practices
 
 HTML e-mail, and in particular newsletters, is an area that is very challenging to design and code. The biggest obstacle is that there are so many different clients available for reading email, each of which can display the same e-mail in vastly different ways. Even when the HTML e-mail is displayed properly by the software, the user preferences can be modified extensively; making the final layout even more difficult to predict. This makes testing HTML e-mail a far more challenging task than testing the cross browser compatibility of web sites.
 

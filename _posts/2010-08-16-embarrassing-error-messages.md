@@ -1,13 +1,12 @@
 ---
 title: Embarrassing Error Messages
-author: wayne.moir
 layout: default
 categories:
-- Asides
+- Web development
 tags:
 - Asides
 ---
-# 
+# Embarrassing Error Messages
 
 Error messages should be helpful and give users hints on what to do next. This article from uxmatters on [avoiding being embarrassed by your error messages][1] provides food for thought on this subject
 

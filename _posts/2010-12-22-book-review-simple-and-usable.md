@@ -1,11 +1,10 @@
 ---
-title: 'Book Review: Simple and Usable'
-author: wayne.moir
+title: Simple and Usable, A Book Review
 layout: default
 categories:
-- Reviews
+- Web development
 tags:
-- Book Review
+- Review
 - Design
 - User Interface
 ---

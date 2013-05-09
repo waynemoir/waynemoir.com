@@ -1,13 +1,13 @@
 ---
 title: Disadvantages to Lazy Loading
-author: wayne.moir
 layout: default
 categories:
-- Thoughts
+- Web development
 tags:
-- 'Thoughts &amp; Opinions'
+- Thoughts
+- Opinions
 ---
-# 
+# Disadvantages to Lazy Loading
 
 [Lazy loading][1] for images is a great idea, **in theory**. Deferring the loading of images until such time as they are required means a shorter initial loading time for the user, great! Reducing unnecessary traffic if the user leaves the page before reaching the end of the article means smaller hosting bills, brilliant! However in my experience the story doesn’t really go to plan.
 

@@ -1,13 +1,12 @@
 ---
 title: Background Images Not Displaying in Chrome
-author: wayne.moir
 layout: default
 categories:
-- Asides
+- Web development
 tags:
 - CSS
 ---
-# 
+# Background Images Not Displaying in Chrome
 
 Recently I switched my default browser from Firefox to Chrome, in doing so came across a strange issue with background images not displaying on a number of sites when using Chrome. Investigation into this showed that the image to the path and was correct, as was the CSS to display it.
 

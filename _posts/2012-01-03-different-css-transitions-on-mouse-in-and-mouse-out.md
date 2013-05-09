@@ -1,14 +1,13 @@
 ---
 title: Different CSS Transitions on Mouse In and Mouse Out
-author: wayne.moir
 layout: default
 categories:
-- CSS
+- Web development
 tags:
 - CSS
 - Transitions
 ---
-# 
+# Different CSS Transitions on Mouse In and Mouse Out
 
 Prior to CSS3 the most effective way to implement mouse hover animations was using JavaScript. Now that cross browser CSS3 transitions support has grown beyond being restricted to WebKit I have started experimenting more with transitions and quickly came across the problem of wanting to use a different transition effects on mouse in and mouse out events.
 
