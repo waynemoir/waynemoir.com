@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<article class="post">
+
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+
+
+
+
+<style>
+	.nav-bar {
+		background: #ccc;
+		float: left;
+		width: 100%;
+		padding: 20px 0;
+	}
+	.published {
+		float: left;
+		padding: 0 20px;
+	}
+	.tags {
+		float: left;
+		padding-left: 20px;
+		border-left: 1px solid black
+	}
+
+.post-nav {
+position: fixed;
+top: 50%;
+}
+.post-nav--prev{
+	left: 0;
+}
+.post-nav--next{
+	right: 0;
+}
+</style>
+
+<div class="nav-bar">
+	<div class="published">{{ page.date | date: "%B %e, %Y" }}</div>
+	
+	<div class="tags">
+		{% for tag in page.tags  %}
+			{{ tag }},
+		{% endfor %}
+	</div>	
+
+
+
+		{% if page.previous.url %} 
+			<a href="{{page.previous.url}}" title="Previous post: {{page.previous.title}}" class="post-nav post-nav--prev">Previous post <</a> 
+		{% endif %} 
+		{% if page.next.url %} 
+			<a href="{{page.next.url}}" title="Next post: {{page.next.title}}" class="post-nav post-nav--next">> Next post</a> 
+		{% endif %} 
+	</div> 
+
+
+
+</article>
