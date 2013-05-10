@@ -1,12 +1,5 @@
 ---
-title: Number 35
-layout: default
-categories:
-- Web development
-tags:
-- CSS
-- HTML
+title: Moving to jekyll
+layout: post
 ---
 
-
-# Moving to jekyll

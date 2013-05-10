@@ -1,8 +1,7 @@
 ---
-layout: default
+title: Why Bootstrap worked for us, and why it isnt
+layout: post
 ---
-
-#Why Bootstrap worked for us, and why it isnt
 
 One year ago almost to the day I made the move from small CSS to big CSS
 

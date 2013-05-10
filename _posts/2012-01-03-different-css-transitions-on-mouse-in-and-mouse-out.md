@@ -1,24 +1,19 @@
 ---
 title: Different CSS Transitions on Mouse In and Mouse Out
-layout: default
+layout: post
 categories:
 - Web development
 tags:
 - CSS
 - Transitions
 ---
-# Different CSS Transitions on Mouse In and Mouse Out
 
 Prior to CSS3 the most effective way to implement mouse hover animations was using JavaScript. Now that cross browser CSS3 transitions support has grown beyond being restricted to WebKit I have started experimenting more with transitions and quickly came across the problem of wanting to use a different transition effects on mouse in and mouse out events.
 
-![Mouse in and out transition][1]
+![Mouse in and out transition](http://www.waynemoir.com/wp-content/uploads/2012/01/mouseinout.jpg)
 
- [1]: http://www.waynemoir.com/wp-content/uploads/2012/01/mouseinout.jpg "Mouse In Out"
-
-Initially looking at the syntax for this it doesn’t appear to be possible, however this can be done using the following simple trick as originally documented on [Design Shack][2] and [CSS Tricks][3].
-
- [2]: http://www.designshack.net/articles/css/mastering-mouse-enter-and-exit-events-with-css-transitions/
- [3]: http://css-tricks.com/different-transitions-for-hover-on-hover-off/
+Initially looking at the syntax for this it doesn’t appear to be possible, however this can be done using the following simple trick as originally documented on [Design Shack](http://www.designshack.net/articles/css/mastering-mouse-enter-and-exit-events-with-css-transitions/) and [CSS Tricks](http://css-tricks.com/different-transitions-for-hover-on-hover-off/
+).
 
     div &#123;
         background: black;
@@ -53,6 +48,4 @@ Initially looking at the syntax for this it doesn’t appear to be possible, how
 
 The key to achieving the desired behaviour on mouse in and mouse out is to specify the mouse over transition in the hover state and the mouse out transition in the regular state.
 
-[View demo][4]
-
- [4]: http://jsfiddle.net/QKUdx/1/
+[View demo](http://jsfiddle.net/QKUdx/1/)
