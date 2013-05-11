@@ -23,8 +23,7 @@ layout: default
 	}
 	.tags {
 		float: left;
-		padding-left: 20px;
-		border-left: 1px solid black
+
 	}
 
 .post-nav {
@@ -32,32 +31,50 @@ position: fixed;
 top: 50%;
 }
 .post-nav--prev{
+	left: -1em;
+}
+.post-nav--prev:hover {
 	left: 0;
 }
 .post-nav--next{
+	right: -1em;
+}
+.post-nav--next:hover{
 	right: 0;
 }
-</style>
 
-<div class="nav-bar">
-	<div class="published">{{ page.date | date: "%B %e, %Y" }}</div>
-	
-	<div class="tags">
-		{% for tag in page.tags  %}
-			{{ tag }},
-		{% endfor %}
-	</div>	
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+</style>
 
 
 
 		{% if page.previous.url %} 
-			<a href="{{page.previous.url}}" title="{{page.previous.title}}" class="post-nav post-nav--prev">Older posts <</a>
+			<a href="{{page.previous.url}}" title="{{page.previous.title}}" class="post-nav post-nav--prev">Older posts <</a> 
 		{% endif %} 
 		{% if page.next.url %} 
-			<a href="{{page.next.url}}" title="{{page.next.title}}" class="post-nav post-nav--next">> Newer posts</a>
+			<a href="{{page.next.url}}" title="{{page.next.title}}" class="post-nav post-nav--next">> Newer posts</a> 
 		{% endif %} 
-	</div> 
 
 
+
+
+
+
+
+<footer class="post-meta">
+	<p>Published {{ page.date | date: "%B %e, %Y" }}.</p>
+	<p>Tagged: {% for tag in page.tags  %}
+			{{ tag }},
+		{% endfor %}</p>
+</footer>
 
 </article>
