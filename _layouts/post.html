@@ -51,10 +51,10 @@ top: 50%;
 
 
 		{% if page.previous.url %} 
-			<a href="{{page.previous.url}}" title="Previous post: {{page.previous.title}}" class="post-nav post-nav--prev">Previous post <</a> 
+			<a href="{{page.previous.url}}" title="{{page.previous.title}}" class="post-nav post-nav--prev">Older posts <</a>
 		{% endif %} 
 		{% if page.next.url %} 
-			<a href="{{page.next.url}}" title="Next post: {{page.next.title}}" class="post-nav post-nav--next">> Next post</a> 
+			<a href="{{page.next.url}}" title="{{page.next.title}}" class="post-nav post-nav--next">> Newer posts</a>
 		{% endif %} 
 	</div> 
 
