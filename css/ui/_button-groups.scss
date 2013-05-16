@@ -1,0 +1,49 @@
+/*
+// |--------------------------------------------------------------------------
+// |  $BUTTON-GROUPS
+// |--------------------------------------------------------------------------
+*/
+.btn-group {
+	display: inline-block; // Display multiple groups on one line
+	font-size: 0; // Make the gap between the buttons predictable so that we can close it
+	position: relative; // For alignment of the dropdown menu in a button dropdown
+}
+
+.btn-group > .btn,
+.btn-group > .dropdown-menu {
+	font-size: $base-font-size; // Restore the font-size after closing the gap between the buttons
+}
+
+.btn-group > .btn {
+	@include border-radius(0); // Remove the border-radius for the inner buttons in a group
+}
+
+.btn-group > .btn:first-child {
+	@include border-left-radius($brand-round); // Partially restore the border-radius for buttons on the end
+}
+
+.btn-group > .btn:last-child,
+.btn-group > .dropdown-toggle {
+	@include border-right-radius($brand-round); // Partially restore the border-radius for buttons on the end
+}
+
+.btn-group > .btn + .btn {
+	margin-left: -1px; // Hide the left edge to make the buttons in a group appear joined together
+}
+
+.btn-group + .btn-group {
+	margin-left: $base-spacing-unit / 4; // Spacing between multiple groups
+}
+
+
+// Optional: Group multiple button groups together for a toolbar
+.btn-toolbar {
+	font-size: 0; // Hack to remove whitespace that results from using inline-block
+	margin-top: $base-spacing-unit / 2;
+	margin-bottom: $base-spacing-unit / 2;	
+}
+
+.btn-toolbar > .btn {
+	font-size: $base-font-size; // Restore the font-size after closing the gap between the buttons
+	margin-right: $base-spacing-unit / 4;
+}

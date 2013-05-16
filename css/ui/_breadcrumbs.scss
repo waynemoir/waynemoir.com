@@ -1,0 +1,12 @@
+.breadcrumb {
+	font-size: $milli-size;
+}
+
+.breadcrumb__link {
+	color: $muted-color;
+
+	&:hover {
+		color: $brand-color;
+	}
+
+}

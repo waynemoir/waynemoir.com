@@ -1,0 +1,118 @@
+/*
+// |--------------------------------------------------------------------------
+// |  $BUTTONS
+// |--------------------------------------------------------------------------
+*/
+@mixin button-gradient($basecolour){
+	$highlight: lighten($basecolour, 3%);
+	$lowlight: darken($basecolour, 3%);
+
+	background-color: $basecolour; // Old browsers
+	background-image: -moz-linear-gradient(top, $highlight 0%, $highlight 50%, $lowlight 50%, $lowlight 100%); // FF3.6+
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$highlight), color-stop(50%,$highlight), color-stop(50%,$lowlight), color-stop(100%,$lowlight)); // Chrome,Safari4+
+	background-image: -webkit-linear-gradient(top, $highlight 0%,$highlight 50%,$lowlight 50%,$lowlight 100%); // Chrome10+,Safari5.1+
+	background-image: -o-linear-gradient(top, $highlight 0%,$highlight 50%,$lowlight 50%,$lowlight 100%); // Opera 11.10+
+	background-image: linear-gradient(top, $highlight 0%,$highlight 50%,$lowlight 50%,$lowlight 100%); // W3C
+}
+
+
+ .btn {
+	@include border-radius($brand-round);
+	@include button-gradient($brand-btn-color);
+	border: 1px solid #acacac;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	color: $black;
+	box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+	padding: $half-spacing-unit/2 $half-spacing-unit;
+	text-decoration: none; // Reset default <a> styling
+	
+	&:focus,
+	&:hover {
+		@include button-gradient(darken($brand-btn-color, 15%));
+	}
+
+	&:active {
+		@include button-gradient(darken($brand-btn-color, 40));
+	}
+
+}
+
+
+.btn--primary {
+	@include button-gradient($brand-color);
+	color: $white;
+
+	&:focus,
+	&:hover {
+		@include button-gradient(darken($brand-color, 15%));
+	}
+
+	&:active {
+		@include button-gradient(darken($brand-color, 20%));
+	}
+
+}
+
+
+.btn--info {
+	@include button-gradient(darken($brand-info-background-color, 40%));
+	color: $white;
+
+	&:focus,
+	&:hover {
+		@include button-gradient(darken($brand-info-background-color, 60%));
+	}
+
+	&:active {
+		@include button-gradient(darken($brand-info-background-color, 65%));
+	}
+
+}
+
+
+.btn--success {
+	@include button-gradient(darken($brand-success-background-color, 40%));
+	color: $white;
+
+	&:focus,
+	&:hover {
+		@include button-gradient(darken($brand-success-background-color, 60%));
+	}
+
+	&:active {
+		@include button-gradient(darken($brand-success-background-color, 65%));
+	}
+
+}
+
+
+.btn--warning {
+	background: $orange;
+	color: $white;
+
+	&:focus,
+	&:hover {
+		@include button-gradient(darken($brand-warning-background-color, 60%));
+	}
+
+	&:active {
+		@include button-gradient(darken($brand-warning-background-color, 65%));
+	}
+
+}
+
+
+.btn--danger {
+	background: $red;
+	color: $white;
+
+	&:focus,
+	&:hover {
+		@include button-gradient(darken($brand-danger-background-color, 60%));
+	}
+
+	&:active {
+		@include button-gradient(darken($brand-danger-background-color, 65%));
+	}
+
+}

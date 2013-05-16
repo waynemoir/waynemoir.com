@@ -1,0 +1,36 @@
+/*
+// |--------------------------------------------------------------------------
+// |  $NAV--TABS
+// |--------------------------------------------------------------------------
+*/
+.nav--tabs {
+	border-bottom: 1px solid $base-ui-color;
+}
+
+.nav--tabs > li {
+	margin-bottom: -1px; // Pull up the bottom border to make the active tab appear tab like
+}
+
+.nav--tabs a {
+	border: 1px solid transparent; // Give all the links a border to maintain consistant sizing
+	@include border-top-radius($brand-round);
+	padding: $half-spacing-unit;
+	text-decoration: none; // Remove default <a> styling
+}
+
+.nav--tabs a:hover, 
+.nav--tabs a:focus {
+	background-color: $base-ui-color-alt;
+	border-bottom-color: $base-ui-color;
+	text-decoration: none; // Remove default <a> styling
+}
+
+.nav--tabs .active a, 
+.nav--tabs .active a:hover, 
+.nav--tabs .active a:focus {
+	background-color: $body-background; // Give the active tab a background to stop the .nav--tabs border-bottom showing
+	border: 1px solid $base-ui-color;
+	border-bottom-color: transparent;
+	color: $base-font-color; // Discourage clicking on the active tab by removing link styling
+	cursor: default; // Discourage clicking on the active tab by removing link styling
+}
