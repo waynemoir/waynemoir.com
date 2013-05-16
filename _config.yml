@@ -1,1 +1,1 @@
-exclude: [build.bat,README.md]
+exclude: [build.bat,README.md,*.scss]
