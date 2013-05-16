@@ -4,77 +4,24 @@ layout: default
 <article class="post">
 
     <h1>{{ page.title }}</h1>
-
     {{ content }}
 
+	<footer class="island--well">
+		<time pubdate="">{{ page.date | date: "%B %e, %Y" }}.<br></time>
 
-
-
-<style>
-	.nav-bar {
-		background: #ccc;
-		float: left;
-		width: 100%;
-		padding: 20px 0;
-	}
-	.published {
-		float: left;
-		padding: 0 20px;
-	}
-	.tags {
-		float: left;
-
-	}
-
-.post-nav {
-position: fixed;
-top: 50%;
-}
-.post-nav--prev{
-	left: -1em;
-}
-.post-nav--prev:hover {
-	left: 0;
-}
-.post-nav--next{
-	right: -1em;
-}
-.post-nav--next:hover{
-	right: 0;
-}
-
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-</style>
-
-
-
-		{% if page.previous.url %} 
-			<a href="{{page.previous.url}}" title="{{page.previous.title}}" class="post-nav post-nav--prev">Older posts <</a> 
-		{% endif %} 
-		{% if page.next.url %} 
-			<a href="{{page.next.url}}" title="{{page.next.title}}" class="post-nav post-nav--next">> Newer posts</a> 
-		{% endif %} 
-
-
-
-
-
-
-
-<footer class="post-meta">
-	<p>Published {{ page.date | date: "%B %e, %Y" }}.</p>
-	<p>Tagged: {% for tag in page.tags  %}
-			{{ tag }},
-		{% endfor %}</p>
-</footer>
+		{% if page.tags.size >= 0 %}
+			Tagged: 
+			{% for tag in page.tags  %}
+				{{ tag }},
+			{% endfor %}
+		{% endif %}
+	</footer>
 
 </article>
+
+{% if page.previous.url %} 
+	<a href="{{page.previous.url}}" title="{{page.previous.title}}" class="post-nav post-nav--prev">Older posts <</a> 
+{% endif %} 
+{% if page.next.url %} 
+	<a href="{{page.next.url}}" title="{{page.next.title}}" class="post-nav post-nav--next">> Newer posts</a> 
+{% endif %} 
