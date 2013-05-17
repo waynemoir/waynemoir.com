@@ -78,3 +78,65 @@ top: 50%;
 
 
 
+
+
+
+
+
+/* Site Wide - Header
+*/
+	.site-header {
+		background: #6d9705 url(/img/bg-secondary.jpg);
+		border-bottom: 3px solid #fff;
+		-moz-box-shadow: -8px 0 5px 3px #c0bebe;
+		-webkit-box-shadow: 0 0 5px 3px #c0bebe;
+		box-shadow: 0 0 5px 3px #c0bebe;
+		float: left;
+		margin-bottom: 50px;
+		padding: 10px 0;
+		position: relative;
+		width: 100%;
+		z-index: 1;
+	}
+	.site-header:after {
+		border-bottom: 1px solid #7b7b7b;
+	}
+
+	.site-logo {
+		float: left;
+		margin: 0 50px 0 30px;
+		position: relative;
+		width: 239px;
+	}
+	.site-logo a {
+		border: none;
+		color: #2F4301;
+		padding: 0;
+	}
+	.site-logo a img {
+		border-color: transparent;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		display: block;
+		max-width: 100%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.nav {
+		display: none;
+	}
