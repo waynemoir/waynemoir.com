@@ -31,8 +31,14 @@ padding: 0.063em 0.125em;
 text-decoration: none;
 */
 
+.block-list a {
+	display: block;
+}
+
+
+
 .block-list li:hover {
-	background-color: #ccc;
+	background-color: #dedbdb;
 	cursor: pointer;
 }
 
