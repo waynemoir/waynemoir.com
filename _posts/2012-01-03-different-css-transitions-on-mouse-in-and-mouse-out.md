@@ -12,8 +12,7 @@ Prior to CSS3 the most effective way to implement mouse hover animations was usi
 
 ![Mouse in and out transition](http://www.waynemoir.com/wp-content/uploads/2012/01/mouseinout.jpg)
 
-Initially looking at the syntax for this it doesn’t appear to be possible, however this can be done using the following simple trick as originally documented on [Design Shack](http://www.designshack.net/articles/css/mastering-mouse-enter-and-exit-events-with-css-transitions/) and [CSS Tricks](http://css-tricks.com/different-transitions-for-hover-on-hover-off/
-).
+Initially looking at the syntax for this it doesn’t appear to be possible, however this can be done using the following simple trick as originally documented on [Design Shack](http://www.designshack.net/articles/css/mastering-mouse-enter-and-exit-events-with-css-transitions/) and [CSS Tricks](http://css-tricks.com/different-transitions-for-hover-on-hover-off/).
 
     div &#123;
         background: black;
