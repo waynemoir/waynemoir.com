@@ -17,7 +17,7 @@ At work we currently use the LESS preprocessor to build our CSS framework and ha
 *   The syntax can be easily switched: 
     *   LESS @ is directly equivalent to Sass $
     *   When writing mixins: LESS .border-radius() {} would become Sass @mixin border-radius() {}
-    *   When using mixins: LESS .border-radius; would become Sass @inlcude border-radius(); OR @extend border-radius();
+    *   When using mixins: LESS .border-radius; would become Sass @include border-radius(); OR @extend border-radius();
 *   Both have a large community
 *   Both are seeing active development, Sass used to be more active but LESS has recently seen a surge in development
 
@@ -29,11 +29,11 @@ At work we currently use the LESS preprocessor to build our CSS framework and ha
 ## Pro Sass
 
 *   FireSass (Firefox) and Sass Inspector (Chrome) and powerful debugging tools, nothing like these exist for LESS
-*   Autocompile is a standard feature in Sass, WinLESS can autocompile but has problems with @include
+*   Auto compile is a standard feature in Sass, WinLESS can auto compile but has problems with @include
 *   CSS3 helpers and spriting are built in to Compass
 *   Sass is seen as the "jQuery of the preprocessor world" by Jonathan Verrecchia, and the community, therefore is probably the better choice for personal development
 *   Sass @extend can help to optimise our CSS output, massively
-*   If statements can be used to keep IE hacks in the context of the CSS module, but then pull them out at build time into a seperate CSS file
+*   If statements can be used to keep IE hacks in the context of the CSS module, but then pull them out at build time into a separate CSS file
 *   Sass has actual logical and looping operators in the language. if/then/else statements, for loops, while loops, and each loops
 *   Sass has nicer @media support as you can name the breakpoints
 

@@ -27,7 +27,7 @@ After a brief period of failed experimentation with the font icon generation too
 2.  Map the font to characters  
     I found using Inkscape to be the easier way to [map characters in the font](http://cleversomeday.wordpress.com/2010/03/27/video-make-a-font-in-inkscape/) to the SVG exported from Illustrator. Again using a 1000 point canvas and exporting the output as an SVG.
 3.  Convert the SVG to TTF  
-    I had no problems using [freefontconverter](http://www.freefontconverter.com/) to do this.
+    I had no problems using [FreeFontConverter](http://www.freefontconverter.com/) to do this.
 4.  Generate the font-face kit from the TTF  
     I used [Font Squirrel]( http://www.fontsquirrel.com/fontface/generator) to generate the font-face kit.
 5.  Add the characters and classes to the CSS  

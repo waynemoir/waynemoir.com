@@ -1,5 +1,5 @@
 ---
-title: Hate Photoshops Pen Tool?
+title: Hate the Pen Tool in Photoshop?
 layout: post
 categories:
 - Web development
