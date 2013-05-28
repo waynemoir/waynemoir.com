@@ -65,22 +65,7 @@ text-decoration: none;
 
 	}
 
-.post-nav {
-position: fixed;
-top: 50%;
-}
-.post-nav--prev{
-	left: -1em;
-}
-.post-nav--prev:hover {
-	left: 0;
-}
-.post-nav--next{
-	right: -1em;
-}
-.post-nav--next:hover{
-	right: 0;
-}
+
 
 
 
@@ -146,3 +131,6 @@ top: 50%;
 	.nav {
 		display: none;
 	}
+.post-nav {
+	color: rgb(177, 177, 172);
+}

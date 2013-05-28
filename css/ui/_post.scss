@@ -1,0 +1,21 @@
+/*
+// |--------------------------------------------------------------------------
+// |  $POST
+// |--------------------------------------------------------------------------
+*/
+
+/* In post navigation
+*/
+.post-nav {
+	font-size: $mega-size;
+	position: fixed;
+	text-decoration: none;
+	top: 50%;
+}
+
+.post-nav--prev {
+	left: $base-spacing-unit;
+}
+.post-nav--next{
+	right: $base-spacing-unit;
+}
