@@ -1,1 +1,1 @@
-exclude: [build.bat, README.md, inuit.css, style.scss]
+exclude: [build.bat, README.md, inuit.css, style.scss]pygments: true
