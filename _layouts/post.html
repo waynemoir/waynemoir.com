@@ -6,17 +6,7 @@ layout: default
     <h1>{{ page.title }}</h1>
     {{ content }}
 
-	<footer class="island--well">
-		<time pubdate="">{{ page.date | date: "%B %e, %Y" }}.<br></time>
-
-		{% if page.tags.size >= 0 %}
-			Tagged: 
-			{% for tag in page.tags  %}
-				{{ tag }},
-			{% endfor %}
-		{% endif %}
-	</footer>
-
+	<strong>{{ page.date | date: "%B %e, %Y" }}</strong>
 </article>
 
 {% if page.previous.url %} 
