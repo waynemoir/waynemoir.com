@@ -79,9 +79,7 @@ text-decoration: none;
 	.site-header {
 		background: #6d9705 url(/img/bg-secondary.jpg);
 		border-bottom: 3px solid #fff;
-		-moz-box-shadow: -8px 0 5px 3px #c0bebe;
-		-webkit-box-shadow: 0 0 5px 3px #c0bebe;
-		box-shadow: 0 0 5px 3px #c0bebe;
+		@include box-shadow(0 0 5px 3px #c0bebe);
 		float: left;
 		margin-bottom: 50px;
 		padding: 10px 0;
