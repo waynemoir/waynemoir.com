@@ -6,12 +6,19 @@ echo ##################
 echo.
 echo.
 
-if exist .\_site (
-	rd .\_site /q /s
-)
+echo Installing Node modules
+echo -----------------------
 
-mkdir .\_site
+call npm install
+
+echo.
+echo.
+
+echo Building docs
+echo -------------
 
 call jekyll build
+
+start "Watching SASS..." /min grunt 
 
 start "Watching HTML..." /min jekyll build --watch
