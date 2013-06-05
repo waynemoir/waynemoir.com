@@ -1,0 +1,140 @@
+/*------------------------------------*\
+  Reset default styles
+\*------------------------------------*/
+	body, div, dl, dt, dd, ul, ol, li,
+	h1, h2, h3, h4, h5, h6,
+	pre, form, fieldset, input, textarea,
+	p, blockquote, th, td {
+	  margin: 0;
+	  padding: 0;
+	}
+	table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	}
+	fieldset, img {
+	  border: 0;
+	}
+	address, caption, cite, dfn, th, var {
+	  font-style: normal;
+	  font-weight: normal;
+	}
+	caption, th {
+	  text-align: left;
+	}
+	h1, h2, h3, h4, h5, h6 {
+	  font-size: 100%;
+	  font-weight: normal;
+	}
+	q:before, q:after {
+	  content: '';
+	}
+	abbr, acronym {
+	  border: 0;
+	}
+/*------------------------------------*\
+  Main Structure
+\*------------------------------------*/
+	html {
+		
+		color: #222;
+		font-family: Cambria, Georgia, "Times New Roman", Times, serif;
+		margin: 0 auto;
+		max-width: 940px;
+		padding: 0 10px;
+	}
+	body {
+		font-size: 1.125em;
+		line-height: 1.5;
+		margin: 0 auto;
+		max-width: 580px;
+		padding-top: 4em;  
+	}
+	body:hover {
+		background: url(../images/grid.png) center -15px repeat-y;
+	}
+/*------------------------------------*\
+  Typography
+\*------------------------------------*/
+/*--- Headings ---*/
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	}
+	h1 {  
+		font-size: 3em;  /* 54px --> 54 ÷ 18 = 3 */
+		line-height: 0.5; /* 27px --> 27 ÷ 54 = 0.5 */
+		margin-bottom: 0.5em; /* 27px --> 27 ÷ 54 = 0.5 */
+	}
+	h2 {
+	  font-size: 2em; /* 36px --> 36 ÷ 18 = 23 */
+	  line-height: 0.75; /* 27px --> 27 ÷ 36 = 0.75 */  
+	  margin-bottom: 0.75em; /* 27px --> 27 ÷ 36 = 0.75 */  
+	}
+	h3 {
+	  font-size: 1.5em; /* 27px --> 27 ÷ 18 = 1.5 */
+	  line-height: 1; /* 27px --> 27 ÷ 27 = 1 */
+	  margin-bottom: 1em; /* 27px --> 27 ÷ 27 = 1 */
+	}
+	h4, h5, h6 {
+	  font-size: 1em; /* 18px --> 18 ÷ 18 = 1 */
+	  line-height: 0;
+	  margin-bottom: 1.5em; /* 27px --> 27 ÷ 18 = 1.5 */
+	}
+/*--- Paragraphs ---*/
+	p {
+		margin-bottom: 1.5em;
+	}
+	body > p:first-of-type {
+		font-size: 1.111em; /* 20px ? 20 ÷ 18 = 1.111 */
+		line-height: 1.35; /* 27px ? 27 ÷ 20 = 1.35 */
+		margin-bottom: 1.35em;
+	}
+/*--- Lists ---*/
+	ul, ol {
+		margin-bottom: 1.5em;
+	}
+	ul {
+		list-style: square outside;
+	}
+	ul ul,
+	ol ol {
+		margin: 0 0 0 60px;
+	}
+/*--- Quotes ---*/
+	blockquote {
+		border-left: 5px solid #4096EE;
+		margin: 0 60px 0 40px;
+		padding-left: 15px;
+		text-indent: -0.4em;
+	}
+	blockquote b {
+	  display: block;
+	  text-indent: 0;
+	}
+/*--- Links ---*/
+	a {
+		color: #4096EE;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	a:active,
+	a:focus {
+		position: relative;
+		top: 1px;
+	}
+	.read-more:after {
+		content: "\00A0\02192"; /* Insert a space then right arrow */
+	}
+/*------------------------------------*\
+  Images
+\*------------------------------------*/
+	#logo {
+		float: right;
+		margin: 0 0 0 20px;
+		padding: 5px;
+		width: 150px;
+	}

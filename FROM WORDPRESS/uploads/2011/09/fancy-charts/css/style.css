@@ -1,0 +1,307 @@
+/*------------------------------------*\
+  Reset default styles
+\*------------------------------------*/
+	body, div, dl, dt, dd, ul, ol, li,
+	h1, h2, h3, h4, h5, h6,
+	pre, form, fieldset, input, textarea,
+	p, blockquote, th, td {
+	  margin: 0;
+	  padding: 0;
+	}
+	table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	}
+	fieldset, img {
+	  border: 0;
+	}
+	address, caption, cite, dfn, th, var {
+	  font-style: normal;
+	  font-weight: normal;
+	}
+	caption, th {
+	  text-align: left;
+	}
+	h1, h2, h3, h4, h5, h6 {
+	  font-size: 100%;
+	  font-weight: normal;
+	}
+	q:before, q:after {
+	  content: '';
+	}
+	abbr, acronym {
+	  border: 0;
+	}
+/*------------------------------------*\
+  Main Structure
+\*------------------------------------*/
+	html {
+		color: #222;
+		font-family: Cambria, Georgia, "Times New Roman", Times, serif;
+		margin: 0 auto;
+		max-width: 840px;
+		padding: 0 10px;
+	}
+	body {
+		font-size: 1.125em;
+		line-height: 1.5;
+		padding-top: 3em;  
+		position: relative;
+	}
+/*------------------------------------*\
+  Typography
+\*------------------------------------*/
+/*--- Headings ---*/
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	}
+	h1 {  
+		font-size: 3em;  /* 54px --> 54 ÷ 18 = 3 */
+		line-height: 1; /* 27px --> 27 ÷ 54 = 0.5 */
+		margin-bottom: 0.5em; /* 27px --> 27 ÷ 54 = 0.5 */
+		text-align: center;
+	}
+	h2 {
+	  font-size: 2em; /* 36px --> 36 ÷ 18 = 23 */
+	  line-height: 0.75; /* 27px --> 27 ÷ 36 = 0.75 */  
+	  margin-bottom: 0.75em; /* 27px --> 27 ÷ 36 = 0.75 */  
+	}
+	h3 {
+	  font-size: 1.5em; /* 27px --> 27 ÷ 18 = 1.5 */
+	  line-height: 1; /* 27px --> 27 ÷ 27 = 1 */
+	  margin-bottom: 1em; /* 27px --> 27 ÷ 27 = 1 */
+	}
+	h4, h5, h6 {
+	  font-size: 1em; /* 18px --> 18 ÷ 18 = 1 */
+	  line-height: 0;
+	  margin-bottom: 1.5em; /* 27px --> 27 ÷ 18 = 1.5 */
+	}
+/*--- Paragraphs ---*/
+	p {
+		margin-bottom: 1.5em;
+	}
+	body > p:first-of-type {
+		font-size: 1.111em; /* 20px ? 20 ÷ 18 = 1.111 */
+		line-height: 1.35; /* 27px ? 27 ÷ 20 = 1.35 */
+		margin-bottom: 1.35em;
+	}
+/*--- Lists ---*/
+	ul, ol {
+		margin-bottom: 1.5em;
+	}
+	ul {
+		list-style: square outside;
+	}
+	ul ul,
+	ol ol {
+		margin: 0 0 0 60px;
+	}
+/*--- Quotes ---*/
+	blockquote {
+		border-left: 5px solid #4096EE;
+		margin: 0 60px 0 40px;
+		padding-left: 15px;
+		text-indent: -0.4em;
+	}
+	blockquote b {
+	  display: block;
+	  text-indent: 0;
+	}
+/*--- Links ---*/
+	a {
+		color: #4096EE;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	a:active,
+	a:focus {
+		position: relative;
+		top: 1px;
+	}
+/*------------------------------------*\
+  Tables
+\*------------------------------------*/
+	table {
+		border: none;
+	}
+	table caption {
+		line-height:2;
+		text-align: center;
+	}
+	table thead {
+		background:#F0F0F0;
+	}
+	
+	table th {
+		border: 1px inset gray;
+		font-weight: bold;
+		padding: 5px 20px;
+	}
+	table td {
+		border: 1px inset gray;
+		text-align: center;
+	}
+/*------------------------------------*\
+  Chart
+\*------------------------------------*/
+	#reset-graph-button {
+		background: #6b6b6b;
+		border-radius: 3px;
+		color: #fff;
+		padding: 0 6px;
+		position: absolute;
+		right: 0;
+		text-decoration: none;
+		top: 5px; 
+	}
+	#reset-graph-button:hover {
+		background: #161616;
+	}
+	article#chart h2 {
+		font-size: 1em;
+		font-weight: normal;
+		padding: 20px 0;
+		text-align: center;
+	}
+	.graph {
+		height: 315px;
+		min-width: 840px;
+		position: relative;
+	}
+/*--- Y-Axis ---*/
+	.y-axis {
+		color: #555;
+		position: absolute;
+		width: 100%;
+	}
+/*--- Y-Axis Lines ---*/
+	.y-axis li {
+		border-top: 1px solid #ccc;
+		display: block;
+		height: 62px;
+		text-indent: -10px;
+	}
+/*--- Y-Axis Labels ---*/
+	.y-axis li span {
+		display: block;
+		margin: -15px 0 0 -50px;
+		text-align: right;
+		width: 40px;
+	}
+/*--- X-Axis ---*/
+	.x-axis {
+		bottom: 0;
+		color: #555;
+		list-style: none;
+		position: absolute;
+		text-align: center;
+	}
+/*--- X-Axis Labels ---*/
+	.x-axis li {
+		float: left;
+		margin: 0 15px;
+		width: 180px;
+	}
+/*--- Legend ---*/
+	.legend {
+		background: #ebebeb;
+		border-radius: 4px;
+		float:left;
+		text-align: left;
+		margin-top: 320px;
+		width: 840px;
+	}
+	.legend li {
+		float: left;
+		line-height: 20px;
+		list-style-type: none;
+		margin: 0;
+		padding: 10px 15px;
+		width: 180px;
+	}
+/*--- Legend Icon ---*/
+	.legend li span {
+		background-position: 50% 0;
+		border-radius: 2px;
+		float: left;
+		height: 16px;
+		margin: 2px 10px 0 0;
+		width: 16px;
+	}
+/*--- Graph Bars ---*/
+	.bars {
+		height: 253px;
+		position: absolute;
+	}
+	.bar-group {
+		float: left;
+		height: 100%;
+		margin: 0 15px;
+		position: relative;
+		width: 180px;
+	}
+	.bar {
+		border-radius: 3px 3px 0 0;
+		bottom: 0;
+		cursor: pointer;
+		position: absolute;
+		width: 24px;
+	}
+/*--- Individual Bar Alignment ---*/
+	.bar.fig0 {
+		left: 0;
+	}
+	.bar.fig1 {
+		left: 26px;
+	}
+	.bar.fig2 {
+		left: 52px;
+	}
+	.bar.fig3 {
+		left: 78px;
+	}
+	.bar.fig4 {
+		left: 104px;
+	}
+	.bar.fig5 {
+		left: 130px;
+	}
+/*--- Bar Value ---*/
+	.bar span {
+		background: #fefefe url(../images/info-bg.gif) 0 100% repeat-x;
+		border-radius: 3px;
+		box-shadow: rgba(0, 0, 0, 0.6) 0 1px 4px;
+		display: none;
+		left: -13px;
+		padding: 0 5px;
+		position: relative;
+		text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+		width: 40px;
+	}
+	.bar:hover span {
+		display: block;
+		margin-top: -25px;
+	}
+/*--- Bar Colours ---*/
+	.fig0 {
+		background: #2b97d6 url(../images/bar-01-bg.gif) 0 0 repeat-y;
+	}
+	.fig1 {
+		background: #e16c1b url(../images/bar-02-bg.gif) 0 0 repeat-y;
+	}
+	.fig2 {
+		background: #048d11 url(../images/bar-03-bg.gif) 0 0 repeat-y;
+	}
+	.fig3 {
+		background: #434343 url(../images/bar-04-bg.gif) 0 0 repeat-y;
+	}
+	.fig4 {
+		background: #d23539 url(../images/bar-05-bg.gif) 0 0 repeat-y;
+	}
+	.fig5 {
+		background: #65048d url(../images/bar-06-bg.gif) 0 0 repeat-y;
+	}

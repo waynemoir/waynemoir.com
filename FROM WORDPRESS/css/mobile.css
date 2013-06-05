@@ -1,0 +1,118 @@
+.handheld  {
+	display:block;		
+}
+#devbar {
+	display: none;
+}
+header#site-header {
+	margin-bottom: 30px;
+}
+header#site-header h1 {
+	float: none;
+	margin: 0 auto;
+	width: 239px;
+}
+nav#site-nav ul{
+	display: none;
+}
+.column {
+	height: auto !important;
+}
+#content-wrapper {
+	min-width: 0;
+	padding: 0 10px;
+}
+.post {
+   margin: 0;
+}
+h1#section-title {
+   margin-left: 0;
+}
+aside#sidebar {
+	display: none;
+}
+footer#site-footer {
+	margin:0;
+}
+footer#site-footer .container h1,
+footer#site-footer .container ul,
+footer#site-footer .container nav,
+footer#site-footer .container p {
+	padding: 0;
+}
+footer#site-footer nav#categories {
+	display: none;
+}
+footer#site-footer .container nav {
+	padding: 0 10px;
+}
+footer#site-footer #additional-nav ul {
+	float: none;
+	font-size: 100%;
+	padding-bottom: 20px;
+}
+footer#site-footer #additional-nav li.handheld {
+	display: block;
+}
+footer#site-footer #additional-nav li  {
+	display: block;
+	margin: 0;
+}
+footer#site-footer #additional-nav li a, 
+footer#site-footer #additional-nav li a:visited, 
+a:link#handheld-nav,
+a:visited#handheld-nav {
+	background: #6d9705 url(../images/bg-secondary.jpg);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	-moz-border-radius: 5px; /* FF1+ */
+	-webkit-border-radius: 5px; /* Saf3-4 */
+	border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome */
+	-moz-box-shadow: 0 1px 3px #999; /* FF3.5+ */
+	-webkit-box-shadow: 0 1px 3px #999; /* Saf3.0+, Chrome */
+	box-shadow: 0 1px 3px #999; /* Opera 10.5, IE9 */
+	color: #fff; 	
+	display: block;
+	float: none;
+	font-size: 0.9em;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0 0 5px;
+	padding: 8px 0;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+footer#site-footer #additional-nav li a {
+	text-align: center;
+}
+footer#site-footer #additional-nav li a:hover,
+a:hover#handheld-nav { 		
+	background: #825344 url(../images/bg-third.jpg);
+	border-color: transparent;
+	border-bottom-color: rgba(0,0,0,0.25);
+}
+footer#site-footer p#copyright {
+	border-top: 1px solid #a1a0a0;
+	clear: both;
+	float: none;
+	padding: 20px 0 10px;
+	text-align: center;	
+	position: relative;
+	z-index: 1;
+}
+footer#site-footer p#copyright:before {
+	border-top: 1px solid #fff;
+}
+a:link#handheld-nav,
+a:visited#handheld-nav {
+	clear: both;
+	text-align: center;
+	margin: 0 10px 30px;
+}
+
+
+/* experimenting - fixed top bar */ 
+	header#site-header {
+		position: relative;
+	}
+	#content, #sidebar {
+		padding-top: 0;
+	}
