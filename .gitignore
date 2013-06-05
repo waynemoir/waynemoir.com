@@ -1,4 +1,4 @@
-*.css
+css/style.css
 _site/
 *.sublime-workspace
 .sass-cache/
