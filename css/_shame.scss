@@ -1,37 +1,38 @@
 :after, :before {
-content: "";
-bottom: 0;
-left: 0;
-position: absolute;
-right: 0;
-top: 0;
-z-index: -1;
-
-
-	}
+	content: "";
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
 
 .container {
-margin: 0 auto;
-max-width: 1140px;
+	margin: 0 auto;
+	max-width: 1140px;
 }
 
 .block-list a {
 	display: block;
 }
 
-
-
 .block-list li:hover {
 	background-color: #dedbdb;
 	cursor: pointer;
 }
-
 
 .post-date {
 	float: right;
 	color: $body-text;
 }
 
+.nav-bar {
+	background: #ccc;
+	float: left;
+	width: 100%;
+	padding: 20px 0;
+}
 
 .post-nav {
 	color: rgb(177, 177, 172);
