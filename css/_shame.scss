@@ -15,18 +15,6 @@ margin: 0 auto;
 max-width: 1140px;
 }
 
-
-
-
-
-/*
-border: 1px solid transparent;
-border-bottom-color: #6d9705;
-color: #6d9705;
-padding: 0.063em 0.125em;
-text-decoration: none;
-*/
-
 .block-list a {
 	display: block;
 }
@@ -43,30 +31,6 @@ text-decoration: none;
 	float: right;
 	color: $body-text;
 }
-
-
-
-	.nav-bar {
-		background: #ccc;
-		float: left;
-		width: 100%;
-		padding: 20px 0;
-	}
-	.published {
-		float: left;
-		padding: 0 20px;
-	}
-	.tags {
-		float: left;
-
-	}
-
-
-
-
-
-
-
 
 
 .post-nav {
