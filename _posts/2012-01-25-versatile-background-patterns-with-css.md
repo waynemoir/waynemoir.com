@@ -1,6 +1,13 @@
 ---
 title: Versatile Background Patterns With CSS
 layout: post
+categories:
+- Web development
+tags:
+- Colour
+- CSS
+- Design
+- Photoshop
 ---
 
 One thing that has always bugged me about background patterns in web design is the lack of versatility in changing colours. It has always felt like changing the colour of the pattern could be easily done using CSS background colours, but I could never dial down the process to best achieve this.

@@ -1,6 +1,11 @@
 ---
 title: Whats In Your Refrigerator?
 layout: post
+categories:
+- Personal
+tags:
+- Competition
+- Photography
 ---
 
 ![What's in your refrigerator?](http://www.waynemoir.com/wp-content/uploads/2010/07/fridge.jpg) 

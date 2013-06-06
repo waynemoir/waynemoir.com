@@ -1,6 +1,10 @@
 ---
 title: St Marys Church in Derby
 layout: post
+categories:
+- Personal
+tags:
+- Photography
 ---
 
 ![St Marys Church in Derby](http://www.waynemoir.com/wp-content/uploads/2010/08/St-Marys-Church-in-Derby.jpg)  

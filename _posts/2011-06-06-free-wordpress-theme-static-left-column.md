@@ -1,6 +1,11 @@
 ---
 title: 'Free WordPress Theme: Static Left Column'
 layout: post
+categories:
+- Web development
+tags:
+- WordPress
+- Theme
 ---
 
 You may have noticed that a recent tweak to the design of this site shifted the layout from a static left column layout to the one you see before you now. In doing so I decided that rather than retire the previous design I would develop it further make it available as a free WordPress theme.

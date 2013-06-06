@@ -1,6 +1,11 @@
 ---
 title: CSS Performance and Maintainability
 layout: post
+categories:
+- Web development
+tags:
+- CSS
+- Performance
 ---
 
 Specificity wars, duplication and stale rules all result in CSS bloat, an issue which I have found to be common when working on large projects. This is an issue which has a huge impact on CSS performance, not only in terms of load time but also in terms of the additional effort involved in maintaining the code base.

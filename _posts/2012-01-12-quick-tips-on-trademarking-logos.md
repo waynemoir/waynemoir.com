@@ -1,6 +1,13 @@
 ---
 title: Quick Tips for Logos Trade Marks
 layout: post
+categories:
+- Web development
+tags:
+- Copyright
+- Legal
+- Logos
+- Asides
 ---
 
 When creating logos suitable for trade mark it is important to provide the client with a simplified version of the logo, that is with all colour and gradients removed. The reasoning behind this is that if the logo were to be copied and a different colour used this may be seen as enough to qualify the copy as a new logo.

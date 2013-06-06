@@ -1,6 +1,10 @@
 ---
 title: Playa Del Cura in Torrevieja
 layout: post
+categories:
+- Personal
+tags:
+- Photography
 ---
 
 ![Playa del Cura in Torrevieja](http://www.waynemoir.com/wp-content/uploads/2011/01/Playa-del-Cura-in-Torrevieja.jpg)
