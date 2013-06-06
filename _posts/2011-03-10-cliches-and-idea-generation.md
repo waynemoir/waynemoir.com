@@ -1,10 +1,6 @@
 ---
 title: Cliches and Idea Generation
 layout: post
-categories:
-- Web development
-tags:
-- Asides
 ---
 
 When I first started out designing I often found myself looking at the work of others with admiration and wondering where their good ideas come from. To a certain degree I subscribed to the genius theory, believing that creativity is a gift people are born with. Fast forward several years and I have learnt that the art of good design is not passed down to a select few by the gods of design; but is a skill like any other that can be learned, taught and practiced.

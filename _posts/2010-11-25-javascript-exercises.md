@@ -1,10 +1,6 @@
 ---
 title: JavaScript Exercises
 layout: post
-categories:
-- Web development
-tags:
-- JavaScript
 ---
 
 Lately I have been focusing on developing my knowledge of JavaScript as I feel that the ability to write custom JavaScript is the weak spot in my skill set. Whilst doing so I have found [books](http://www.amazon.co.uk/Learning-JavaScript-Sparkle-Life-Pages/dp/0596521871/ref=sr_1_3?s=books&ie=UTF8&qid=1296042370&sr=1-3) and [online resources](http://www.w3schools.com/js/) to be an excellent source of knowledge. However one area that I have found both these resources to be lacking in is the reinforcement of this knowledge through practical application. To help me practice and further develop my skills I have been setting myself exercises. I am posting both these and my solutions here for future reference and to aid anyone else that may wish to practice.

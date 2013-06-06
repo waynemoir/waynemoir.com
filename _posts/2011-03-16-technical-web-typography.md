@@ -1,11 +1,6 @@
 ---
 title: Technical Web Typography
 layout: post
-categories:
-- Web development
-tags:
-- CSS
-- Typography
 ---
 
 Typography is a design element that has always fascinated me, when done well it instantly impresses and makes communicating the message appear effortless. Good typography is something I have always strived for, but is often the element that I am least satisfied with in my designs; no matter how hard I work at it I never seem to be able to get it quite right. 

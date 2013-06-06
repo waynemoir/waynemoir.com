@@ -1,10 +1,6 @@
 ---
 title: Font Icons
 layout: post
-categories:
-- Web development
-tags:
-- Icons
 ---
 
 Ever since [Chris Coyer](http://css-tricks.com/examples/IconFont/) opened my eyes to the advantages of using fonts for icons, I have been a firm believer that icon fonts are the way forward for creating beautiful resolution independent interfaces.

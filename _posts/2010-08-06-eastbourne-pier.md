@@ -1,10 +1,6 @@
 ---
 title: Eastbourne Pier
 layout: post
-categories:
-- Personal
-tags:
-- Photography
 ---
 
 ![Eastbourne Pier in East Sussex](http://www.waynemoir.com/wp-content/uploads/2010/08/Eastbourne-Pier-614x382.jpg) 
