@@ -1,0 +1,17 @@
+/*
+// |--------------------------------------------------------------------------
+// |  $MISC
+// |--------------------------------------------------------------------------
+*/
+
+/**
+ * Coloured highlighting
+ */
+::selection { 
+	background-color: $brand-color;
+	color: #fff;
+}
+::-moz-selection { 
+	background-color: $brand-color;
+	color: #fff;
+}
