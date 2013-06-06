@@ -18,8 +18,13 @@
 }
 
 .block-list li:hover {
-	background-color: #dedbdb;
+	background-color: $brand-color;
 	cursor: pointer;
+}
+.block-list li:hover a, 
+.block-list li:hover .post-date {
+	color: #fff;
+	text-decoration: none;
 }
 
 .post-date {
