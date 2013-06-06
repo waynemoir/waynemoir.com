@@ -2,7 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/C/Dev/waynemoir.com"
+			"path": "/C/Dev/waynemoir.com",
+			"file_exclude_patterns": ["style.css"]
 		}
 	]
 }
