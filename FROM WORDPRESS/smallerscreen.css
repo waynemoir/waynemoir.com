@@ -1,0 +1,11 @@
+#content {
+    min-width: 100px;
+	width: 100%;
+}
+#content-wrapper, 
+#content-wrapper:before {
+	border-right: none;
+}	
+aside#sidebar {
+	display: none;	
+}
