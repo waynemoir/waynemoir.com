@@ -37,3 +37,13 @@
 .post-nav {
 	color: rgb(177, 177, 172);
 }
+
+
+/* CSSWizardry doesn't need these styles when based on inuit.css, why is this behaviour different here? */
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
