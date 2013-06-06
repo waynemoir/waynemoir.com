@@ -73,37 +73,6 @@ text-decoration: none;
 
 
 
-
-/* Site Wide - Header
-*/
-	.site-header {
-		background: #6d9705 url(/img/bg-secondary.jpg);
-		border-bottom: 3px solid #fff;
-		@include box-shadow(0 0 5px 3px #c0bebe);
-		float: left;
-		margin-bottom: 50px;
-		padding: 10px 0;
-		position: relative;
-		width: 100%;
-		z-index: 1;
-	}
-	.site-header:after {
-		border-bottom: 1px solid #7b7b7b;
-	}
-
-
-
-
-
-
-
-
-
-
-
-	.nav {
-		display: none;
-	}
 .post-nav {
 	color: rgb(177, 177, 172);
 }

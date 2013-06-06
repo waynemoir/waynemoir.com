@@ -1,0 +1,13 @@
+/*
+// |--------------------------------------------------------------------------
+// |  $PAGE-HEAD
+// |--------------------------------------------------------------------------
+*/
+
+.page-head {
+	background: #6d9705 url(/img/bg-secondary.jpg);
+	@include box-shadow(0 0 5px 3px #c0bebe);
+	border-bottom: 3px solid #fff;	
+	margin-bottom: $base-spacing-unit;
+	padding: $half-spacing-unit 0;
+}
