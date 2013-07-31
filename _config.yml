@@ -1,3 +1,4 @@
 exclude: [build.bat, README.md, inuit.css, style.scss, node_modules, Gruntfile.js]
 markdown: rdiscount
 pygments: true
+permalink: /:year/:month/:title
