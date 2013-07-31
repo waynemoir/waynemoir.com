@@ -15,20 +15,20 @@
 
 
 // |--------------------------------------------------------------------------
-// | Mixins
+// | Custom UI
 // |--------------------------------------------------------------------------
+
+// | Mixins
 @import "compass/css3/box-shadow";
 @import "compass/css3/border-radius";
 
-
-// |--------------------------------------------------------------------------
-// | Custom UI
-// |--------------------------------------------------------------------------
-@import "ui/page";
+// | UI
 @import "ui/typography";
+@import "ui/page";
 @import "ui/page-head";
-@import "ui/footer";
 @import "ui/post";
+@import "ui/footer";
 @import "ui/misc";
 
+// | Shame
 @import "shame";
