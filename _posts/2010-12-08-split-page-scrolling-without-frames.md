@@ -1,8 +1,6 @@
 ---
 title: Split Page Scrolling Without Frames
 layout: post
-categories:
-- Web development
 tags:
 - CSS
 - HTML
