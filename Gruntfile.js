@@ -1,26 +1,49 @@
-module.exports = function (grunt) {
-	grunt.initConfig({
+module.exports = function(grunt) {
 
-		clean: ['_site'],
 
-		compass: {
-			dist: {
-				options: {
-					sassDir: 'css',
-					cssDir: 'css'
-				}
-			}
-		},
+// Load NPM tasks and options
+	var Helpers = require('./tasks/helpers'),
+		config = Helpers.config,
+		filterAvailable = Helpers.filterAvailableTasks,
+		_ = grunt.util._;
 
-		 watch: {
-			files: './css/**/*.scss',
-			tasks: ['compass'],
-		}
+	config = _.extend(config, Helpers.loadConfig('./tasks/options/'));
+
+	require('load-grunt-tasks')(grunt);
+	grunt.loadTasks('tasks');
+
+
+// Register tasks
+	grunt.registerTask('default', function () {
+		grunt.task.run([
+			'clean',
+			'sass',
+			'autoprefixer',
+			'jekyll:build',
+			'watchTasks'
+		]);
+		grunt.log.writeln('Everything built. All done!');
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-compass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	
-	grunt.registerTask('default', ['clean', 'compass', 'watch']);
+
+	grunt.registerTask('watchTasks', function(){
+		grunt.log.writeln('Starting!');
+
+		var done = this.async();
+
+		setTimeout(function () {
+			grunt.task.run(['watch:sass']);
+			grunt.log.writeln('CSS built. All done!');
+			done();
+		}, 1000);
+
+		setTimeout(function () {
+			grunt.task.run(['watch:jekyll']);
+			grunt.log.writeln('HTML built. All done!');
+			done();
+		}, 1000);
+	});
+
+
+	grunt.initConfig(config);
 };
