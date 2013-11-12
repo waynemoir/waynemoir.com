@@ -1,7 +1,6 @@
 module.exports = {
 	development: {
 		options: {
-			sourcemap: true,
 			style: 'expanded'
 		},
 		files: {
