@@ -1,8 +1,11 @@
 ---
-title: Switching from LESS to Sass
 layout: post
+
+title: Switching from LESS to Sass
+
 categories:
 - Web development
+
 tags:
 - CSS
 - LESS
@@ -14,7 +17,7 @@ At work we currently use the LESS preprocessor to build our CSS framework and ha
 ## Pro neither
 
 *   Bootstrap is built on LESS, there is a Sass branch
-*   The syntax can be easily switched: 
+*   The syntax can be easily switched:
     *   LESS @ is directly equivalent to Sass $
     *   When writing mixins: LESS .border-radius() {} would become Sass @mixin border-radius() {}
     *   When using mixins: LESS .border-radius; would become Sass @include border-radius(); OR @extend border-radius();
