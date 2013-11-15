@@ -16,8 +16,8 @@ module.exports = {
 
 	jekyll:{
 		files: [
-			'_posts/**',
-			'_layouts/**'
+			'./_posts/**',
+			'./_layouts/**'
 		],
 		tasks: ['jekyll:build']
 	}
