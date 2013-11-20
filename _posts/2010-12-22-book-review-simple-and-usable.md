@@ -9,7 +9,7 @@ tags:
 - User Interface
 ---
 
-[Simple and Usable Web, Mobile, and Interaction Design](http://www.simpleandusable.com/) by Giles Colborne explores four core strategies to attain interface simplicity, “Remove, Organise, Hide, Displace”. This book gets to the crux of many of the key challenges to organising and presenting information via digital media in a manageable, motivational and easily digestible chunks.
+[Simple and Usable Web, Mobile, and Interaction Design](http://www.simpleandusable.com/) by Giles Colborne explores four core strategies to achieve interface simplicity, “Remove, Organise, Hide, Displace”. This book gets to the crux of many of the key challenges to organising and presenting information via digital media in a manageable, motivational and easily digestible chunks.
 
 ![Simple and Usable cover art](/img/content/simple-and-usable.jpg)
 
