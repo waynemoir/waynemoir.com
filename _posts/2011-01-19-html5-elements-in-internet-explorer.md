@@ -11,14 +11,14 @@ tags:
 
 The HTML5 specification is still a working draft and it is estimated that it could be 2022 before it becomes a W3C Recommendation, however **HTML5 is ready to use today!**
 
-![A HTML5 page displayed correctly in Firefox](http://www.waynemoir.com/wp-content/uploads/2011/01/firefox.jpg)
+![A HTML5 page displayed correctly in Firefox](/img/content/html5-elements/firefox.jpg)
 A HTML5 test page displayed correctly by default in Firefox 3
 
 ## The Caveat
 
 From a mark-up point of the view HTML5 is supported in the latest release of all the major browsers with the exception of Internet Explorer, thankfully this issue can easily be resolved using a little JavaScript.
 
-![A HTML5 page displayed incorrectly in Internet Explorer 8](http://www.waynemoir.com/wp-content/uploads/2011/01/ie.jpg)
+![A HTML5 page displayed incorrectly in Internet Explorer 8](/img/content/html5-elements/ie8.jpg)
 A HTML5 test page displayed incorrectly in Internet Explorer 8
 
 ## Measuring the impact
@@ -44,10 +44,10 @@ The JavaScript to fix this issue, discovered by [Sjoerd Visscher](http://intertw
     document.createElement('nav');
     document.createElement('section');
     document.createElement('time');
-    
 
-[View a demo page without the fix](http://www.waynemoir.com/wp-content/uploads/2011/01/html5-demo/html5.html)
-[View a demo page with the fix applied](http://www.waynemoir.com/wp-content/uploads/2011/01/html5-demo/html5iefix.html)
 
-![A HTML5 page displayed correctly in Internet Explorer 8](http://www.waynemoir.com/wp-content/uploads/2011/01/iefixed.jpg) 
+[View a demo page without the fix](/demos/html5-elements/html5.html)
+[View a demo page with the fix applied](/demos/html5-elements/html5iefix.html)
+
+![A HTML5 page displayed correctly in Internet Explorer 8](/img/content/html5-elements/ie8-fixed.jpg)
 A HTML5 test page displayed correctly after the fix in Internet Explorer 8
