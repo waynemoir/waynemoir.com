@@ -13,7 +13,7 @@ Lately I have been focusing on developing my knowledge of JavaScript as I feel t
 ## Exercise 1.1
 Prompt the user to enter their name.
 
-<div data-height="82" data-theme-id="0" data-slug-hash="CAsfm" data-user="waynemoir" data-default-tab="js" class='codepen'><pre><code>var name=prompt(&quot;Please enter your name&quot;);</code></pre>
+<div data-height="85" data-theme-id="0" data-slug-hash="CAsfm" data-user="waynemoir" data-default-tab="js" class='codepen'><pre><code>var name=prompt(&quot;Please enter your name&quot;);</code></pre>
 <p>See the Pen <a href='http://codepen.io/waynemoir/pen/CAsfm'>%= penName %></a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
@@ -23,8 +23,10 @@ Prompt the user to enter their name.
 ## Exercise 1.2
 Use a pop-up box to welcome the user.
 
-    var name=prompt("Please enter your name");
-    alert("Hello "   name);
+<div data-height="105" data-theme-id="2540" data-slug-hash="LyGDe" data-user="waynemoir" data-default-tab="js" class='codepen'><pre><code>var name=prompt(&quot;Please enter your name&quot;);
+alert(&quot;Hello &quot;   name);</code></pre>
+<p>See the Pen <a href='http://codepen.io/waynemoir/pen/LyGDe'>%= penName %></a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
+</div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
 
 
@@ -32,56 +34,62 @@ Use a pop-up box to welcome the user.
 
 ## Exercise 1.3
 Display today’s date on the page in the following format: November 25, 2010.
-	var currentTime = new Date();
-	var year = currentTime.getFullYear();
-	var month = currentTime.getMonth()   1;
-	var day = currentTime.getDate();
 
-	if (month == 01){
-		month = "January";
-	}
-	else if (month == 02){
-		month = "February";
-	}
-	else if (month == 03){
-		month = "March";
-	}
-	else if (month == 04){
-		month = "April";
-	}
-	else if (month == 05){
-		month = "May";
-	}
-	else if (month == 06){
-		month = "June";
-	}
-	else if (month == 07){
-		month = "July";
-	}
-	else if (month == 08){
-		month = "August";
-	}
-	else if (month == 09){
-		month = "September";
-	}
-	else if (month == 10){
-		month = "October";
-	}
-	else if (month == 11){
-		month = "November";
-	}
-	else if (month == 12){
-		month = "December";
-	}
-	document.write(month   " "   day   ", "   year   ".");
+<div data-height="268" data-theme-id="2540" data-slug-hash="ikobF" data-user="waynemoir" data-default-tab="js" class='codepen'><pre><code>var currentTime = new Date();
+				var year = currentTime.getFullYear();
+				var month = currentTime.getMonth() + 1;
+				var day = currentTime.getDate();
+
+				if (month == 01){
+					month = &quot;January&quot;;
+				}
+				else if (month == 02){
+					month = &quot;February&quot;;
+				}
+				else if (month == 03){
+					month = &quot;March&quot;;
+				}
+				else if (month == 04){
+					month = &quot;April&quot;;
+				}
+				else if (month == 05){
+					month = &quot;May&quot;;
+				}
+				else if (month == 06){
+					month = &quot;June&quot;;
+				}
+				else if (month == 07){
+					month = &quot;July&quot;;
+				}
+				else if (month == 08){
+					month = &quot;August&quot;;
+				}
+				else if (month == 09){
+					month = &quot;September&quot;;
+				}
+				else if (month == 10){
+					month = &quot;October&quot;;
+				}
+				else if (month == 11){
+					month = &quot;November&quot;;
+				}
+				else if (month == 12){
+					month = &quot;December&quot;;
+				}
+				document.write(month + &quot; &quot; + day + &quot;, &quot; + year + &quot;.&quot;);</code></pre>
+<p>See the Pen <a href='http://codepen.io/waynemoir/pen/ikobF'>%= penName %></a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
+</div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
 
 
 
 ## Exercise 1.4
 Display the last modified date of the document.
-    var fileModified = document.lastModified;
-    document.write("This file was last modified: "   fileModified);
+
+<div data-height="108" data-theme-id="2540" data-slug-hash="DaGqj" data-user="waynemoir" data-default-tab="js" class='codepen'><pre><code>var fileModified = document.lastModified;
+document.write(&quot;This file was last modified: &quot; + fileModified);</code></pre>
+<p>See the Pen <a href='http://codepen.io/waynemoir/pen/DaGqj'>%= penName %></a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
+</div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
 
 
@@ -89,3 +97,16 @@ Display the last modified date of the document.
 ## Exercise 1.5
 Display a greeting based on the time of day. For example; Good Morning if it is in the morning or Good Afternoon if it is the afternoon.
 
+<div data-height="268" data-theme-id="2540" data-slug-hash="rxnEy" data-user="waynemoir" data-default-tab="js" class='codepen'><pre><code>				var currentTime = new Date();
+				var hour = currentTime.getHours();
+				if (hour &gt;= 6 &amp;&amp; hour &lt;= 12 ){
+					document.write(&quot;Morning&quot;);
+				} else if (hour &gt;= 13 &amp;&amp; hour &lt;= 18 ){
+					document.write(&quot;Afternoon&quot;);
+				} else if (hour &gt;= 18 &amp;&amp; hour &lt;= 22 ){
+					document.write(&quot;Evening&quot;);
+				} else {
+					document.write(&quot;Night&quot;);
+				}</code></pre>
+<p>See the Pen <a href='http://codepen.io/waynemoir/pen/rxnEy'>%= penName %></a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
+</div><script async src="//codepen.io/assets/embed/ei.js"></script>
