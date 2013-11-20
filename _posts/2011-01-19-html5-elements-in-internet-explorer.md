@@ -11,15 +11,12 @@ tags:
 
 The HTML5 specification is still a working draft and it is estimated that it could be 2022 before it becomes a W3C Recommendation, however **HTML5 is ready to use today!**
 
-![A HTML5 page displayed correctly in Firefox](/img/content/html5-elements/firefox.jpg)
-A HTML5 test page displayed correctly by default in Firefox 3
 
 ## The Caveat
 
-From a mark-up point of the view HTML5 is supported in the latest release of all the major browsers with the exception of Internet Explorer, thankfully this issue can easily be resolved using a little JavaScript.
+From a mark-up point of the view HTML5 is supported in the latest release of all the major browsers with the exception of Internet Explorer 8, thankfully this issue can easily be resolved using a little JavaScript.
 
 ![A HTML5 page displayed incorrectly in Internet Explorer 8](/img/content/html5-elements/ie8.jpg)
-A HTML5 test page displayed incorrectly in Internet Explorer 8
 
 ## Measuring the impact
 
@@ -27,7 +24,7 @@ Being a big advocate of accessibility in websites, one of the first thoughts tha
 
 This question can be answered by studying your analytics data which will tell you how much of an impact this will have on your visitors, hopefully providing you with enough information to make you comfortable using this work around. It is important to note that if your analytics’s software uses JavaScript to track statistics, as Google Analytics does, then you wont be capturing how many users have JavaScript disabled. An [alternative solution](http://remysharp.com/2009/10/15/the-missing-stat-noscript/) is required for this statistic to be tracked.
 
-Studying the analytics data for [Thank The Forces](http://www.thanktheforces.org.uk) reviled that whilst 66% of visitors to the site are using Internet Explorer, less than 1% of ALL visitors have JavaScript disabled; therefore for this website the use of this work around was deemed an acceptable solution with a minimal effect to the users.
+Studying the analytics data for [Thank The Forces](http://www.thanktheforces.org.uk) reviled that whilst 66% of visitors to the site are using Internet Explorer, less than 1% of <strong>all visitors</strong> have JavaScript disabled; therefore for that website the use of this work around was deemed an acceptable solution with a minimal effect to the users.
 
 ## Resolving the Issue
 
