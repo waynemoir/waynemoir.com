@@ -10,8 +10,10 @@ layout: default
 </article>
 
 {% if page.previous.url %}
-	<a href="{{page.previous.url}}" title="Previous post: {{page.previous.title}}" class="post-nav post-nav--prev">&lt;</a>
+	<a href="{{page.previous.url}}" title="Previous post: {{page.previous.title}}" class="post-nav post-nav--prev"><i class="icon  icon-arrow-left" aria-hidden="true"></i></a>
 {% endif %}
 {% if page.next.url %}
-	<a href="{{page.next.url}}" title="Next post: {{page.next.title}}" class="post-nav post-nav--next">&gt;</a>
+	<a href="{{page.next.url}}" title="Next post: {{page.next.title}}" class="post-nav post-nav--next"><i class="icon  icon-arrow-right" aria-hidden="true"></i></a>
 {% endif %}
+
+
