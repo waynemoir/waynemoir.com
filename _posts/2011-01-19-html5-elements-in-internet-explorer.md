@@ -45,9 +45,8 @@ The JavaScript to fix this issue, discovered by [Sjoerd Visscher](http://intertw
     document.createElement('section');
     document.createElement('time');
 
+<a href="/demos/html5-elements/html5.html" class="btn">Demo without the fix</a>
+<a href="/demos/html5-elements/html5iefix.html" class="btn">Demo with the fix applied</a>
 
-[View a demo page without the fix](/demos/html5-elements/html5.html)
-[View a demo page with the fix applied](/demos/html5-elements/html5iefix.html)
 
 ![A HTML5 page displayed correctly in Internet Explorer 8](/img/content/html5-elements/ie8-fixed.jpg)
-A HTML5 test page displayed correctly after the fix in Internet Explorer 8
