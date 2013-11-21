@@ -2,6 +2,3 @@ Switching posts to use local resources
 Categorise posts based on UX roles
 Remove "also read" from articles list
 remove tags
-
-
-http://waynemoir.local/2010/11/javascript-exercises/
