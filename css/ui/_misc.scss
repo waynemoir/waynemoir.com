@@ -4,14 +4,15 @@
 // |--------------------------------------------------------------------------
 */
 
+
 /**
  * Coloured highlighting
  */
-::selection { 
+::selection {
 	background-color: $brand-color;
 	color: #fff;
 }
-::-moz-selection { 
+::-moz-selection {
 	background-color: $brand-color;
 	color: #fff;
 }
