@@ -10,6 +10,7 @@
 .block-list li:hover {
 	background-color: $brand-color;
 	cursor: pointer;
+	opacity: 1 !important;
 }
 .block-list li:hover a,
 .block-list li:hover .post-date {
@@ -91,4 +92,6 @@ text-shadow: #7DAA0C 0px 1px 0, #283901 0 -1px 0;
 
 
 
+.ui-also-read__excerpt {
+	color: $body-text;
 }
