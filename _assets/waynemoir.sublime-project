@@ -3,7 +3,7 @@
 	[
 		{
 			"path": "/C/Dev/waynemoir.com",
-			"file_exclude_patterns": ["style.css", "*.sublime-workspace"],
+			"file_exclude_patterns": ["*.css", "*.sublime-workspace", "*.map"],
 			"folder_exclude_patterns": ["_site", "node_modules"]
 		}
 	]
