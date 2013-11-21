@@ -1,11 +1,10 @@
 ---
-title: Technical Web Typography
 layout: post
+
+title: Technical Web Typography
+
 categories:
-- Web development
-tags:
-- CSS
-- Typography
+- Web Design
 ---
 
 Typography is a design element that has always fascinated me, when done well it instantly impresses and makes communicating the message appear effortless. Good typography is something I have always strived for, but is often the element that I am least satisfied with in my designs; no matter how hard I work at it I never seem to be able to get it quite right.
@@ -16,4 +15,4 @@ Being a skill that I have wanted to improve upon for some time I was excited by 
 
 I found this very informative and extremely easy to follow; it has certainly filled a few gaps in my typography knowledge. I would recommend reading this article to anyone looking to improve on their typography and I am looking forward forward to applying the results to this site. You can view the demo I created whilst following this article below.
 
-[View Demo](/demos/technical-typography/)
+<a href="/demos/technical-typography/" class="btn">Demo</a>

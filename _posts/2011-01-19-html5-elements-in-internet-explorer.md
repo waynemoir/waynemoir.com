@@ -1,12 +1,10 @@
 ---
-title: HTML5 Elements in Internet Explorer
 layout: post
+
+title: HTML5 Elements in Internet Explorer
+
 categories:
-- Web development
-tags:
-- HTML
-- JavaScript
-- Tools
+- Web Design
 ---
 
 The HTML5 specification is still a working draft and it is estimated that it could be 2022 before it becomes a W3C Recommendation, however **HTML5 is ready to use today!**
@@ -28,6 +26,8 @@ Studying the analytics data for [Thank The Forces](http://www.thanktheforces.org
 
 ## Resolving the Issue
 
+![A HTML5 page displayed correctly in Internet Explorer 8](/img/content/html5-elements/ie8-fixed.jpg)
+
 The JavaScript to fix this issue, discovered by [Sjoerd Visscher](http://intertwingly.net/blog/2008/01/22/Best-Standards-Support#c1201006277), is as simple as calling the following code in the head of the page.
 
     document.createElement('article');
@@ -44,6 +44,3 @@ The JavaScript to fix this issue, discovered by [Sjoerd Visscher](http://intertw
 
 <a href="/demos/html5-elements/html5.html" class="btn">Demo without the fix</a>
 <a href="/demos/html5-elements/html5iefix.html" class="btn">Demo with the fix applied</a>
-
-
-![A HTML5 page displayed correctly in Internet Explorer 8](/img/content/html5-elements/ie8-fixed.jpg)

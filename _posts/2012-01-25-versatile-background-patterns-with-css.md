@@ -4,7 +4,7 @@ layout: post
 title: Versatile Background Patterns With CSS
 
 categories:
-- Front end development
+- Web Design
 ---
 
 One thing that has always bugged me about background patterns in web design is the lack of versatility in changing colours. It has always felt like changing the colour of the pattern could be easily done using CSS background colours, but I could never dial down the process to best achieve this.
@@ -13,4 +13,4 @@ One thing that has always bugged me about background patterns in web design is t
 
 Thankfully for me this excellent tutorial on [Creating Reusable & Versatile Background Patterns](http://webdesignerwall.com/tutorials/creating-reusable-versatile-background-patterns) from Web Designer Wall details exactly what is involved in extracting the pattern from an existing image.
 
-[View demo](/demos/versatile-background-images/)
+<a href="/demos/versatile-background-images/" class="btn">Demo</a>

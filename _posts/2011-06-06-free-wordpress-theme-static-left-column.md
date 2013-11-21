@@ -15,4 +15,4 @@ This theme uses HTML5 semantic elements, CSS3 and responsive design using media 
 
 I hope you enjoy using this theme.
 
-[Download Theme](/demos/wp-static-left-column/wp-static-left-column.zip)[Preview Theme](/demos/wp-static-left-column/preview.jpg)
+<a href="/demos/wp-static-left-column/wp-static-left-column.zip" class="btn">Download Theme</a>

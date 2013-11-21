@@ -4,7 +4,7 @@ layout: post
 title: Background Images Not Displaying in Chrome
 
 categories:
-- Front end development
+- Web Design
 ---
 
 Recently I switched my default browser from Firefox to Chrome, in doing so came across a strange issue with background images not displaying on a number of sites when using Chrome. Investigation into this showed that the image to the path and was correct, as was the CSS to display it.
@@ -15,11 +15,11 @@ The problem came down to the fact that in the CSS the background-image was only 
 
 	/* Not working */
 	body {
-		background-image: url(../images/bg-primary.jpg);
+		background-image: url(/img/ui/bg.jpg);
 	}
 
 	/* Working */
 	html,
 	body {
-		background-image: url(../images/bg-primary.jpg);
+		background-image: url(/img/ui/bg.jpg);
 	}

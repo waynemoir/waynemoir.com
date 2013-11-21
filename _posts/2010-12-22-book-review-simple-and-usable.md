@@ -1,12 +1,10 @@
 ---
-title: Simple and Usable, A Book Review
 layout: post
+
+title: Simple and Usable, A Book Review
+
 categories:
-- Web development
-tags:
-- Review
-- Design
-- User Interface
+- Interface Design
 ---
 
 [Simple and Usable Web, Mobile, and Interaction Design](http://www.simpleandusable.com/) by Giles Colborne explores four core strategies to achieve interface simplicity, “Remove, Organise, Hide, Displace”. This book gets to the crux of many of the key challenges to organising and presenting information via digital media in a manageable, motivational and easily digestible chunks.
