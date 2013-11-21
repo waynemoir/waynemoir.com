@@ -4,18 +4,39 @@
 // |--------------------------------------------------------------------------
 */
 
-/* In post navigation
+
+.post img {
+	background: #F1F1F1;
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0) #A1A0A0 #A1A0A0 rgba(0, 0, 0, 0);
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #888;
+	max-width: 100%;
+	padding: $half-spacing-unit;
+}
+
+
+
+
+/*
+// |--------------------------------------------------------------------------
+// |  Next and previous post navigation
+// |--------------------------------------------------------------------------
 */
 .post-nav {
+	color: rgb(177, 177, 172);
 	font-size: $mega-size;
 	position: fixed;
 	text-decoration: none;
 	top: 50%;
 }
 
+
 .post-nav--prev {
 	left: $base-spacing-unit;
 }
+
+
 .post-nav--next{
 	right: $base-spacing-unit;
 }

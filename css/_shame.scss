@@ -38,9 +38,6 @@
 	padding: 20px 0;
 }
 
-.post-nav {
-	color: rgb(177, 177, 172);
-}
 
 
 /* CSSWizardry doesn't need these styles when based on inuit.css, why is this behaviour different here? */
@@ -105,22 +102,9 @@ text-shadow: #7DAA0C 0px 1px 0, #283901 0 -1px 0;
 
 
 
-.post img {
 
 
-border: 1px solid #A1A0A0;
-border-color: rgba(0, 0, 0, 0) #A1A0A0 #A1A0A0 rgba(0, 0, 0, 0);
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
-border-radius: 5px;
--moz-box-shadow: 2px 2px 5px #888;
--webkit-box-shadow: 2px 2px 5px #888;
-box-shadow: 2px 2px 5px #888;
-max-width: 100%;
 
-background: #F1F1F1;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
-border-radius: 5px;
-padding: 10px;
+
+
 }
