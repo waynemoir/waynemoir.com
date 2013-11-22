@@ -95,3 +95,13 @@ text-shadow: #7DAA0C 0px 1px 0, #283901 0 -1px 0;
 .ui-also-read__excerpt {
 	color: $body-text;
 }
+
+.post {
+
+}
+.post__title {
+	@extend .gamma;
+}
+.post__category {
+
+}
