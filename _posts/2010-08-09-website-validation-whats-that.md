@@ -4,7 +4,7 @@ layout: post
 title: Website Validation, Whats That?
 
 categories:
-- Web design
+- Web Design
 ---
 
 Despite HTML validation being a hot topic in web design circles for [more than seven years](http://simplebits.com/notebook/2002/10/20/october-20-2002/) I still meet a large number of web professionals who are not aware of what HTML validation is or why it is important.
