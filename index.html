@@ -2,17 +2,6 @@
 layout: default
 ---
 
-{% for post in site.posts limit:1 %}
-	<article class="post">
-		<h1>{{ post.title }}</h1>
-		{{ post.content }}
-		<strong>{{ post.date | date: "%B %e, %Y" }}</strong>
-	</article>
-{% endfor %}
-
-
-{% for post in site.posts limit:1 offset:1 %}
-	<a href="{{post.url}}" title="Previous post: {{post.title}}" class="post-nav post-nav--prev">
-		<i class="icon  icon-arrow-left" aria-hidden="true"></i>
-	</a>
-{% endfor %}
+{% assign post = site.posts.first %}
+{% assign content = post.content %}
+{% include post-detail.html %}

@@ -1,0 +1,75 @@
+<ul class="nav  nav--article">
+
+	<li>
+		{% if page.previous.url %}
+			<a href="{{page.previous.url}}" title="Previous article: {{page.previous.title}}" class="nav__prev">
+				<i class="icon  icon-arrow-left3" aria-hidden="true"></i>
+			</a>
+		{% elsif post.previous.url %}
+			<a href="{{post.previous.url}}" title="Previous article: {{post.previous.title}}" class="nav__prev">
+				<i class="icon  icon-arrow-left3" aria-hidden="true"></i>
+			</a>
+		{% else %}
+			<div class="nav__prev  disabled">
+				<i class="icon  icon-arrow-left3" aria-hidden="true"></i>
+			</div>
+		{% endif %}
+	</li>
+
+
+	<li>
+		{% if page.next.url %}
+			<a href="{{page.next.url}}" title="Next article: {{page.next.title}}" class="nav__next">
+				<i class="icon  icon-arrow-right3" aria-hidden="true"></i>
+			</a>
+		{% elsif post.next.url %}
+			<a href="{{post.next.url}}" title="Next article: {{post.next.title}}" class="nav__next">
+				<i class="icon  icon-arrow-right3" aria-hidden="true"></i>
+			</a>
+		{% else %}
+			<div class="nav__next  disabled">
+				<i class="icon  icon-arrow-right3" aria-hidden="true"></i>
+			</div>
+		{% endif %}
+	</li>
+
+</ul>
+
+
+
+
+<article class="article">
+
+	<h1 class="article__title">
+		{% if page.title %}
+			<a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+		{% endif %}
+		{% if post.title %}
+			<a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+		{% endif %}
+	</h1>
+
+
+	<p class="article__meta">
+		{% if page.date %}
+			{{ page.date | date: "%B %e, %Y" }}
+		{% endif %}
+		{% if post.date %}
+			{{ post.date | date: "%B %e, %Y" }}
+		{% endif %}
+
+
+		{% if page.categories  != null %}
+			|
+			<span class="article__categories">{% for category in page.categories %} {{ category }} {% endfor %}</span>
+		{% endif %}
+		{% if post.categories != null %}
+			|
+			<span class="article__categories">{% for category in post.categories %} {{ category }} {% endfor %}</span>
+		{% endif %}
+	</p>
+
+
+	{{ content }}
+
+</article>
