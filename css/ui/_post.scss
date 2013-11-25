@@ -24,13 +24,20 @@
 // |--------------------------------------------------------------------------
 */
 .post-nav {
-	color: rgb(177, 177, 172);
-	font-size: $mega-size;
+	color: $body-text;
+	font-size: $kilo-size;
+	opacity: 0.3;
 	position: fixed;
-	text-decoration: none;
 	top: 50%;
 }
 
+.post-nav:focus,
+.post-nav:hover,
+.post-nav:active
+ {
+	opacity: 1;
+	text-decoration: none;
+}
 
 .post-nav--prev {
 	left: $base-spacing-unit;
