@@ -110,5 +110,20 @@ text-shadow: #7DAA0C 0px 1px 0, #283901 0 -1px 0;
 	@extend .gamma;
 }
 .post__category {
+.icon-menu:before {
+	content: "\e606";
+}
+.icon-arrow-left2:before {
+	content: "\e607";
+}
+.icon-arrow-right2:before {
+	content: "\e608";
+}
+.icon-arrow-right3:before {
+	content: "\e609";
+}
+.icon-arrow-left3:before {
+	content: "\e60a";
+}
 
 }
