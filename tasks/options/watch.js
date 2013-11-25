@@ -18,6 +18,7 @@ module.exports = {
 		files: [
 			'./_posts/**',
 			'./_layouts/**',
+			'./_includes/**',
 			'./index.html',
 			'./articles.html',
 			'./resources.html'
