@@ -1,3 +1,20 @@
+html {
+	color: $body-text;
+}
+
+
+body {
+	border-top: $half-spacing-unit solid $brand-color;
+}
+
+
+h2, h3, h4, h5, h6 {
+	color: #3A3A3A;
+}
+
+
+
+
 .container {
 	margin-left: auto;
 	margin-right: auto;
@@ -47,17 +64,6 @@ a:hover {
 
 
 
-html {
-	color: $body-text;
-}
-
-h1 {
-	color: #000;
-}
-
-h2, h3, h4, h5, h6 {
-	color: #3A3A3A;
-}
 
 
 .subtitle {
@@ -72,7 +78,6 @@ margin-left: $half-spacing-unit;
 .inline > li:first-of-type {
 margin-left: 0;
 }
-
 
 
 .loz--new {
@@ -135,9 +140,6 @@ margin-left: 0;
 
 
 
-body {
-	border-top: $half-spacing-unit solid $brand-color;
-}
 
 .nav--article {
 	position: fixed;
@@ -209,4 +211,9 @@ body {
 
 .copyright {
 	float: left;
+}
+
+
+h1 {
+	color: #000;
 }
