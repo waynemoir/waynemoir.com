@@ -45,11 +45,21 @@
 }
 
 
-.icon-arrow-left:before {
+.icon-menu:before {
+	content: "\e606";
+}
+
+
+.icon-feed:before {
 	content: "\e603";
 }
 
 
 .icon-arrow-right:before {
-	content: "\e604";
+	content: "\e609";
+}
+
+
+.icon-arrow-left:before {
+	content: "\e60a";
 }

@@ -3,15 +3,15 @@
 	<li>
 		{% if page.previous.url %}
 			<a href="{{page.previous.url}}" title="Previous article: {{page.previous.title}}" class="nav__prev">
-				<i class="icon  icon-arrow-left3" aria-hidden="true"></i>
+				<i class="icon  icon-arrow-left" aria-hidden="true"></i>
 			</a>
 		{% elsif post.previous.url %}
 			<a href="{{post.previous.url}}" title="Previous article: {{post.previous.title}}" class="nav__prev">
-				<i class="icon  icon-arrow-left3" aria-hidden="true"></i>
+				<i class="icon  icon-arrow-left" aria-hidden="true"></i>
 			</a>
 		{% else %}
 			<div class="nav__prev  disabled">
-				<i class="icon  icon-arrow-left3" aria-hidden="true"></i>
+				<i class="icon  icon-arrow-left" aria-hidden="true"></i>
 			</div>
 		{% endif %}
 	</li>
@@ -20,15 +20,15 @@
 	<li>
 		{% if page.next.url %}
 			<a href="{{page.next.url}}" title="Next article: {{page.next.title}}" class="nav__next">
-				<i class="icon  icon-arrow-right3" aria-hidden="true"></i>
+				<i class="icon  icon-arrow-right" aria-hidden="true"></i>
 			</a>
 		{% elsif post.next.url %}
 			<a href="{{post.next.url}}" title="Next article: {{post.next.title}}" class="nav__next">
-				<i class="icon  icon-arrow-right3" aria-hidden="true"></i>
+				<i class="icon  icon-arrow-right" aria-hidden="true"></i>
 			</a>
 		{% else %}
 			<div class="nav__next  disabled">
-				<i class="icon  icon-arrow-right3" aria-hidden="true"></i>
+				<i class="icon  icon-arrow-right" aria-hidden="true"></i>
 			</div>
 		{% endif %}
 	</li>
