@@ -36,18 +36,18 @@
 </ul>
 
 
-
-
 <article class="article">
 
-	<h1 class="article__title">
-		{% if page.title %}
+	{% if page.title %}
+		<h1 title="Permanent link to {{ page.title }}" class="article__title">
 			<a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
-		{% endif %}
-		{% if post.title %}
+		</h1>
+	{% endif %}
+	{% if post.title %}
+		<h1 title="Permanent link to {{ post.title }}" class="article__title">
 			<a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
-		{% endif %}
-	</h1>
+		</h1>
+	{% endif %}
 
 
 	<p class="article__meta">

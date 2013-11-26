@@ -3,78 +3,77 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
+
 		<!-- Meta -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Notebook and blog of Wayne Moir, Experience designer" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+
 		<title>{% if page.title %} {{  page.title  }} | {% endif %} Wayne Moir</title>
+
 
 		<!-- Favicons -->
 		<link rel="shortcut icon" href="/img/ui/favicon.ico"/>
 
+
 		<!-- CSS -->
 		<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+
 	</head>
 	<body>
 
 		<div class="container  container--content">
-
-					{{ content }}
-
+			{{ content }}
 		</div>
+
 
 		<footer class="site-footer">
 			<div class="container">
 
-			<div class="grid">
-				<div class="grid__item  desk-six-twelfths">
-					<h6>About Me</h6>
-					<p><a href="https://twitter.com/waynemoir">Wayne Moir</a> Experience designer</p>
-				</div><!--
-			--><div class="grid__item  desk-six-twelfths">
+				<div class="grid">
+					<div class="grid__item  desk-six-twelfths">
 
+						<h6>About Me</h6>
+						<p><a href="https://twitter.com/waynemoir">Wayne Moir</a> Experience designer</p>
 
+					</div><!--
+				--><div class="grid__item  desk-six-twelfths">
 
-
-					<h6>Also read</h6>
-
-<ul>
-
-
-						{% for post in site.posts limit:5 %}
+						<h6>Also read</h6>
+						<ul>
+							{% for post in site.posts limit:5 %}
+								<li>
+									<a href="{{ post.url }}">
+										{{ post.title }}
+									</a>
+								</li>
+							{% endfor %}
 							<li>
-								<a href="{{ post.url }}">
-									{{ post.title }}
-								</a>
+								<a href="/articles/">Show all</a>
 							</li>
-						{% endfor %}
+						</ul>
 
-					</ul>
-
-
-
-</div>
-
-
-
+					</div>
+				</div>
 
 			</div>
 		</footer>
+
+
 		<div class="container  site-meta">
 
-			<p class="copyright">&copy; {{ site.time | date: '%Y' }} <a href="http://feeds.feedburner.com/waynemoir">RSS</a></p>
+			<p class="copyright">&copy; {{ site.time | date: '%Y' }}</p>
 
 
-<ul class="inline  float--right">
-
-	<li><a href="https://twitter.com/waynemoir" title="Twitter"><i class="icon  icon-twitter" aria-hidden="true"></i> @waynemoir</a></li>
-	<li><a href="https://github.com/waynemoir" title="GitHub"><i class="icon  icon-github" aria-hidden="true"></i> waynemoir</a></li>
-	<li><a href="http://www.linkedin.com/in/waynemoir"><i class="icon  icon-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-</ul>
+			<ul class="inline  float--right">
+				<li><a href="https://twitter.com/waynemoir" title="Twitter"><i class="icon  icon-twitter" aria-hidden="true"></i> @waynemoir</a></li>
+				<li><a href="https://github.com/waynemoir" title="GitHub"><i class="icon  icon-github" aria-hidden="true"></i> waynemoir</a></li>
+				<li><a href="http://www.linkedin.com/in/waynemoir"><i class="icon  icon-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+				<li><a href="http://feeds.feedburner.com/waynemoir"><i class="icon  icon-feed" aria-hidden="true"></i> RSS</a></li>
+			</ul>
 
 		</div>
-
 
 
 		<!-- Google Analytics
@@ -96,5 +95,7 @@
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 		</script>
 		-->
+
+
 	</body>
 </html>
