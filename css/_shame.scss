@@ -123,12 +123,6 @@ margin-left: 0;
 
 
 
-.site-header {
-	position: fixed;
-	left: $base-spacing-unit;
-	top: $base-spacing-unit;
-	@extend .muted;
-}
 
 
 
@@ -141,7 +135,7 @@ margin-left: 0;
 .nav--article {
 	position: fixed;
 	right: $base-spacing-unit;
-	top: $base-spacing-unit
+	top: $base-spacing-unit * 2;
 }
 
 .nav__next {
@@ -219,9 +213,14 @@ h1 {
 
 
 .site-header {
-	text-align: center;
+	@extend .muted;
+
+	left: $base-spacing-unit;
 	min-height: 100%;
 	padding-right: $base-spacing-unit;
+	position: fixed;
+	text-align: center;
+	top: $base-spacing-unit * 2;
 }
 
 .nav--site {
