@@ -10,4 +10,7 @@ html {
 	color: $body-text;
 }
 
+
+body {
+	border-top: $half-spacing-unit solid $brand-color;
 }

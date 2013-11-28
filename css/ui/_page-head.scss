@@ -3,3 +3,59 @@
 // |  $PAGE-HEAD
 // |--------------------------------------------------------------------------
 */
+
+.site-logo {
+	@extend .muted;
+
+	color: $body-text;
+	display: inline-block;
+	font-size: 2.5em;
+	margin-bottom: $base-spacing-unit * 2;
+}
+
+
+.site-logo:hover {
+	color: $body-text !important;
+	text-decoration: none;
+}
+
+
+
+.site-header {
+	@extend .muted;
+
+	left: 0;
+	padding: $base-spacing-unit * 2 $base-spacing-unit;
+	min-height: 100%;
+	padding-right: $base-spacing-unit;
+	position: fixed;
+	text-align: center;
+	top: 0;
+}
+
+.nav--site {
+	visibility: hidden;
+}
+
+.site-header:hover .site-logo {
+	color: #000;
+	opacity: 1 !important;
+}
+.site-header:hover .nav--site {
+	visibility: visible;
+}
+
+.nav--site a {
+	font-weight: bold;
+	line-height: 3;
+}
+.nav--site a:hover {
+	text-decoration: none;
+	border-bottom: 4px solid $brand-color;
+}
+
+
+.nav--site {
+	list-style-type: none;
+	margin-left: 0;
+}
