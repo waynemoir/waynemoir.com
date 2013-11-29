@@ -43,22 +43,35 @@
 		</div>
 
 
-		<div class="container  container--content">
-			{{ content }}
+			<div class="something">
+				<ul class="nav--site">
+					<li><a href="/articles/">Articles</a></li>
+					<li><a href="/resources/">Resources</a></li>
+					<li><a href="/about/">About</a></li>
+				</ul>
+
+
+				<ul class="nav  nav--social">
+					<li><a href="https://twitter.com/waynemoir" title="Twitter profile"><i class="icon  icon-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/waynemoir" title="GitHub profile"><i class="icon  icon-github" aria-hidden="true"></i></a></li>
+					<li><a href="http://www.linkedin.com/in/waynemoir" title="LinkedIn profile"><i class="icon  icon-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="http://feeds.feedburner.com/waynemoir" title="RSS Feed"><i class="icon  icon-feed" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
 		</div>
 
 
+		<div class="container">
+			{{ content }}
 
 
-
-		<div class="container  site-meta">
-
-			<p class="copyright">
-				&copy; <a href="https://twitter.com/waynemoir">Wayne Moir</a> {{ site.time | date: '%Y' }}
-				<br>
-				Experience designer &hellip;<a href="/about/">more</a>
-			</p>
-
+			<div class="site-meta">
+				<p class="copyright">
+					&copy; <a href="https://twitter.com/waynemoir">Wayne Moir</a> {{ site.time | date: '%Y' }}
+					<br>
+					Experience designer &hellip;<a href="/about/">more</a>
+				</p>
+			</div>
 
 		</div>
 
