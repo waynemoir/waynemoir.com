@@ -21,7 +21,7 @@
 
 
 
-.site-header {
+.side-panel {
 	@extend .muted;
 
 	left: 0;
@@ -33,15 +33,15 @@
 	top: 0;
 }
 
-.nav--site {
+.something {
 	visibility: hidden;
 }
 
-.site-header:hover .site-logo {
+.side-panel:hover {
 	color: #000;
 	opacity: 1 !important;
 }
-.site-header:hover .nav--site {
+.side-panel:hover .something {
 	visibility: visible;
 }
 
