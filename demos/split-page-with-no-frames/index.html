@@ -5,10 +5,21 @@
 		<title>No Frames Needed</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<style type="text/css">
-			* {margin:0;padding:0;}
-			html{overflow:none;}
-			.column{float:left;overflow-y:scroll;width:49%;}
-			#data-two{float:right;}			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			html {
+				overflow: hidden;
+			}
+			.column {
+				float: left;
+				overflow-y: scroll;
+				width: 49%;
+			}
+			#data-two {
+				float: right;
+			}
 		</style>
 		<script type="text/javascript">
 			function getwindowHeight() {
@@ -26,7 +37,7 @@
 				}
 				return windowHeight;
 			}
-			
+
 			function setWrap() {
 				if (document.getElementById) {
 					var windowHeight = getwindowHeight();
@@ -39,17 +50,17 @@
 					}
 				}
 			}
-			
+
 			window.onload = function() {
 				setWrap();
 			}
 			window.onresize = function() {
 				setWrap();
 			}
-		</script> 
+		</script>
 	</head>
-	<body>	            
-		<div class="column" id="data-one">			
+	<body>
+		<div class="column" id="data-one">
 			 <ul>
 				<li>Row 1</li>
 				<li>Row 2</li>
@@ -652,8 +663,8 @@
 				<li>Row 599</li>
 				<li>Row 600</li>
 			</ul>
-		</div>	
-		<div class="column" id="data-two">	
+		</div>
+		<div class="column" id="data-two">
 			<ul>
 				<li>Row 1</li>
 				<li>Row 2</li>
@@ -1255,7 +1266,7 @@
 				<li>Row 598</li>
 				<li>Row 599</li>
 				<li>Row 600</li>
-			</ul>			
-		</div>	
+			</ul>
+		</div>
 	</body>
 </html>
