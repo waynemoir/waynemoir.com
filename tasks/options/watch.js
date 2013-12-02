@@ -19,6 +19,9 @@ module.exports = {
 			'./_posts/**',
 			'./_layouts/**',
 			'./_includes/**',
+			'./demos/**',
+			'./img/**',
+			'./fonts/**',
 			'./*.html'
 		],
 		tasks: ['jekyll:build']
