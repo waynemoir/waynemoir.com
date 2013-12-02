@@ -14,4 +14,4 @@ Negative space, or whitespace, is a powerful design element which impacts both t
 
 The 8 Fish logo above is an example of clever use of what negative space can achieve, an attractive design providing additional depth that rewards the viewer for the taking time to think about the logo and in turn the company it represents. The four orange fish stand out, whilst closer inspection of the negative space reveals four more fish swimming in the opposite direction.
 
-This article titled [Negative Space in Webpage Layouts: A Guide](http://sixrevisions.com/web_design/negative-space-in-webpage-layouts-a-guide/) explores the fundamentals of negative space, looks into how to improve the use of negative space in layout design and is well worth a read.
+This article titled [Negative Space in Web Page Layouts: A Guide](http://sixrevisions.com/web_design/negative-space-in-webpage-layouts-a-guide/) explores the fundamentals of negative space, looks into how to improve the use of negative space in layout design and is well worth a read.

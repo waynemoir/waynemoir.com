@@ -20,7 +20,7 @@ For me this reason alone justifies the importance of HTML validation, however va
 *   Faster loading and reduced bandwidth usage
 *   A solid foundation for accessibility
 *   Improved search engine rankings
-*   Easier maintainence
+*   Easier maintenance
 
 In addition to this, a lot of the time validation is something that is very easy to do. Often all that is needed to achieve validation is to add a closing tag here, move this element there, change that element to an equivalent that isn’t depreciated, and so on.
 

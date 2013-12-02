@@ -42,6 +42,6 @@ At work we currently use the LESS preprocessor to build our CSS framework and ha
 ## Resources
 
 *   [Dive deep into CSS preprocessors with Jonathan Verrecchia](http://www.youtube.com/watch?gl=GB&client=mv-google&hl=en-GB&v=FlW2vvl0yvo&nomobile=1)
-*   [Sass vs LESS on CSS tricks](http://css-tricks.com/sass-vs-less/)
-*   [Sass vs LESS on Hongkiat](http://www.hongkiat.com/blog/sass-vs-less/)
+*   [Sass versus LESS on CSS tricks](http://css-tricks.com/sass-vs-less/)
+*   [Sass versus LESS on Hongkiat](http://www.hongkiat.com/blog/sass-vs-less/)
 *   [The Sass Way Blog](http://thesassway.com/)

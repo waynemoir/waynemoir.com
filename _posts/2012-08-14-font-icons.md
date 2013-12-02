@@ -38,7 +38,7 @@ After a brief period of failed experimentation with the font icon generation too
 Support for icon fonts is very good, the problem comes with using CSS generated content to insert the font characters, Internet Explorer 7 does not support this. Thankfully there are a couple of options for a partial work around.
 
 *   Option One. Use [Modernizr](http://modernizr.com/) to check for CSS generated content and polyfill as necessary.
-*   Option Two. Use CSS expressions, ala [Foundation](http://www.zurb.com/article/1047/bigger-stronger-new-accessible-foundation).
+*   Option Two. Use CSS expressions, [Foundation](http://www.zurb.com/article/1047/bigger-stronger-new-accessible-foundation) is an example of this.
 
 The reason for terming this a partial work around is that whilst both methods work reliably, they both run on page load. Meaning that should you insert any additional data through JQuery or an Ajax call, the icons on those elements will not receive the CSS generated content and will not work in Internet Explorer 7. I have not yet found a way around this.
 

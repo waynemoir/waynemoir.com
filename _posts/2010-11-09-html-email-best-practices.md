@@ -7,7 +7,7 @@ categories:
 - Web design
 ---
 
-HTML e-mail is an area that is very challenging to design and code. The biggest obstacles are that there are so many different clients available and vertially no adherance to web standards by the clients. Even when the HTML e-mail is displayed properly by the software, the user preferences can be modified extensively; making the final layout even more difficult to predict. This makes testing HTML e-mail a far more challenging task than testing the cross browser compatibility of web sites.
+HTML e-mail is an area that is very challenging to design and code. The biggest obstacles are that there are so many different clients available and virtually no adherence to web standards by the clients. Even when the HTML e-mail is displayed properly by the software, the user preferences can be modified extensively; making the final layout even more difficult to predict. This makes testing HTML e-mail a far more challenging task than testing the cross browser compatibility of web sites.
 
 The unfortunate side effect of the lack of web standards support is that when coding e-mail the rules of semantic clean mark-up and the separation of content and presentation go straight out the window if any kind of cross client compatibility is hoped to be achieved.
 
