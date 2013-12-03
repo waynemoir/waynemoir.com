@@ -59,13 +59,26 @@
 		{% endif %}
 
 
+		{% assign categoriesIteration = 0 %}
 		{% if page.categories  != null %}
 			|
-			<span class="article__categories">{% for category in page.categories %} {{ category }} {% endfor %}</span>
+			<span class="article__categories">
+				{% assign categoriesLength = page.categories | size %}
+				{% for category in page.categories %}
+					{% assign categoriesIteration = categoriesIteration | plus:1 %}
+					{{ category }}{% if categoriesIteration < categoriesLength %},{% endif %}
+				{% endfor %}
+			</span>
 		{% endif %}
 		{% if post.categories != null %}
 			|
-			<span class="article__categories">{% for category in post.categories %} {{ category }} {% endfor %}</span>
+			<span class="article__categories">
+				{% assign categoriesLength = post.categories | size %}
+				{% for category in post.categories %}
+					{% assign categoriesIteration = categoriesIteration | plus:1 %}
+					{{ category }}{% if categoriesIteration < categoriesLength %},{% endif %}
+				{% endfor %}
+			</span>
 		{% endif %}
 	</p>
 
