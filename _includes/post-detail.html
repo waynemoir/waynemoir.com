@@ -1,12 +1,43 @@
+{% if page.path contains '_posts' %}
+
+	{% assign previousUrl 	= {{page.previous.url}} %}
+	{% assign previousTitle	= {{page.previous.title}} %}
+
+
+	{% assign nextUrl 		= {{page.next.url}} %}
+	{% assign nextTitle 	= {{page.next.title}} %}
+
+
+	{% assign url 			= {{page.url}} %}
+	{% assign title 		= {{page.title}} %}
+	{% assign date 			= {{page.date}} %}
+	{% assign categories 	= {{page.categories}} %}
+
+{% else %}
+
+	{% assign previousUrl 	= {{post.previous.url}} %}
+	{% assign previousTitle = {{post.previous.title}} %}
+
+
+	{% assign nextUrl 		= {{post.next.url}} %}
+	{% assign nextTitle 	= {{post.next.title}} %}
+
+
+	{% assign url 			= {{post.url}} %}
+	{% assign title 		= {{post.title}} %}
+	{% assign date 			= {{post.date}} %}
+	{% assign categories 	= {{post.categories}} %}
+
+{% endif %}
+
+
+
+
 <ul class="nav  nav--article">
 
 	<li>
-		{% if page.previous.url %}
-			<a href="{{page.previous.url}}" title="Previous article: {{page.previous.title}}" class="nav__prev">
-				<i class="icon  icon-arrow-left" aria-hidden="true"></i>
-			</a>
-		{% elsif post.previous.url %}
-			<a href="{{post.previous.url}}" title="Previous article: {{post.previous.title}}" class="nav__prev">
+		{% if previousUrl %}
+			<a href="{{previousUrl}}" title="Previous article: {{previousTitle}}" class="nav__prev">
 				<i class="icon  icon-arrow-left" aria-hidden="true"></i>
 			</a>
 		{% else %}
@@ -18,12 +49,8 @@
 
 
 	<li>
-		{% if page.next.url %}
-			<a href="{{page.next.url}}" title="Next article: {{page.next.title}}" class="nav__next">
-				<i class="icon  icon-arrow-right" aria-hidden="true"></i>
-			</a>
-		{% elsif post.next.url %}
-			<a href="{{post.next.url}}" title="Next article: {{post.next.title}}" class="nav__next">
+		{% if nextUrl %}
+			<a href="{{nextUrl}}" title="Next article: {{nextTitle}}" class="nav__next">
 				<i class="icon  icon-arrow-right" aria-hidden="true"></i>
 			</a>
 		{% else %}
@@ -36,45 +63,25 @@
 </ul>
 
 
+
+
 <article class="article">
 
-	{% if page.title %}
-		<h1 title="Permanent link to {{ page.title }}" class="article__title">
-			<a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
-		</h1>
-	{% endif %}
-	{% if post.title %}
-		<h1 title="Permanent link to {{ post.title }}" class="article__title">
-			<a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
-		</h1>
-	{% endif %}
+	<h1 title="Permanent link to {{title}}" class="article__title">
+		<a href="{{root_url}}{{url}}">{{ title }}</a>
+	</h1>
 
 
 	<p class="article__meta">
-		{% if page.date %}
-			{{ page.date | date: "%B %e, %Y" }}
-		{% endif %}
-		{% if post.date %}
-			{{ post.date | date: "%B %e, %Y" }}
-		{% endif %}
+		{{ date | date: "%B %e, %Y" }}
 
 
 		{% assign categoriesIteration = 0 %}
-		{% if page.categories  != null %}
+		{% if categories  != null %}
 			|
 			<span class="article__categories">
-				{% assign categoriesLength = page.categories | size %}
-				{% for category in page.categories %}
-					{% assign categoriesIteration = categoriesIteration | plus:1 %}
-					{{ category }}{% if categoriesIteration < categoriesLength %},{% endif %}
-				{% endfor %}
-			</span>
-		{% endif %}
-		{% if post.categories != null %}
-			|
-			<span class="article__categories">
-				{% assign categoriesLength = post.categories | size %}
-				{% for category in post.categories %}
+				{% assign categoriesLength = categories | size %}
+				{% for category in categories %}
 					{% assign categoriesIteration = categoriesIteration | plus:1 %}
 					{{ category }}{% if categoriesIteration < categoriesLength %},{% endif %}
 				{% endfor %}
@@ -83,6 +90,6 @@
 	</p>
 
 
-	{{ content }}
+	{{content}}
 
 </article>
