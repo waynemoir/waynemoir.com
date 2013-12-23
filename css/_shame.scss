@@ -74,12 +74,20 @@ margin-left: 0;
 
 
 
-
-.btn {
+%ui-btn {
+	@extend .btn;
 	background-color: #DADBE1;
 	line-height: 1;
 	font-size: 20px;
 	padding: 0;
+
+	&:hover {
+		background-color: $brand-color;
+	}
+}
+
+.btn {
+	@extend %ui-btn;
 }
 
 
@@ -99,15 +107,17 @@ margin-left: 0;
 	top: $base-spacing-unit * 2;
 }
 
+
+
 .nav__next {
-	@extend .btn;
+	@extend %ui-btn;
 
 	border-bottom-left-radius: 0; // Flush left hand side
 	border-top-left-radius: 0; // Flush left hand side
 }
 
 .nav__prev {
-	@extend .btn;
+	@extend %ui-btn;
 
 	border-bottom-right-radius: 0; // Flush right hand side
 	border-top-right-radius: 0; // Flush right hand side
