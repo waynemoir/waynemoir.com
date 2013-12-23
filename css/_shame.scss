@@ -6,47 +6,23 @@
 
 
 
-.block-list a {
-	display: block;
-}
+
 
 .block-list li:hover {
 	background-color: $brand-color;
 	cursor: pointer;
 	opacity: 1 !important;
 }
-.block-list li:hover a,
-.block-list li:hover .post-date {
+.block-list li:hover a {
 	color: #fff;
 	text-decoration: none;
 }
 
-.post-date {
-	color: $body-text;
-}
-
-
-
-
-/* CSSWizardry doesn't need these styles when based on inuit.css, why is this behaviour different here? */
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
 
 
 
 
 
-
-
-
-.subtitle {
-	font-weight: normal;
-}
 
 .inline > li {
 display: inline-block;
@@ -57,10 +33,6 @@ margin-left: $half-spacing-unit;
 margin-left: 0;
 }
 
-
-.loz--new {
-	background-color: $brand-color;
-}
 
 
 
