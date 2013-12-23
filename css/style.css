@@ -4452,15 +4452,8 @@ body {
   color: #4d4d4d;
 }
 
-/* CSSWizardry doesn't need these styles when based on inuit.css, why is this behaviour different here? */
-
-a {
-  text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
 
 .subtitle {
   font-weight: normal;
