@@ -24,12 +24,12 @@
 
 
 
-.inline > li {
+%inline > li {
 display: inline-block;
 margin-left: $half-spacing-unit;
 }
-.inline,
-.inline > li:first-of-type {
+%inline,
+%inline > li:first-of-type {
 margin-left: 0;
 }
 
