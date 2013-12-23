@@ -24,10 +24,25 @@
 	<body>
 
 		<div class="container">
+
+			<div class="header">
+				<a href="/" class="site-logo  header__site-logo" title="Wayne Moir">
+					<i class="icon  icon-logo" aria-hidden="true"></i>
+				</a>
+
+				<ul class="nav  header__nav">
+					<li><a href="/articles/">Articles</a></li>
+					<li><a href="/about/">About</a></li>
+				</ul>
+			</div>
+
+
 			{{ content }}
 
 
-			</div>
+			<p class="copyright">
+				&copy; <a href="https://twitter.com/waynemoir">Wayne Moir</a> {{ site.time | date: '%Y' }}
+			</p>
 
 		</div>
 
