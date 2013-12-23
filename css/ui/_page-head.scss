@@ -50,7 +50,10 @@
 }
 
 
-.site-logo:hover {
-/*	color: $body-text !important;*/
+.site-logo:focus,
+.site-logo:hover,
+.site-logo:active {
+	color: #000;
+	opacity: 1 !important;
 	text-decoration: none;
 }
