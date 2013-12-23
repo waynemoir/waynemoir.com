@@ -99,7 +99,7 @@ margin-left: 0;
 // |--------------------------------------------------------------------------
 */
 
-
+/*
 
 .nav--article {
 	position: fixed;
@@ -130,4 +130,12 @@ margin-left: 0;
 .nav__next.disabled:hover,
 .nav__prev.disabled:hover {
 	@extend button[disabled];
+}
+
+*/
+
+
+body {
+	padding-left: $base-spacing-unit;
+	padding-right: $base-spacing-unit;
 }
