@@ -3,23 +3,7 @@
 \*------------------------------------*/
 
 
-.site-footer {
-	background: #fff;
-	border-bottom: 1px solid #a1a0a0;
-	border-top: 1px solid #a1a0a0;
-	margin-top: $base-spacing-unit;
-	padding-top: $base-spacing-unit;
-	padding-bottom: $base-spacing-unit;
-}
-
-
-.site-meta {
-	font-size: $milli-size;
-	margin-top: $base-spacing-unit * 6;
-	margin-bottom: $half-spacing-unit;
-}
-
-
 .copyright {
-	float: left;
+	font-size: $milli-size;
+	margin-top: $base-spacing-unit * 2;
 }
