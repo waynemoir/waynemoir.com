@@ -30,6 +30,10 @@
 }
 
 
+.icon--large:before {
+	font-size: $kilo-size;
+}
+
 .icon-logo:before {
 	content: "\e604";
 }
