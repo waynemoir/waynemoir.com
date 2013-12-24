@@ -5,6 +5,68 @@
 */
 
 
+
+
+/*
+// |  Inter-article next and previous post navigation
+// |--------------------------------------------------------------------------
+*/
+.nav--article {
+	display: none; // Hidden by default for mobile
+}
+
+
+@media all and (min-width: $desktop) {
+	.nav--article {
+		display: block; // Desktop uses .side-panel instead of .header
+		position: fixed;
+		right: $base-spacing-unit;
+		top: $base-spacing-unit * 2;
+	}
+}
+
+
+.nav__next {
+	@extend %ui-btn;
+
+	border-bottom-left-radius: 0; // Flush left hand side
+	border-top-left-radius: 0; // Flush left hand side
+}
+
+
+.nav__prev {
+	@extend %ui-btn;
+
+	border-bottom-right-radius: 0; // Flush right hand side
+	border-top-right-radius: 0; // Flush right hand side
+}
+
+
+.nav__next.disabled,
+.nav__prev.disabled {
+	 opacity: 0.5
+}
+
+
+.nav__next.disabled:hover,
+.nav__prev.disabled:hover {
+	@extend button[disabled];
+}
+
+
+
+
+/*
+// |  Article content
+// |--------------------------------------------------------------------------
+*/
+@media all and (min-width: $desktop) {
+	.article {
+		margin-top: $base-spacing-unit * 2; // Give desktop more space to align article title with inter-article navigation
+	}
+}
+
+
 .article__title {
 	margin-bottom: 0;
 }
