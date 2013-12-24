@@ -19,10 +19,18 @@
 }
 
 
+@media all and (min-width: $desktop) {
+	.header {
+		display: none; // Desktop uses .side-panel instead of .header
+	}
+}
+
+
 .header__site-logo {
 	float: left;
 	margin-bottom: 0;
 }
+
 
 .header__nav {
 	float: right;
@@ -32,7 +40,6 @@
 		margin-left: $half-spacing-unit;
 	}
 }
-
 
 
 
