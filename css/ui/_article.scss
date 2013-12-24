@@ -58,13 +58,6 @@
 // |  Article content
 // |--------------------------------------------------------------------------
 */
-@media all and (min-width: $desktop) {
-	.article {
-		margin-top: $base-spacing-unit * 2; // Give desktop more space to align article title with inter-article navigation
-	}
-}
-
-
 .article__title {
 	margin-bottom: 0;
 }

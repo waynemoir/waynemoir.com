@@ -4321,6 +4321,12 @@ body {
   max-width: 650px;
 }
 
+@media all and (min-width: 1230px) {
+  .content {
+    margin-top: 48px;
+  }
+}
+
 .header {
   border-bottom: 2px solid #cccccc;
   margin-bottom: 48px;
@@ -4456,12 +4462,6 @@ body {
 .nav__next.disabled,
 .nav__prev.disabled {
   opacity: 0.5;
-}
-
-@media all and (min-width: 1230px) {
-  .article {
-    margin-top: 48px;
-  }
 }
 
 .article__title {
