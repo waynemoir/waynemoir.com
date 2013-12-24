@@ -26,9 +26,6 @@
 }
 
 
-.something {
-	visibility: hidden;
-}
 
 .side-panel:hover {
 	background: #F1EEEE;
@@ -36,9 +33,6 @@
 	box-shadow: inset 0 0 $quarter-spacing-unit rgba(50, 50, 50, 0.75);
 }
 
-.side-panel:hover .something {
-	visibility: visible;
-}
 
 .nav--site a {
 	font-weight: bold;
@@ -65,8 +59,12 @@
 	}
 
 
-.side-panel__site-logo {
-	margin-bottom: $base-spacing-unit * 2;
+	.side-panel__additional-content {
+		visibility: hidden;
+	}
+
+
+	.side-panel:hover .side-panel__additional-content {
+		visibility: visible;
+	}
 }
-
-
