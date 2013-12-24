@@ -20,7 +20,7 @@
 		padding: $base-spacing-unit * 2;
 		position: fixed;
 		text-align: center;
-		top: 0;
+		top: $half-spacing-unit; // Matched to body border-width
 		width: 265px;
 	}
 
