@@ -56,22 +56,14 @@
 }
 
 
-.nav--social {
-> li {
-display: inline-block;
-margin-left: $half-spacing-unit;
-}
 
-> li:first-of-type {
-margin-left: 0;
-}
 
-margin-left: 0;
+	.nav--social {
+		bottom: 0;
+		font-size: 1.5em;
+		position: absolute;
+	}
 
-	bottom: 0;
-	font-size: 1.5em;
-	position: absolute;
-}
 
 .side-panel__site-logo {
 	margin-bottom: $base-spacing-unit * 2;
