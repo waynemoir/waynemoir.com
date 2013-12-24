@@ -3,7 +3,24 @@
 \*------------------------------------*/
 
 
-.btn {
-	background-color: $brand-color;
+
+
+%ui-btn {
+	@extend .btn;
+	background-color: #DADBE1;
 	color: #fff;
+	line-height: 1;
+	font-size: 20px;
+	padding: $half-spacing-unit;
+
+	&:hover {
+		background-color: $brand-color;
+	}
+
+
+	&.disabled:hover {
+		@extend button[disabled];
+
+		background-color: #DADBE1; // Reset to default
+	}
 }

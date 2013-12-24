@@ -6,11 +6,19 @@
 
 
 html {
-	background-color: #f9f9f9;
+	background-color: #F4F3EF;
 	color: $body-text;
 }
 
 
 body {
 	border-top: $half-spacing-unit solid $brand-color;
+	padding-left: $base-spacing-unit;
+	padding-right: $base-spacing-unit;
+}
+
+
+.container {
+	margin: $base-spacing-unit auto;
+	max-width: 650px;
 }

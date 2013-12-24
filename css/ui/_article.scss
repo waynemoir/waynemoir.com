@@ -5,6 +5,66 @@
 */
 
 
+
+
+/*
+// |  Inter-article next and previous post navigation
+// |--------------------------------------------------------------------------
+*/
+.nav--article {
+	display: none; // Hidden by default for mobile
+}
+
+
+@media all and (min-width: $desktop) {
+	.nav--article {
+		display: block; // Desktop uses .side-panel instead of .header
+		position: fixed;
+		right: $base-spacing-unit;
+		top: $base-spacing-unit * 2;
+	}
+}
+
+
+.nav__next,
+.nav__prev {
+	@extend %ui-btn;
+
+	padding: 0;
+}
+
+.nav__next {
+	border-bottom-left-radius: 0; // Flush left hand side
+	border-top-left-radius: 0; // Flush left hand side
+}
+
+
+.nav__prev {
+	border-bottom-right-radius: 0; // Flush right hand side
+	border-top-right-radius: 0; // Flush right hand side
+}
+
+
+.nav__next.disabled,
+.nav__prev.disabled {
+	 opacity: 0.5
+}
+
+
+
+
+
+/*
+// |  Article content
+// |--------------------------------------------------------------------------
+*/
+@media all and (min-width: $desktop) {
+	.article {
+		margin-top: $base-spacing-unit * 2; // Give desktop more space to align article title with inter-article navigation
+	}
+}
+
+
 .article__title {
 	margin-bottom: 0;
 }
@@ -21,10 +81,17 @@
 
 
 .article img {
-	background: #F1F1F1;
+	background: #eee;
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0) #A1A0A0 #A1A0A0 rgba(0, 0, 0, 0);
 	border-radius:  $border-radius;
 	max-width: 100%;
 	padding: $half-spacing-unit;
+}
+
+
+.article .btn {
+	@extend %ui-btn;
+
+	background-color: $brand-color;
 }

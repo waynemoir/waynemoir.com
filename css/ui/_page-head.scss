@@ -4,73 +4,63 @@
 // |--------------------------------------------------------------------------
 */
 
+
+
+
+/*
+// |  Mobile header and navigation
+// |--------------------------------------------------------------------------
+*/
+.header {
+	@extend .cf;
+
+	border-bottom: 2px solid $base-ui-color;
+	margin-bottom: $base-spacing-unit * 2;
+}
+
+
+@media all and (min-width: $desktop) {
+	.header {
+		display: none; // Desktop uses .side-panel instead of .header
+	}
+}
+
+
+.header__site-logo {
+	float: left;
+	margin-bottom: 0;
+}
+
+
+.header__nav {
+	float: right;
+	padding-top: $half-spacing-unit + $quarter-spacing-unit;
+
+	> li {
+		margin-left: $half-spacing-unit;
+	}
+}
+
+
+
+
+/*
+// |  Site logo
+// |--------------------------------------------------------------------------
+*/
 .site-logo {
 	@extend .muted;
 
 	color: $body-text;
 	display: inline-block;
 	font-size: 2.5em;
-	margin-bottom: $base-spacing-unit * 2;
 }
 
 
-.site-logo:hover {
-	color: $body-text !important;
-	text-decoration: none;
-}
-
-
-
-.side-panel {
-	@extend .muted;
-
-	left: 0;
-	min-height: 100%;
-	padding: $base-spacing-unit * 2;
-	position: fixed;
-	text-align: center;
-	top: 0;
-	width: 250px;
-}
-
-.something {
-	visibility: hidden;
-}
-
-.side-panel:hover {
-	background: #F1EEEE;
-	border-right: 1px solid gray;
-	box-shadow: inset 0 0 $quarter-spacing-unit rgba(50, 50, 50, 0.75);
-}
-.side-panel:hover .site-logo {
+.site-logo:focus,
+.site-logo:hover,
+.site-logo:active {
 	color: #000;
 	opacity: 1 !important;
-}
-.side-panel:hover .something {
-	visibility: visible;
-}
-
-.nav--site a {
-	font-weight: bold;
-	line-height: 3;
-}
-.nav--site a:hover {
 	text-decoration: none;
-	border-bottom: 4px solid $brand-color;
 }
-
-
-.nav--site {
-	list-style-type: none;
-	margin-left: 0;
-}
-
-
-.nav--social {
-	@extend .inline;
-
-	bottom: 0;
-	font-size: 1.5em;
-	position: absolute;
-}
-

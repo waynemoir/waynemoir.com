@@ -14,7 +14,7 @@ Lately I have been focusing on developing my knowledge of JavaScript as I feel t
 Prompt the user to enter their name.
 
 <div data-height="85" data-theme-id="0" data-slug-hash="CAsfm" data-user="waynemoir" data-default-tab="js" class='codepen'><pre><code>var name=prompt(&quot;Please enter your name&quot;);</code></pre>
-<p>See the Pen <a href='http://codepen.io/waynemoir/pen/CAsfm'>%= penName %></a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<p>See the Pen <a href='http://codepen.io/waynemoir/pen/CAsfm'>%= penName %</a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
 
@@ -25,7 +25,7 @@ Use a pop-up box to welcome the user.
 
 <div data-height="105" data-theme-id="2540" data-slug-hash="LyGDe" data-user="waynemoir" data-default-tab="js" class='codepen'><pre><code>var name=prompt(&quot;Please enter your name&quot;);
 alert(&quot;Hello &quot;   name);</code></pre>
-<p>See the Pen <a href='http://codepen.io/waynemoir/pen/LyGDe'>%= penName %></a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<p>See the Pen <a href='http://codepen.io/waynemoir/pen/LyGDe'>%= penName %</a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
 
@@ -77,7 +77,7 @@ Display today’s date on the page in the following format: November 25, 2010.
 					month = &quot;December&quot;;
 				}
 				document.write(month + &quot; &quot; + day + &quot;, &quot; + year + &quot;.&quot;);</code></pre>
-<p>See the Pen <a href='http://codepen.io/waynemoir/pen/ikobF'>%= penName %></a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<p>See the Pen <a href='http://codepen.io/waynemoir/pen/ikobF'>%= penName %</a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
 
@@ -88,7 +88,7 @@ Display the last modified date of the document.
 
 <div data-height="108" data-theme-id="2540" data-slug-hash="DaGqj" data-user="waynemoir" data-default-tab="js" class='codepen'><pre><code>var fileModified = document.lastModified;
 document.write(&quot;This file was last modified: &quot; + fileModified);</code></pre>
-<p>See the Pen <a href='http://codepen.io/waynemoir/pen/DaGqj'>%= penName %></a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<p>See the Pen <a href='http://codepen.io/waynemoir/pen/DaGqj'>%= penName %</a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
 
@@ -108,5 +108,5 @@ Display a greeting based on the time of day. For example; Good Morning if it is 
 				} else {
 					document.write(&quot;Night&quot;);
 				}</code></pre>
-<p>See the Pen <a href='http://codepen.io/waynemoir/pen/rxnEy'>%= penName %></a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<p>See the Pen <a href='http://codepen.io/waynemoir/pen/rxnEy'>%= penName %</a> by Wayne Moir (<a href='http://codepen.io/waynemoir'>@waynemoir</a>) on <a href='http://codepen.io'>CodePen</a></p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>

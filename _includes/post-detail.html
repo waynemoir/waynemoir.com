@@ -33,38 +33,6 @@
 
 
 
-<ul class="nav  nav--article">
-
-	<li>
-		{% if previousUrl %}
-			<a href="{{previousUrl}}" title="Previous article: {{previousTitle}}" class="nav__prev">
-				<i class="icon  icon--large  icon-arrow-left" aria-hidden="true"></i>
-			</a>
-		{% else %}
-			<div class="nav__prev  disabled">
-				<i class="icon  icon--large  icon-arrow-left" aria-hidden="true"></i>
-			</div>
-		{% endif %}
-	</li>
-
-
-	<li>
-		{% if nextUrl %}
-			<a href="{{nextUrl}}" title="Next article: {{nextTitle}}" class="nav__next">
-				<i class="icon  icon--large  icon-arrow-right" aria-hidden="true"></i>
-			</a>
-		{% else %}
-			<div class="nav__next  disabled">
-				<i class="icon  icon--large  icon-arrow-right" aria-hidden="true"></i>
-			</div>
-		{% endif %}
-	</li>
-
-</ul>
-
-
-
-
 <article class="article">
 
 	<h1 title="Permanent link to {{title}}" class="article__title">
@@ -93,3 +61,35 @@
 	{{content}}
 
 </article>
+
+
+
+
+<ul class="nav  nav--article">
+
+	<li>
+		{% if previousUrl %}
+			<a href="{{previousUrl}}" title="Previous article: {{previousTitle}}" class="nav__prev">
+				<i class="icon  icon--large  icon-arrow-left" aria-hidden="true"></i>
+			</a>
+		{% else %}
+			<div class="nav__prev  disabled">
+				<i class="icon  icon--large  icon-arrow-left" aria-hidden="true"></i>
+			</div>
+		{% endif %}
+	</li>
+
+
+	<li>
+		{% if nextUrl %}
+			<a href="{{nextUrl}}" title="Next article: {{nextTitle}}" class="nav__next">
+				<i class="icon  icon--large  icon-arrow-right" aria-hidden="true"></i>
+			</a>
+		{% else %}
+			<div class="nav__next  disabled">
+				<i class="icon  icon--large  icon-arrow-right" aria-hidden="true"></i>
+			</div>
+		{% endif %}
+	</li>
+
+</ul>
