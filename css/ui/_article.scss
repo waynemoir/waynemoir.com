@@ -26,17 +26,20 @@
 }
 
 
-.nav__next {
+.nav__next,
+.nav__prev {
 	@extend %ui-btn;
 
+	padding: 0;
+}
+
+.nav__next {
 	border-bottom-left-radius: 0; // Flush left hand side
 	border-top-left-radius: 0; // Flush left hand side
 }
 
 
 .nav__prev {
-	@extend %ui-btn;
-
 	border-bottom-right-radius: 0; // Flush right hand side
 	border-top-right-radius: 0; // Flush right hand side
 }
@@ -47,11 +50,6 @@
 	 opacity: 0.5
 }
 
-
-.nav__next.disabled:hover,
-.nav__prev.disabled:hover {
-	@extend button[disabled];
-}
 
 
 
@@ -89,4 +87,11 @@
 	border-radius:  $border-radius;
 	max-width: 100%;
 	padding: $half-spacing-unit;
+}
+
+
+.article .btn {
+	@extend %ui-btn;
+
+	background-color: $brand-color;
 }
