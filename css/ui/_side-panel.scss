@@ -32,24 +32,30 @@
 	}
 
 
+	.nav--site a {
+		font-weight: bold;
+		line-height: 3;
+	}
 
 
-.nav--site a {
-	font-weight: bold;
-	line-height: 3;
-}
-.nav--site a:hover {
-	text-decoration: none;
-	border-bottom: 4px solid $brand-color;
-}
+	.nav--social a,
+	.nav--site a {
+		border-bottom: 4px solid transparent;
+	}
 
 
-.nav--site {
-	list-style-type: none;
-	margin-left: 0;
-}
+	.nav--site a:hover,
+	.nav--social a:hover {
+		border-color: $brand-color;
+		text-decoration: none;
+	}
 
 
+	.nav--site {
+		list-style-type: none;
+		margin-left: 0;
+		margin-top: $base-spacing-unit * 3;
+	}
 
 
 	.nav--social {
