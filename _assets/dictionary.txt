@@ -1,5 +1,5 @@
 // General terms
-th
+
 
 
 
@@ -13,6 +13,8 @@ spriting
 mixin
 unstyled
 doctype
+th
+janky
 
 
 
