@@ -11,7 +11,7 @@ permalink: /articles/
 	{% for post in site.posts %}
 		<li>
 			<a href="{{ post.url }}" class="block-list__link">
-				<h2>{{ post.title }}</h2>
+				<h2 class="flush--bottom">{{ post.title }}</h2>
 				{{ post.date | date: "%d %B, %Y" }}
 			</a>
 		</li>
