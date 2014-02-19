@@ -2,3 +2,7 @@ exclude: [build.bat, README.md, inuit.css, style.scss, node_modules, Gruntfile.j
 markdown: rdiscount
 pygments: true
 permalink: /articles/:year/:month/:title
+
+name: Wayne Moir
+description: An experience designer that occasionally writes about things.
+url: http://www.waynemoir.com
