@@ -23,7 +23,7 @@ This lead to our framework having an unstable base, we were releasing new versio
 
 In the meantime the company's products weren't standing still. Design work for new features was required and our small team was split between taking on project work that directly impacted the experience of the end products or developing components to move the library towards its MVP.
 
-Work on the framework slowed, too much time was being spent working on the details too early on. We didn't have a year long sprint zero to iron out the details involved in building a solid framework before it was picked up for use in production, we needed a serious leg up to get ourselves ahead of the development so we could stop playing catch up, stop focusing so heavily on code and deliverables, and start focusing on improving actual experiences.
+Work on the framework slowed, <a href="http://gettingreal.37signals.com/ch04_Ignore_Details_Early_On.php">too much time was being spent working on the details too early on</a>. We didn't have a year long sprint zero to iron out the details involved in building a solid framework before it was picked up for use in production, we needed a serious leg up to get ourselves ahead of the development so we could stop playing catch up, stop focusing so heavily on code and deliverables, and start focusing on improving actual experiences.
 
 
 
@@ -47,7 +47,7 @@ The Bootstrap variables alone proved to be insufficient for the level of customi
 
 The many different variations of components Bootstrap provides, such as the different form layout methods and grid systems, were a godsend when we started out. Practically everything we needed was already available so we could hit the ground running, but this flexibility quickly become a nightmare for maintaining visual consistency within the application. Too much flexibility was hurting us.
 
-Switching out our in-house framework for Bootstrap in our products was hard. Our vague class names like "denied" felt like a good idea at the time but were a nightmare to locate in the code base. Replacing these with equally vague Bootstrap class names was painful, this was a lesson we learned too late to do anything about this time round but going forwards every component we add to our library will be name spaced. I would recommend watching When Bootstrap Attacks by Pamela Fox for a more in depth look at this issue.
+Switching out our in-house framework for Bootstrap in our products was hard. Our vague class names like "denied" felt like a good idea at the time but were a nightmare to locate in the code base. Replacing these with equally vague Bootstrap class names was painful, this was a lesson we learned too late to do anything about this time round but going forwards every component we add to our library will be name spaced. I would recommend watching <a href="http://www.youtube.com/watch?v=xbpnqbM6cRk">When Bootstrap Attacks by Pamela Fox</a> for a more in depth look at this issue.
 
 Eventually we learned to let go, we concluded that Bootstraps goals and our goals were different enough that we shouldn't worry about locking into a particular version. Instead we should back away slowly by editing the core files as required to change styles, remove component variations that don't belong in our library and "name space all the things".
 
