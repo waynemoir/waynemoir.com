@@ -4207,6 +4207,7 @@ h4,
 h5,
 h6 {
   color: #3A3A3A;
+  font-weight: 300;
 }
 
 a {
