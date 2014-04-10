@@ -4,5 +4,5 @@ pygments: true
 permalink: /articles/:year/:month/:title
 
 name: Wayne Moir
-description: An experience designer that occasionally writes about things.
+description: A user experience designer that occasionally writes about interesting things.
 url: http://www.waynemoir.com
