@@ -1,0 +1,31 @@
+{% if page.path contains '_posts' %}
+
+	{% assign previousUrl 	= {{page.previous.url}} %}
+	{% assign previousTitle	= {{page.previous.title}} %}
+
+
+	{% assign nextUrl 		= {{page.next.url}} %}
+	{% assign nextTitle 	= {{page.next.title}} %}
+
+
+	{% assign url 			= {{page.url}} %}
+	{% assign title 		= {{page.title}} %}
+	{% assign date 			= {{page.date}} %}
+	{% assign categories 	= {{page.categories}} %}
+
+{% else %}
+
+	{% assign previousUrl 	= {{post.previous.url}} %}
+	{% assign previousTitle = {{post.previous.title}} %}
+
+
+	{% assign nextUrl 		= {{post.next.url}} %}
+	{% assign nextTitle 	= {{post.next.title}} %}
+
+
+	{% assign url 			= {{post.url}} %}
+	{% assign title 		= {{post.title}} %}
+	{% assign date 			= {{post.date}} %}
+	{% assign categories 	= {{post.categories}} %}
+
+{% endif %}
