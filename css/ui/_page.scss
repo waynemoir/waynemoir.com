@@ -22,3 +22,9 @@ body {
 	margin: $base-spacing-unit auto;
 	max-width: 650px;
 }
+
+@media all and (min-width: $desktop) {
+	.content {
+		margin-top: $base-spacing-unit * 2; // Give desktop more space to align article and page titles with inter-article navigation and the side panel
+	}
+}

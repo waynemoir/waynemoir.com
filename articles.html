@@ -4,16 +4,56 @@ layout: default
 permalink: /articles/
 ---
 
+
+
+
 <h1>Articles</h1>
 
 
 <ul class="block-list">
 	{% for post in site.posts %}
+
+	{% include vars.html %}
 		<li>
-			<a href="{{ post.url }}" class="block-list__link">
-				<h2>{{ post.title }}</h2>
-				{{ post.date | date: "%d %B, %Y" }}
+		<!--	<a href="{{ post.url }}" class="block-list__link">
+				<h2>  {{ title }}</h2>
+				{{ date | date: "%d %B, %Y" }}
+
+
+				{% assign categoriesLength = categories | size %}
+				{% for category in categories %}
+					{% assign categoriesIteration = categoriesIteration | plus:1 %}
+					{{ category }}{% if categoriesIteration < categoriesLength %},{% endif %}
+				{% endfor %}
 			</a>
+-->
+
+
+
+
+<a href="{{root_url}}{{url}}" class="block-list__link">
+
+	<h2 title="Permanent link to {{title}}" class="article__title  block-list__title  gamma">
+		{{ title }}
+	</h2>
+
+	<p class="article__meta  flush--bottom">
+		{{ date | date: "%B %e, %Y" }}
+
+
+		{% assign categoriesIteration = 0 %}
+		{% if categories  != null %}
+			|
+			<span class="article__categories">
+				{% assign categoriesLength = categories | size %}
+				{% for category in categories %}
+					{% assign categoriesIteration = categoriesIteration | plus:1 %}
+					{{ category }}{% if categoriesIteration < categoriesLength %},{% endif %}
+				{% endfor %}
+			</span>
+		{% endif %}
+	</p>
+</a>
 		</li>
 	{% endfor %}
 </ul>

@@ -1,0 +1,20 @@
+.block-list__link {
+	color: $body-text;
+}
+
+.block-list__title {
+	color: $brand-color;
+}
+
+
+.block-list__link:hover {
+	background-color: $brand-color;
+	cursor: pointer;
+	opacity: 1 !important;
+}
+
+.block-list__link:hover,
+.block-list__link:hover .block-list__title {
+	color: #fff;
+	text-decoration: none;
+}
