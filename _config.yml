@@ -1,4 +1,4 @@
-exclude: [build.bat, README.md, inuit.css, style.scss, node_modules, Gruntfile.js, tasks]
+exclude: [build.bat, README.md, inuit.css, style.scss, node_modules, Gruntfile.js, tasks, package.json]
 markdown: rdiscount
 pygments: true
 permalink: /articles/:year/:month/:title
