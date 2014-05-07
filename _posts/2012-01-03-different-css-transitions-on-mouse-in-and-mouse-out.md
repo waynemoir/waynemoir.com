@@ -2,6 +2,7 @@
 layout: post
 
 title: Different CSS Transitions on Mouse In and Mouse Out
+redirect_from: "/articles/2012/01/different-css-transitions-on-mouse-in-and-mouse-out/"
 
 categories:
 - Web Design

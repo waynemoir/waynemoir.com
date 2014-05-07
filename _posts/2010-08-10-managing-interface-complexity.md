@@ -2,6 +2,7 @@
 layout: post
 
 title: Managing Interface Complexity
+redirect_from: "/articles/2010/08/managing-interface-complexity/"
 
 categories:
 - Interface design

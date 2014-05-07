@@ -2,6 +2,7 @@
 layout: post
 
 title: Why Bootstrap is perfect and why it is not working for us
+redirect_from: "/articles/2014/01/why-bootstrap-is-perfect-and-why-it-is-not-working-for-us/"
 
 categories:
 - Visual design

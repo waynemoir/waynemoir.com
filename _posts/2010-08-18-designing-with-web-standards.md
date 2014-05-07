@@ -2,6 +2,7 @@
 layout: post
 
 title: Designing with Web Standards
+redirect_from: "/articles/2010/08/designing-with-web-standards/"
 
 categories:
 - Web design

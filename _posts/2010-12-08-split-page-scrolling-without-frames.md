@@ -2,6 +2,7 @@
 layout: post
 
 title: Split Page Scrolling Without Frames
+redirect_from: "/articles/2010/12/split-page-scrolling-without-frames/"
 
 categories:
 - Web design

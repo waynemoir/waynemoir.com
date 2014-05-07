@@ -2,6 +2,7 @@
 layout: post
 
 title: Simple and Usable, A Book Review
+redirect_from: "/articles/2010/12/book-review-simple-and-usable/"
 
 categories:
 - Interface Design

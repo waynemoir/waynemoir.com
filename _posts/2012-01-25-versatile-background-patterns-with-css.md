@@ -2,6 +2,7 @@
 layout: post
 
 title: Versatile Background Patterns With CSS
+redirect_from: "/articles/2012/01/versatile-background-patterns-with-css/"
 
 categories:
 - Web Design

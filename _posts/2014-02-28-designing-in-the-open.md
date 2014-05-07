@@ -2,6 +2,7 @@
 layout: post
 
 title: Designing in the open
+redirect_from: "/articles/2014/02/designing-in-the-open/"
 
 categories:
 - Design culture

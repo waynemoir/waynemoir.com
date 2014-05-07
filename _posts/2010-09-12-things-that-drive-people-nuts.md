@@ -2,6 +2,7 @@
 layout: post
 
 title: Things That Drive People Nuts
+redirect_from: "/articles/2010/09/things-that-drive-people-nuts/"
 
 categories:
 - Web design
