@@ -1,0 +1,26 @@
+.block-list--large {
+	border-top-width: 0;
+}
+
+.block-list--large > li {
+	margin-bottom: ($base-spacing-unit * 3);
+	padding-bottom: ($base-spacing-unit * 3);
+}
+
+
+
+.pagination {
+	margin-top: -($base-spacing-unit * 2);
+	text-align: center;
+}
+
+
+.pagination > li {
+	padding: 12px;
+}
+
+
+.pagination > li > a {
+	padding: 12px;
+	margin: -12px;
+}
