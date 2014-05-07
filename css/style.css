@@ -1,10 +1,12 @@
 @charset "UTF-8";
-
-
+/*
+// |--------------------------------------------------------------------------
+// |  STYLE.CSS
+// |--------------------------------------------------------------------------
+*/
 /*------------------------------------*\
     VARS.SCSS
 \*------------------------------------*/
-
 /**
  * Any variables you find set in inuit.cssÔÇÖ `_vars.scss` that you do not wish to
  * keep, simply redefine here. This means that if inuit.css, for example, sets
@@ -13,44 +15,35 @@
  * using your own, so you can completely modify how inuit.css works without ever
  * having to alter the framework itself.
  */
-
 /*------------------------------------*\
     $OBJECTS-AND-ABSTRACTIONS
 \*------------------------------------*/
-
 /**
  * All of inuit.cssÔÇÖ objects and abstractions are initially turned off by
  * default. This means that you start any project with as little as possible,
  * and introducing objects and abstractions is as simple as switching the
  * following variables to `true`.
  */
-
 /*------------------------------------*\
     $OVERRIDES
 \*------------------------------------*/
-
 /**
  * Place any variables that should override inuit.cssÔÇÖ defaults here.
  */
-
 /*------------------------------------*\
     $CUSTOM
 \*------------------------------------*/
-
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
-
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
-
 /*!*
  *
  * inuitcss.com -- @inuitcss -- @csswizardry
  *
  */
-
 /**
  * inuit.css acts as a base stylesheet which you should extend with your own
  * theme stylesheet.
@@ -93,11 +86,9 @@
  *
  * Thank you for choosing inuit.css. May your web fonts render perfectly.
  */
-
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
-
 /**
  * CONTENTS............YouÔÇÖre reading it!
  * WARNING.............Here be dragons!
@@ -152,11 +143,9 @@
  * HELPER..............A series of helper classes to use arbitrarily
  * DEBUG...............Enable to add visual flags for debugging purposes
  */
-
 /*------------------------------------*\
     $WARNING
 \*------------------------------------*/
-
 /*
  * inuit.css, being an OO framework, works in keeping with the open/closed
  * principle. The variables you set previously are now being used throughout
@@ -169,147 +158,113 @@
  * Try not to edit any CSS beyond this point; if you find you need to do so
  * it is a failing of the framework so please tweet at @inuitcss.
  */
-
 /*------------------------------------*\
     $IMPORTS
 \*------------------------------------*/
-
 /**
  * Generic utility styles etc.
  */
-
 /*------------------------------------*\
     $DEFAULTS
 \*------------------------------------*/
-
 /**
  * inuit.cssÔÇÖ default variables. Redefine these in your `_vars.scss` file (found
  * in the inuit.css-web-template) to override them.
  */
-
 /*------------------------------------*\
     $DEBUG
 \*------------------------------------*/
-
 /**
  * Debug mode will visually highlight any potential markup/accessibility quirks
  * in the browser. Set to `true` or `false`.
  */
-
 /*------------------------------------*\
     $BORDER-BOX
 \*------------------------------------*/
-
 /**
  * Do you want all elements to adopt `box-sizing:border-box;` as per
  * paulirish.com/2012/box-sizing-border-box-ftw ?
  */
-
 /*------------------------------------*\
     $BASE
 \*------------------------------------*/
-
 /**
  * Base stuff
  */
-
 /**
  * Base font-family.
  */
-
 /**
  * Default colour for objectsÔÇÖ borders etc.
  */
-
 /*------------------------------------*\
     $RESPONSIVE
 \*------------------------------------*/
-
 /**
  * Responsiveness?
  */
-
 /**
  * Responsiveness for widescreen/high resolution desktop monitors and beyond?
  * Note: `$responsive` variable above must be set to true before enabling this.
  */
-
 /**
  * Responsive push and pull produce a LOT of code, only turn them on if you
  * definitely need them.
  */
-
 /**
  * Note: `$push` variable above must be set to true before enabling these.
  */
-
 /**
  * Note: `$pull` variable above must be set to true before enabling these.
  */
-
 /**
  * Tell inuit.css when breakpoints start.
  */
-
 /*------------------------------------*\
     $FONT-SIZES
 \*------------------------------------*/
-
 /**
  * Font-sizes (in pixels). Refer to relevant sections for their implementations.
  */
-
 /*------------------------------------*\
     $QUOTES
 \*------------------------------------*/
-
 /**
  * English quote marks?
  */
-
 /**
  * If you want English quotes then please do not edit these; theyÔÇÖre only here
  * because Sass needs them.
  */
-
 /**
  * If you need non-English quotes, please alter the following values accordingly:
  */
-
 /*------------------------------------*\
     $BRAND
 \*------------------------------------*/
-
 /**
  * Brand stuff
  */
-
 /**
  * How big would you like round corners to be by default?
  */
-
 /*------------------------------------*\
     $OBJECTS AND ABSTRACTIONS
 \*------------------------------------*/
-
 /**
  * Which objects and abstractions would you like to use?
  */
-
 /*------------------------------------*\
     $FRAMEWORK
 \*------------------------------------*/
-
 /**
  * inuit.css will work these next ones out for use within the framework.
  *
  * Assign our `$base-line-height` to a new spacing var for more transparency.
  */
-
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
-
 /**
  * Create a fully formed type style (sizing and vertical rhythm) by passing in a
  * single value, e.g.:
@@ -319,7 +274,6 @@
  * Thanks to @redclov3r for the `line-height` Sass:
  * twitter.com/redclov3r/status/250301539321798657
  */
-
 /**
  * Style any number of headings in one fell swoop, e.g.:
  *
@@ -332,14 +286,12 @@
  * With thanks to @lar_zzz, @paranoida, @rowanmanning and ultimately
  * @thierrylemoulec for refining and improving my initial mixin.
  */
-
 /**
  * Create vendor-prefixed CSS in one go, e.g.
  *
    `@include vendor(border-radius, 4px);`
  *
  */
-
 /**
  * Create CSS keyframe animations for all vendors in one go, e.g.:
  *
@@ -355,7 +307,6 @@
  *
  * Courtesy of @integralist: twitter.com/integralist/status/260484115315437569
  */
-
 /**
  * Force overly long spans of text to truncate, e.g.:
  *
@@ -363,7 +314,6 @@
  *
  * Where `$truncation-boundary` is a united measurement.
  */
-
 /**
  * CSS arrows!!! But... before you read on, you might want to grab a coffee...
  *
@@ -399,7 +349,6 @@
    }
  *
  */
-
 /**
  * Media query mixin.
  *
@@ -426,17 +375,13 @@
  *
  * We work out your end points for you:
  */
-
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
-
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
-
 /*
  * Correct `block` display not defined in IE 8/9.
  */
-
 article,
 aside,
 details,
@@ -455,7 +400,6 @@ summary {
 /*
  * Correct `inline-block` display not defined in IE 8/9.
  */
-
 audio,
 canvas,
 video {
@@ -466,7 +410,6 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -475,7 +418,6 @@ audio:not([controls]) {
 /*
  * Address styling not present in IE 8/9.
  */
-
 [hidden] {
   display: none;
 }
@@ -483,13 +425,11 @@ audio:not([controls]) {
 /* ==========================================================================
    Base
    ========================================================================== */
-
 /*
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-
 html {
   font-family: sans-serif;
   /* 1 */
@@ -502,7 +442,6 @@ html {
 /*
  * Remove default margin.
  */
-
 body {
   margin: 0;
 }
@@ -510,11 +449,9 @@ body {
 /* ==========================================================================
    Links
    ========================================================================== */
-
 /*
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-
 a:focus {
   outline: thin dotted;
 }
@@ -522,7 +459,6 @@ a:focus {
 /*
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-
 a:active,
 a:hover {
   outline: 0;
@@ -531,12 +467,10 @@ a:hover {
 /* ==========================================================================
    Typography
    ========================================================================== */
-
 /*
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -545,7 +479,6 @@ h1 {
 /*
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -553,7 +486,6 @@ abbr[title] {
 /*
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-
 b,
 strong {
   font-weight: bold;
@@ -562,7 +494,6 @@ strong {
 /*
  * Address styling not present in Safari 5 and Chrome.
  */
-
 dfn {
   font-style: italic;
 }
@@ -570,7 +501,6 @@ dfn {
 /*
  * Address differences between Firefox and other browsers.
  */
-
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -580,7 +510,6 @@ hr {
 /*
  * Address styling not present in IE 8/9.
  */
-
 mark {
   background: #ff0;
   color: #000;
@@ -589,7 +518,6 @@ mark {
 /*
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-
 code,
 kbd,
 pre,
@@ -601,7 +529,6 @@ samp {
 /*
  * Improve readability of pre-formatted text in all browsers.
  */
-
 pre {
   white-space: pre-wrap;
 }
@@ -609,7 +536,6 @@ pre {
 /*
  * Set consistent quote types.
  */
-
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -617,7 +543,6 @@ q {
 /*
  * Address inconsistent and variable font size in all browsers.
  */
-
 small {
   font-size: 80%;
 }
@@ -625,7 +550,6 @@ small {
 /*
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-
 sub,
 sup {
   font-size: 75%;
@@ -645,11 +569,9 @@ sub {
 /* ==========================================================================
    Embedded content
    ========================================================================== */
-
 /*
  * Remove border when inside `a` element in IE 8/9.
  */
-
 img {
   border: 0;
 }
@@ -657,7 +579,6 @@ img {
 /*
  * Correct overflow displayed oddly in IE 9.
  */
-
 svg:not(:root) {
   overflow: hidden;
 }
@@ -665,11 +586,9 @@ svg:not(:root) {
 /* ==========================================================================
    Figures
    ========================================================================== */
-
 /*
  * Address margin not present in IE 8/9 and Safari 5.
  */
-
 figure {
   margin: 0;
 }
@@ -677,11 +596,9 @@ figure {
 /* ==========================================================================
    Forms
    ========================================================================== */
-
 /*
  * Define consistent border, margin, and padding.
  */
-
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -692,7 +609,6 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-
 legend {
   border: 0;
   /* 1 */
@@ -705,7 +621,6 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-
 button,
 input,
 select,
@@ -722,7 +637,6 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-
 button,
 input {
   line-height: normal;
@@ -734,7 +648,6 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-
 button,
 select {
   text-transform: none;
@@ -747,7 +660,6 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-
 button,
 html input[type="button"],
 input[type="reset"],
@@ -761,11 +673,8 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-
-button[disabled],
-.disabled.nav__next:hover,
-.disabled.nav__prev:hover,
-.article .disabled.btn:hover,
+button[disabled], .disabled.nav__next:hover,
+.disabled.nav__prev:hover, .article .disabled.btn:hover,
 html input[disabled] {
   cursor: default;
 }
@@ -774,7 +683,6 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-
 input[type="checkbox"],
 input[type="radio"] {
   -moz-box-sizing: border-box;
@@ -789,7 +697,6 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -802,7 +709,6 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -811,7 +717,6 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Remove inner padding and border in Firefox 4+.
  */
-
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -822,7 +727,6 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-
 textarea {
   overflow: auto;
   /* 1 */
@@ -833,11 +737,9 @@ textarea {
 /* ==========================================================================
    Tables
    ========================================================================== */
-
 /*
  * Remove most spacing between table cells.
  */
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -846,19 +748,14 @@ table {
 /*------------------------------------*\
     $RESET
 \*------------------------------------*/
-
 /**
  * A more considered reset; more of a restart...
  * As per: csswizardry.com/2011/10/reset-restarted
  */
-
 /**
 * LetÔÇÖs make the box model all nice, shall we...?
 */
-
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -868,27 +765,11 @@ table {
 /**
  * The usual...
  */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-dl,
-dd,
-ol,
-ul,
-form,
-fieldset,
-legend,
-table,
-th,
-td,
-caption,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
 hr {
   margin: 0;
   padding: 0;
@@ -897,25 +778,20 @@ hr {
 /**
  * Give a help cursor to elements that give extra info on `:hover`.
  */
-
-abbr[title],
-dfn[title] {
+abbr[title], dfn[title] {
   cursor: help;
 }
 
 /**
  * Remove underlines from potentially troublesome elements.
  */
-
-u,
-ins {
+u, ins {
   text-decoration: none;
 }
 
 /**
  * Apply faux underline via `border-bottom`.
  */
-
 ins {
   border-bottom: 1px solid;
 }
@@ -923,7 +799,6 @@ ins {
 /**
  * So that `alt` text is visually offset if images donÔÇÖt load.
  */
-
 img {
   font-style: italic;
 }
@@ -931,7 +806,6 @@ img {
 /**
  * Give form elements some cursor interactions...
  */
-
 label,
 input,
 textarea,
@@ -952,16 +826,12 @@ textarea:focus {
 /*------------------------------------*\
     $CLEARFIX
 \*------------------------------------*/
-
 /**
  * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
  * and over in your markup.
  */
-
-.cf:after,
-.nav:after,
-.header:after {
+.cf:after, .nav:after, .header:after {
   content: "";
   display: table;
   clear: both;
@@ -970,33 +840,19 @@ textarea:focus {
 /*------------------------------------*\
     $SHARED
 \*------------------------------------*/
-
 /**
  * Where `margin-bottom` is concerned, this value will be the same as the
  * base line-height. This allows us to keep a consistent vertical rhythm.
  * As per: csswizardry.com/2012/06/single-direction-margin-declarations
  */
-
 /**
  * Base elements
  */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hgroup,
-ul,
-ol,
-dl,
-blockquote,
-p,
-address,
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
 table,
-fieldset,
-figure,
+fieldset, figure,
 pre,
 .form-fields > li,
 .media,
@@ -1005,35 +861,14 @@ pre,
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-
-.islet h1,
-.islet h2,
-.islet h3,
-.islet h4,
-.islet h5,
-.islet h6,
-.islet hgroup,
-.islet
-ul,
-.islet ol,
-.islet dl,
-.islet
-blockquote,
-.islet p,
-.islet address,
-.islet
-table,
-.islet
-fieldset,
-.islet figure,
-.islet
-pre,
-.islet .form-fields > li,
-.islet
-.media,
-.islet
-.island,
-.islet
+.islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
+ul, .islet ol, .islet dl, .islet
+blockquote, .islet p, .islet address, .islet
+table, .islet
+fieldset, .islet figure, .islet
+pre, .islet .form-fields > li, .islet
+.media, .islet
+.island, .islet
 .islet {
   margin-bottom: 12px;
   margin-bottom: 0.75rem;
@@ -1042,7 +877,6 @@ pre,
 /**
  * Doubled up `margin-bottom` helper class.
  */
-
 .landmark {
   margin-bottom: 48px;
   margin-bottom: 3rem;
@@ -1052,7 +886,6 @@ pre,
  * `hr` elements only take up a few pixels, so we need to give them special
  * treatment regarding vertical rhythm.
  */
-
 hr {
   margin-bottom: 22px;
   margin-bottom: 1.375rem;
@@ -1062,10 +895,7 @@ hr {
  * Where `margin-left` is concerned we want to try and indent certain elements
  * by a consistent amount. Define that amount once, here.
  */
-
-ul,
-ol,
-dd {
+ul, ol, dd {
   margin-left: 48px;
   margin-left: 3rem;
 }
@@ -1073,11 +903,9 @@ dd {
 /**
  * Base styles; unclassed HTML elements etc.
  */
-
 /*------------------------------------*\
     $MAIN
 \*------------------------------------*/
-
 html {
   font: 1em/1.5 sans-serif;
   overflow-y: scroll;
@@ -1087,7 +915,6 @@ html {
 /*------------------------------------*\
     $HEADINGS
 \*------------------------------------*/
-
 /**
  * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
  *
@@ -1095,44 +922,37 @@ html {
  * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
  * heading hierarchy.
  */
-
-h1,
-.alpha {
+h1, .alpha {
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 1.33333;
 }
 
-h2,
-.beta {
+h2, .beta {
   font-size: 30px;
   font-size: 1.875rem;
   line-height: 1.6;
 }
 
-h3,
-.gamma {
+h3, .gamma {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1;
 }
 
-h4,
-.delta {
+h4, .delta {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2;
 }
 
-h5,
-.epsilon {
+h5, .epsilon {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-h6,
-.zeta {
+h6, .zeta {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
@@ -1148,7 +968,6 @@ h6,
    </hgroup>
  *
  */
-
 hgroup .hN {
   margin-bottom: 0;
 }
@@ -1157,7 +976,6 @@ hgroup .hN {
  * A series of classes for setting massive type; for use in heroes, mastheads,
  * promos, etc.
  */
-
 .giga {
   font-size: 96px;
   font-size: 6rem;
@@ -1179,12 +997,10 @@ hgroup .hN {
 /*------------------------------------*\
     $PARAGRAPHS
 \*------------------------------------*/
-
 /**
  * The `.lede` class is used to make the introductory text (usually a paragraph)
  * of a document slightly larger.
  */
-
 .lede,
 .lead {
   font-size: 18px;
@@ -1195,11 +1011,9 @@ hgroup .hN {
 /*------------------------------------*\
     $SMALLPRINT
 \*------------------------------------*/
-
 /**
  * A series of classes for setting tiny type; for use in smallprint etc.
  */
-
 .smallprint,
 .milli {
   font-size: 12px;
@@ -1216,67 +1030,54 @@ hgroup .hN {
 /*------------------------------------*\
     $QUOTES
 \*------------------------------------*/
-
 /**
  * If English quotes are set in `_vars.scss`, define them here.
  */
-
 /**
  * Big up @boblet: html5doctor.com/blockquote-q-cite
  */
-
 /**
  * Inline quotes.
  */
-
 q {
-  quotes: "\2018" "\2019" "\201C" "\201D";
+  quotes: "\2018" "\2019" "\201C " "\201D ";
 }
-
 q:before {
   content: "\2018";
   content: open-quote;
 }
-
 q:after {
   content: "\2019";
   content: close-quote;
 }
-
 q q:before {
   content: "\201C";
   content: open-quote;
 }
-
 q q:after {
   content: "\201D";
   content: close-quote;
 }
 
 blockquote {
-  quotes: "\201C" "\201D";
+  quotes: "\201C " "\201D ";
 }
-
 blockquote p:before {
-  content: "\201C";
+  content: "\201C ";
   content: open-quote;
 }
-
 blockquote p:after {
   content: "";
   content: no-close-quote;
 }
-
 blockquote p:last-of-type:after {
-  content: "\201D";
+  content: "\201D ";
   content: close-quote;
 }
-
 blockquote q:before {
   content: "\2018";
   content: open-quote;
 }
-
 blockquote q:after {
   content: "\2019";
   content: close-quote;
@@ -1291,14 +1092,12 @@ blockquote q:after {
    </blockquote>
  *
  */
-
 blockquote {
   /**
    * .4em is roughly equal to the width of the opening ÔÇ£ that we wish to hang.
    */
   text-indent: -0.41em;
 }
-
 blockquote p:last-of-type {
   margin-bottom: 0;
 }
@@ -1307,7 +1106,6 @@ blockquote p:last-of-type {
   display: block;
   text-indent: 0;
 }
-
 .source:before {
   content: "\2014";
 }
@@ -1315,11 +1113,9 @@ blockquote p:last-of-type {
 /*------------------------------------*\
     $CODE
 \*------------------------------------*/
-
 /**
  * Use an explicit font stack to ensure browsers render correct `line-height`.
  */
-
 pre {
   overflow: auto;
 }
@@ -1336,7 +1132,6 @@ pre mark {
    <code>&lt;/div&gt;<span class=code-comment>&lt;!-- /wrapper --&gt;</span></code>
  *
  */
-
 .code-comment {
   /**
    * Override this setting in your theme stylesheet
@@ -1366,7 +1161,6 @@ pre mark {
  * 3. Make sure lines of code donÔÇÖt wrap.
  * 4. Give the code form by forcing the `code` to honour white-space.
  */
-
 .line-numbers {
   font-family: monospace, serif;
   /* [1] */
@@ -1387,15 +1181,12 @@ pre mark {
 /*------------------------------------*\
     $IMAGES
 \*------------------------------------*/
-
 /**
  * Demo: jsfiddle.net/inuitcss/yMtur
  */
-
 /**
  * Fluid images.
  */
-
 img {
   max-width: 100%;
 }
@@ -1403,7 +1194,6 @@ img {
 /**
  * Non-fluid images if you specify `width` and/or `height` attributes.
  */
-
 img[width],
 img[height] {
   max-width: none;
@@ -1412,7 +1202,6 @@ img[height] {
 /**
  * Rounded images.
  */
-
 .img--round {
   border-radius: 4px;
 }
@@ -1420,7 +1209,6 @@ img[height] {
 /**
  * Image placement variations.
  */
-
 .img--right {
   float: right;
   margin-bottom: 24px;
@@ -1446,7 +1234,6 @@ img[height] {
  * Please note, these will not work too nicely with fluid images and will
  * distort when resized below a certain width. Use with caution.
  */
-
 .img--short {
   height: 120px;
 }
@@ -1462,7 +1249,6 @@ img[height] {
 /**
  * Images in `figure` elements.
  */
-
 figure > img {
   display: block;
 }
@@ -1470,11 +1256,9 @@ figure > img {
 /*------------------------------------*\
     $LISTS
 \*------------------------------------*/
-
 /**
  * Remove vertical spacing from nested lists.
  */
-
 li > ul,
 li > ol {
   margin-bottom: 0;
@@ -1483,9 +1267,7 @@ li > ol {
 /**
  * Have a numbered `ul` without the semantics implied by using an `ol`.
  */
-
 /*ul*/
-
 .numbered-list {
   list-style-type: decimal;
 }
@@ -1493,7 +1275,6 @@ li > ol {
 /*------------------------------------*\
     $TABLES
 \*------------------------------------*/
-
 /**
  * We have a lot at our disposal for making very complex table constructs, e.g.:
  *
@@ -1548,7 +1329,6 @@ li > ol {
    </table>
  *
  */
-
 table {
   width: 100%;
 }
@@ -1558,7 +1338,6 @@ td {
   padding: 6px;
   text-align: left;
 }
-
 @media screen and (min-width: 480px) {
   th,
   td {
@@ -1569,7 +1348,6 @@ td {
 /**
  * Cell alignments
  */
-
 [colspan] {
   text-align: center;
 }
@@ -1596,7 +1374,6 @@ td {
  * class so that column can soak up the effects of any accidental breakage in
  * the table.
  */
-
 .t5 {
   width: 5%;
 }
@@ -1610,7 +1387,6 @@ td {
 }
 
 /* 1/8 */
-
 .t15 {
   width: 15%;
 }
@@ -1624,7 +1400,6 @@ td {
 }
 
 /* 1/4 */
-
 .t30 {
   width: 30%;
 }
@@ -1634,7 +1409,6 @@ td {
 }
 
 /* 1/3 */
-
 .t35 {
   width: 35%;
 }
@@ -1644,7 +1418,6 @@ td {
 }
 
 /* 3/8 */
-
 .t40 {
   width: 40%;
 }
@@ -1658,7 +1431,6 @@ td {
 }
 
 /* 1/2 */
-
 .t55 {
   width: 55%;
 }
@@ -1672,7 +1444,6 @@ td {
 }
 
 /* 5/8 */
-
 .t65 {
   width: 65%;
 }
@@ -1682,7 +1453,6 @@ td {
 }
 
 /* 2/3 */
-
 .t70 {
   width: 70%;
 }
@@ -1692,7 +1462,6 @@ td {
 }
 
 /* 3/4*/
-
 .t80 {
   width: 80%;
 }
@@ -1706,7 +1475,6 @@ td {
 }
 
 /* 7/8 */
-
 .t90 {
   width: 90%;
 }
@@ -1718,21 +1486,17 @@ td {
 /**
  * Bordered tables
  */
-
 .table--bordered th,
 .table--bordered td {
   border: 1px solid #cccccc;
 }
-
 .table--bordered th:empty,
 .table--bordered td:empty {
   border: none;
 }
-
 .table--bordered thead tr:last-child th {
   border-bottom-width: 2px;
 }
-
 .table--bordered tbody tr th:last-of-type {
   border-right-width: 2px;
 }
@@ -1740,7 +1504,6 @@ td {
 /**
  * Striped tables
  */
-
 .table--striped tbody tr:nth-of-type(odd) {
   background-color: #ffc;
   /* Override this color in your theme stylesheet */
@@ -1749,7 +1512,6 @@ td {
 /**
  * Data table
  */
-
 .table--data {
   font: 12px/1.5 sans-serif;
 }
@@ -1757,13 +1519,11 @@ td {
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
-
 /**
  *
  * Demo: jsfiddle.net/inuitcss/MhHHU
  *
  */
-
 fieldset {
   padding: 24px;
 }
@@ -1778,7 +1538,6 @@ fieldset {
    <input type=password class=text-input>
  *
  */
-
 .text-input,
 textarea {
   /**
@@ -1805,7 +1564,6 @@ textarea {
    </ul>
  *
  */
-
 .form-fields {
   list-style: none;
   margin: 0;
@@ -1841,7 +1599,6 @@ textarea {
    </li>
  *
  */
-
 label,
 .label {
   display: block;
@@ -1853,7 +1610,6 @@ label,
    <label>Card number <small class=additional>No spaces</small></label>
  *
  */
-
 .additional {
   display: block;
   font-weight: normal;
@@ -1874,7 +1630,6 @@ label,
    </li>
  *
  */
-
 .check-list {
   list-style: none;
   margin: 0;
@@ -1883,7 +1638,6 @@ label,
 /*
  * Labels in check-lists
  */
-
 .check-label,
 .check-list label,
 .check-list .label {
@@ -1905,7 +1659,6 @@ label,
    </li>
  *
  */
-
 .spoken-form label {
   display: inline-block;
   font: inherit;
@@ -1923,9 +1676,7 @@ label,
  * it reappears.
  *
  */
-
 /*small*/
-
 .extra-help {
   display: inline-block;
   visibility: hidden;
@@ -1939,11 +1690,9 @@ label,
 /**
  * Objects and abstractions
  */
-
 /*------------------------------------*\
     $GRIDS
 \*------------------------------------*/
-
 /**
  * Fluid and nestable grid system, e.g.:
  *
@@ -1974,11 +1723,9 @@ label,
  * Demo: jsfiddle.net/inuitcss/CLYUC
  *
  */
-
 /**
  * Grid wrapper
  */
-
 .grid {
   margin-left: -24px;
   list-style: none;
@@ -1988,7 +1735,6 @@ label,
 /**
  * Very infrequently occuring grid wrappers as children of grid wrappers.
  */
-
 .grid > .grid {
   margin-left: 0;
 }
@@ -1996,7 +1742,6 @@ label,
 /**
  * Grid
  */
-
 .grid__item {
   display: inline-block;
   width: 100%;
@@ -2007,7 +1752,6 @@ label,
 /*------------------------------------*\
     $NAV
 \*------------------------------------*/
-
 /**
  * Nav abstraction as per: csswizardry.com/2011/09/the-nav-abstraction
  * When used on an `ol` or `ul`, this class throws the list into horizontal mode
@@ -2023,12 +1767,10 @@ label,
  * Demo: jsfiddle.net/inuitcss/Vnph4
  *
  */
-
 .nav {
   list-style: none;
   margin-left: 0;
 }
-
 .nav > li,
 .nav > li > a {
   display: inline-block;
@@ -2045,11 +1787,9 @@ label,
    </ul>
  *
  */
-
 .nav--stacked > li {
   display: list-item;
 }
-
 .nav--stacked > li > a {
   display: block;
 }
@@ -2065,7 +1805,6 @@ label,
    </ul>
  *
  */
-
 .nav--banner {
   text-align: center;
 }
@@ -2081,7 +1820,6 @@ label,
    </ul>
  *
  */
-
 .nav--block {
   line-height: 1;
   /**
@@ -2091,12 +1829,10 @@ label,
   word-spacing: -0.43em;
   white-space: nowrap;
 }
-
 .nav--block > li {
   letter-spacing: normal;
   word-spacing: normal;
 }
-
 .nav--block > li > a {
   padding: 12px;
 }
@@ -2114,16 +1850,13 @@ label,
  *
  * Thanks to @pimpl for this idea!
  */
-
 .nav--fit {
   display: table;
   width: 100%;
 }
-
 .nav--fit > li {
   display: table-cell;
 }
-
 .nav--fit > li > a {
   display: block;
 }
@@ -2134,11 +1867,9 @@ label,
    `<ul class="nav  nav--keywords>`
  *
  */
-
 .nav--keywords > li:after {
   content: "\002C" "\00A0";
 }
-
 .nav--keywords > li:last-child:after {
   display: none;
 }
@@ -2146,7 +1877,6 @@ label,
 /*------------------------------------*\
     $BLOCK-LIST
 \*------------------------------------*/
-
 /**
  * Create big blocky lists of content, e.g.:
  *
@@ -2162,7 +1892,6 @@ label,
  * Demo: jsfiddle.net/inuitcss/hR57q
  *
  */
-
 .block-list,
 .block-list > li {
   border: 0 solid #cccccc;
@@ -2173,7 +1902,6 @@ label,
   margin-left: 0;
   border-top-width: 1px;
 }
-
 .block-list > li {
   border-bottom-width: 1px;
   padding: 12px;
@@ -2188,7 +1916,6 @@ label,
 /*------------------------------------*\
     $BEAUTONS.CSS
 \*------------------------------------*/
-
 /**
  * beautons is a beautifully simple button toolkit.
  *
@@ -2209,17 +1936,14 @@ label,
  * limitations under the License.
  * 
  */
-
 /*!*
  * 
  * @csswizardry -- csswizardry.com/beautons
  * 
  */
-
 /*------------------------------------*\
     $BASE
 \*------------------------------------*/
-
 /**
  * Base button styles.
  *
@@ -2235,10 +1959,8 @@ label,
  * 8. Basic cosmetics for default buttons. Change or override at will.
  * 9. DonÔÇÖt allow buttons to have underlines; it kinda ruins the illusion.
  */
-
-.btn,
-.nav__next,
-.nav__prev {
+.btn, .nav__next,
+.nav__prev, .article .btn {
   display: inline-block;
   /* [1] */
   vertical-align: middle;
@@ -2269,21 +1991,14 @@ label,
   /* [8] */
 }
 
-.btn,
-.nav__next,
-.nav__prev,
-.btn:hover,
-.nav__next:hover,
+.btn, .nav__next,
+.nav__prev, .article .btn, .btn:hover, .nav__next:hover,
 .nav__prev:hover {
   text-decoration: none;
   /* [9] */
 }
-
-.btn:active,
-.nav__next:active,
-.nav__prev:active,
-.btn:focus,
-.nav__next:focus,
+.btn:active, .nav__next:active,
+.nav__prev:active, .btn:focus, .nav__next:focus,
 .nav__prev:focus {
   outline: none;
 }
@@ -2291,14 +2006,12 @@ label,
 /*------------------------------------*\
     $SIZES
 \*------------------------------------*/
-
 /**
  * Button size modifiers.
  *
  * These all follow the same sizing rules as above; text is 1em, space around it
  * remains uniform.
  */
-
 .btn--small {
   padding-right: 0.5em;
   padding-left: 0.5em;
@@ -2322,7 +2035,6 @@ label,
  *
  * 1. Remove padding so that widths and paddings donÔÇÖt conflict.
  */
-
 .btn--full {
   width: 100%;
   padding-right: 0;
@@ -2335,11 +2047,9 @@ label,
 /*------------------------------------*\
     $FONT-SIZES
 \*------------------------------------*/
-
 /**
  * Button font-size modifiers.
  */
-
 .btn--alpha {
   font-size: 3rem;
 }
@@ -2355,7 +2065,6 @@ label,
 /**
  * Make the button inherit sizing from its parent.
  */
-
 .btn--natural {
   vertical-align: baseline;
   font-size: inherit;
@@ -2367,15 +2076,12 @@ label,
 /*------------------------------------*\
     $FUNCTIONS
 \*------------------------------------*/
-
 /**
  * Button function modifiers.
  */
-
 /**
  * Positive actions; e.g. sign in, purchase, submit, etc.
  */
-
 .btn--positive {
   background-color: #4A993E;
   color: #fff;
@@ -2384,7 +2090,6 @@ label,
 /**
  * Negative actions; e.g. close account, delete photo, remove friend, etc.
  */
-
 .btn--negative {
   background-color: #b33630;
   color: #fff;
@@ -2395,7 +2100,6 @@ label,
  * 
  * 1. Make the button look like normal text when hovered.
  */
-
 .btn--inactive,
 .btn--inactive:hover,
 .btn--inactive:active,
@@ -2409,13 +2113,11 @@ label,
 /*------------------------------------*\
     $STYLES
 \*------------------------------------*/
-
 /**
  * Button style modifiers.
  *
  * 1. Use an overly-large number to ensure completely rounded, pill-like ends.
  */
-
 .btn--soft {
   border-radius: 200px;
   /* [1] */
@@ -2428,7 +2130,6 @@ label,
 /*------------------------------------*\
     $LOZENGES
 \*------------------------------------*/
-
 /**
  * Create pill- and lozenge-like runs of text, e.g.:
  *
@@ -2441,9 +2142,7 @@ label,
  * Demo: jsfiddle.net/inuitcss/N3pGm
  *
  */
-
-.pill,
-.loz {
+.pill, .loz {
   display: inline-block;
   /**
    * These numbers set in ems mean that, at its narrowest, a lozenge will be
@@ -2473,11 +2172,9 @@ label,
 /**
  * Style trumps; helper and brand classes
  */
-
 /*------------------------------------*\
     $WIDTHS
 \*------------------------------------*/
-
 /**
  * Sizes in human readable format. These are used in conjunction with other
  * objects and abstractions found in inuit.css, most commonly the grid system
@@ -2486,11 +2183,9 @@ label,
  * We have a mixin to generate our widths and their breakpoint-specific
  * variations.
  */
-
 /**
 * Whole
 */
-
 .one-whole {
   width: 100%;
 }
@@ -2498,90 +2193,65 @@ label,
 /**
 * Halves
 */
-
-.one-half,
-.two-quarters,
-.three-sixths,
-.four-eighths,
-.five-tenths,
-.six-twelfths {
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
   width: 50%;
 }
 
 /**
 * Thirds
 */
-
-.one-third,
-.two-sixths,
-.four-twelfths {
+.one-third, .two-sixths, .four-twelfths {
   width: 33.333%;
 }
 
-.two-thirds,
-.four-sixths,
-.eight-twelfths {
+.two-thirds, .four-sixths, .eight-twelfths {
   width: 66.666%;
 }
 
 /**
 * Quarters
 */
-
-.one-quarter,
-.two-eighths,
-.three-twelfths {
+.one-quarter, .two-eighths, .three-twelfths {
   width: 25%;
 }
 
-.three-quarters,
-.six-eighths,
-.nine-twelfths {
+.three-quarters, .six-eighths, .nine-twelfths {
   width: 75%;
 }
 
 /**
 * Fifths
 */
-
-.one-fifth,
-.two-tenths {
+.one-fifth, .two-tenths {
   width: 20%;
 }
 
-.two-fifths,
-.four-tenths {
+.two-fifths, .four-tenths {
   width: 40%;
 }
 
-.three-fifths,
-.six-tenths {
+.three-fifths, .six-tenths {
   width: 60%;
 }
 
-.four-fifths,
-.eight-tenths {
+.four-fifths, .eight-tenths {
   width: 80%;
 }
 
 /**
 * Sixths
 */
-
-.one-sixth,
-.two-twelfths {
+.one-sixth, .two-twelfths {
   width: 16.666%;
 }
 
-.five-sixths,
-.ten-twelfths {
+.five-sixths, .ten-twelfths {
   width: 83.333%;
 }
 
 /**
 * Eighths
 */
-
 .one-eighth {
   width: 12.5%;
 }
@@ -2601,7 +2271,6 @@ label,
 /**
 * Tenths
 */
-
 .one-tenth {
   width: 10%;
 }
@@ -2621,7 +2290,6 @@ label,
 /**
 * Twelfths
 */
-
 .one-twelfth {
   width: 8.333%;
 }
@@ -2652,12 +2320,10 @@ label,
  * Demo: jsfiddle.net/inuitcss/WS4Ge
  *
  */
-
 @media only screen and (max-width: 480px) {
   /**
   * Whole
   */
-
   .palm-one-whole {
     width: 100%;
   }
@@ -2665,90 +2331,65 @@ label,
   /**
   * Halves
   */
-
-  .palm-one-half,
-  .palm-two-quarters,
-  .palm-three-sixths,
-  .palm-four-eighths,
-  .palm-five-tenths,
-  .palm-six-twelfths {
+  .palm-one-half, .palm-two-quarters, .palm-three-sixths, .palm-four-eighths, .palm-five-tenths, .palm-six-twelfths {
     width: 50%;
   }
 
   /**
   * Thirds
   */
-
-  .palm-one-third,
-  .palm-two-sixths,
-  .palm-four-twelfths {
+  .palm-one-third, .palm-two-sixths, .palm-four-twelfths {
     width: 33.333%;
   }
 
-  .palm-two-thirds,
-  .palm-four-sixths,
-  .palm-eight-twelfths {
+  .palm-two-thirds, .palm-four-sixths, .palm-eight-twelfths {
     width: 66.666%;
   }
 
   /**
   * Quarters
   */
-
-  .palm-one-quarter,
-  .palm-two-eighths,
-  .palm-three-twelfths {
+  .palm-one-quarter, .palm-two-eighths, .palm-three-twelfths {
     width: 25%;
   }
 
-  .palm-three-quarters,
-  .palm-six-eighths,
-  .palm-nine-twelfths {
+  .palm-three-quarters, .palm-six-eighths, .palm-nine-twelfths {
     width: 75%;
   }
 
   /**
   * Fifths
   */
-
-  .palm-one-fifth,
-  .palm-two-tenths {
+  .palm-one-fifth, .palm-two-tenths {
     width: 20%;
   }
 
-  .palm-two-fifths,
-  .palm-four-tenths {
+  .palm-two-fifths, .palm-four-tenths {
     width: 40%;
   }
 
-  .palm-three-fifths,
-  .palm-six-tenths {
+  .palm-three-fifths, .palm-six-tenths {
     width: 60%;
   }
 
-  .palm-four-fifths,
-  .palm-eight-tenths {
+  .palm-four-fifths, .palm-eight-tenths {
     width: 80%;
   }
 
   /**
   * Sixths
   */
-
-  .palm-one-sixth,
-  .palm-two-twelfths {
+  .palm-one-sixth, .palm-two-twelfths {
     width: 16.666%;
   }
 
-  .palm-five-sixths,
-  .palm-ten-twelfths {
+  .palm-five-sixths, .palm-ten-twelfths {
     width: 83.333%;
   }
 
   /**
   * Eighths
   */
-
   .palm-one-eighth {
     width: 12.5%;
   }
@@ -2768,7 +2409,6 @@ label,
   /**
   * Tenths
   */
-
   .palm-one-tenth {
     width: 10%;
   }
@@ -2788,7 +2428,6 @@ label,
   /**
   * Twelfths
   */
-
   .palm-one-twelfth {
     width: 8.333%;
   }
@@ -2805,12 +2444,10 @@ label,
     width: 91.666%;
   }
 }
-
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   /**
   * Whole
   */
-
   .lap-one-whole {
     width: 100%;
   }
@@ -2818,90 +2455,65 @@ label,
   /**
   * Halves
   */
-
-  .lap-one-half,
-  .lap-two-quarters,
-  .lap-three-sixths,
-  .lap-four-eighths,
-  .lap-five-tenths,
-  .lap-six-twelfths {
+  .lap-one-half, .lap-two-quarters, .lap-three-sixths, .lap-four-eighths, .lap-five-tenths, .lap-six-twelfths {
     width: 50%;
   }
 
   /**
   * Thirds
   */
-
-  .lap-one-third,
-  .lap-two-sixths,
-  .lap-four-twelfths {
+  .lap-one-third, .lap-two-sixths, .lap-four-twelfths {
     width: 33.333%;
   }
 
-  .lap-two-thirds,
-  .lap-four-sixths,
-  .lap-eight-twelfths {
+  .lap-two-thirds, .lap-four-sixths, .lap-eight-twelfths {
     width: 66.666%;
   }
 
   /**
   * Quarters
   */
-
-  .lap-one-quarter,
-  .lap-two-eighths,
-  .lap-three-twelfths {
+  .lap-one-quarter, .lap-two-eighths, .lap-three-twelfths {
     width: 25%;
   }
 
-  .lap-three-quarters,
-  .lap-six-eighths,
-  .lap-nine-twelfths {
+  .lap-three-quarters, .lap-six-eighths, .lap-nine-twelfths {
     width: 75%;
   }
 
   /**
   * Fifths
   */
-
-  .lap-one-fifth,
-  .lap-two-tenths {
+  .lap-one-fifth, .lap-two-tenths {
     width: 20%;
   }
 
-  .lap-two-fifths,
-  .lap-four-tenths {
+  .lap-two-fifths, .lap-four-tenths {
     width: 40%;
   }
 
-  .lap-three-fifths,
-  .lap-six-tenths {
+  .lap-three-fifths, .lap-six-tenths {
     width: 60%;
   }
 
-  .lap-four-fifths,
-  .lap-eight-tenths {
+  .lap-four-fifths, .lap-eight-tenths {
     width: 80%;
   }
 
   /**
   * Sixths
   */
-
-  .lap-one-sixth,
-  .lap-two-twelfths {
+  .lap-one-sixth, .lap-two-twelfths {
     width: 16.666%;
   }
 
-  .lap-five-sixths,
-  .lap-ten-twelfths {
+  .lap-five-sixths, .lap-ten-twelfths {
     width: 83.333%;
   }
 
   /**
   * Eighths
   */
-
   .lap-one-eighth {
     width: 12.5%;
   }
@@ -2921,7 +2533,6 @@ label,
   /**
   * Tenths
   */
-
   .lap-one-tenth {
     width: 10%;
   }
@@ -2941,7 +2552,6 @@ label,
   /**
   * Twelfths
   */
-
   .lap-one-twelfth {
     width: 8.333%;
   }
@@ -2958,12 +2568,10 @@ label,
     width: 91.666%;
   }
 }
-
 @media only screen and (min-width: 481px) {
   /**
   * Whole
   */
-
   .lap-and-up-one-whole {
     width: 100%;
   }
@@ -2971,90 +2579,65 @@ label,
   /**
   * Halves
   */
-
-  .lap-and-up-one-half,
-  .lap-and-up-two-quarters,
-  .lap-and-up-three-sixths,
-  .lap-and-up-four-eighths,
-  .lap-and-up-five-tenths,
-  .lap-and-up-six-twelfths {
+  .lap-and-up-one-half, .lap-and-up-two-quarters, .lap-and-up-three-sixths, .lap-and-up-four-eighths, .lap-and-up-five-tenths, .lap-and-up-six-twelfths {
     width: 50%;
   }
 
   /**
   * Thirds
   */
-
-  .lap-and-up-one-third,
-  .lap-and-up-two-sixths,
-  .lap-and-up-four-twelfths {
+  .lap-and-up-one-third, .lap-and-up-two-sixths, .lap-and-up-four-twelfths {
     width: 33.333%;
   }
 
-  .lap-and-up-two-thirds,
-  .lap-and-up-four-sixths,
-  .lap-and-up-eight-twelfths {
+  .lap-and-up-two-thirds, .lap-and-up-four-sixths, .lap-and-up-eight-twelfths {
     width: 66.666%;
   }
 
   /**
   * Quarters
   */
-
-  .lap-and-up-one-quarter,
-  .lap-and-up-two-eighths,
-  .lap-and-up-three-twelfths {
+  .lap-and-up-one-quarter, .lap-and-up-two-eighths, .lap-and-up-three-twelfths {
     width: 25%;
   }
 
-  .lap-and-up-three-quarters,
-  .lap-and-up-six-eighths,
-  .lap-and-up-nine-twelfths {
+  .lap-and-up-three-quarters, .lap-and-up-six-eighths, .lap-and-up-nine-twelfths {
     width: 75%;
   }
 
   /**
   * Fifths
   */
-
-  .lap-and-up-one-fifth,
-  .lap-and-up-two-tenths {
+  .lap-and-up-one-fifth, .lap-and-up-two-tenths {
     width: 20%;
   }
 
-  .lap-and-up-two-fifths,
-  .lap-and-up-four-tenths {
+  .lap-and-up-two-fifths, .lap-and-up-four-tenths {
     width: 40%;
   }
 
-  .lap-and-up-three-fifths,
-  .lap-and-up-six-tenths {
+  .lap-and-up-three-fifths, .lap-and-up-six-tenths {
     width: 60%;
   }
 
-  .lap-and-up-four-fifths,
-  .lap-and-up-eight-tenths {
+  .lap-and-up-four-fifths, .lap-and-up-eight-tenths {
     width: 80%;
   }
 
   /**
   * Sixths
   */
-
-  .lap-and-up-one-sixth,
-  .lap-and-up-two-twelfths {
+  .lap-and-up-one-sixth, .lap-and-up-two-twelfths {
     width: 16.666%;
   }
 
-  .lap-and-up-five-sixths,
-  .lap-and-up-ten-twelfths {
+  .lap-and-up-five-sixths, .lap-and-up-ten-twelfths {
     width: 83.333%;
   }
 
   /**
   * Eighths
   */
-
   .lap-and-up-one-eighth {
     width: 12.5%;
   }
@@ -3074,7 +2657,6 @@ label,
   /**
   * Tenths
   */
-
   .lap-and-up-one-tenth {
     width: 10%;
   }
@@ -3094,7 +2676,6 @@ label,
   /**
   * Twelfths
   */
-
   .lap-and-up-one-twelfth {
     width: 8.333%;
   }
@@ -3111,12 +2692,10 @@ label,
     width: 91.666%;
   }
 }
-
 @media only screen and (max-width: 1023px) {
   /**
   * Whole
   */
-
   .portable-one-whole {
     width: 100%;
   }
@@ -3124,90 +2703,65 @@ label,
   /**
   * Halves
   */
-
-  .portable-one-half,
-  .portable-two-quarters,
-  .portable-three-sixths,
-  .portable-four-eighths,
-  .portable-five-tenths,
-  .portable-six-twelfths {
+  .portable-one-half, .portable-two-quarters, .portable-three-sixths, .portable-four-eighths, .portable-five-tenths, .portable-six-twelfths {
     width: 50%;
   }
 
   /**
   * Thirds
   */
-
-  .portable-one-third,
-  .portable-two-sixths,
-  .portable-four-twelfths {
+  .portable-one-third, .portable-two-sixths, .portable-four-twelfths {
     width: 33.333%;
   }
 
-  .portable-two-thirds,
-  .portable-four-sixths,
-  .portable-eight-twelfths {
+  .portable-two-thirds, .portable-four-sixths, .portable-eight-twelfths {
     width: 66.666%;
   }
 
   /**
   * Quarters
   */
-
-  .portable-one-quarter,
-  .portable-two-eighths,
-  .portable-three-twelfths {
+  .portable-one-quarter, .portable-two-eighths, .portable-three-twelfths {
     width: 25%;
   }
 
-  .portable-three-quarters,
-  .portable-six-eighths,
-  .portable-nine-twelfths {
+  .portable-three-quarters, .portable-six-eighths, .portable-nine-twelfths {
     width: 75%;
   }
 
   /**
   * Fifths
   */
-
-  .portable-one-fifth,
-  .portable-two-tenths {
+  .portable-one-fifth, .portable-two-tenths {
     width: 20%;
   }
 
-  .portable-two-fifths,
-  .portable-four-tenths {
+  .portable-two-fifths, .portable-four-tenths {
     width: 40%;
   }
 
-  .portable-three-fifths,
-  .portable-six-tenths {
+  .portable-three-fifths, .portable-six-tenths {
     width: 60%;
   }
 
-  .portable-four-fifths,
-  .portable-eight-tenths {
+  .portable-four-fifths, .portable-eight-tenths {
     width: 80%;
   }
 
   /**
   * Sixths
   */
-
-  .portable-one-sixth,
-  .portable-two-twelfths {
+  .portable-one-sixth, .portable-two-twelfths {
     width: 16.666%;
   }
 
-  .portable-five-sixths,
-  .portable-ten-twelfths {
+  .portable-five-sixths, .portable-ten-twelfths {
     width: 83.333%;
   }
 
   /**
   * Eighths
   */
-
   .portable-one-eighth {
     width: 12.5%;
   }
@@ -3227,7 +2781,6 @@ label,
   /**
   * Tenths
   */
-
   .portable-one-tenth {
     width: 10%;
   }
@@ -3247,7 +2800,6 @@ label,
   /**
   * Twelfths
   */
-
   .portable-one-twelfth {
     width: 8.333%;
   }
@@ -3264,12 +2816,10 @@ label,
     width: 91.666%;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   /**
   * Whole
   */
-
   .desk-one-whole {
     width: 100%;
   }
@@ -3277,90 +2827,65 @@ label,
   /**
   * Halves
   */
-
-  .desk-one-half,
-  .desk-two-quarters,
-  .desk-three-sixths,
-  .desk-four-eighths,
-  .desk-five-tenths,
-  .desk-six-twelfths {
+  .desk-one-half, .desk-two-quarters, .desk-three-sixths, .desk-four-eighths, .desk-five-tenths, .desk-six-twelfths {
     width: 50%;
   }
 
   /**
   * Thirds
   */
-
-  .desk-one-third,
-  .desk-two-sixths,
-  .desk-four-twelfths {
+  .desk-one-third, .desk-two-sixths, .desk-four-twelfths {
     width: 33.333%;
   }
 
-  .desk-two-thirds,
-  .desk-four-sixths,
-  .desk-eight-twelfths {
+  .desk-two-thirds, .desk-four-sixths, .desk-eight-twelfths {
     width: 66.666%;
   }
 
   /**
   * Quarters
   */
-
-  .desk-one-quarter,
-  .desk-two-eighths,
-  .desk-three-twelfths {
+  .desk-one-quarter, .desk-two-eighths, .desk-three-twelfths {
     width: 25%;
   }
 
-  .desk-three-quarters,
-  .desk-six-eighths,
-  .desk-nine-twelfths {
+  .desk-three-quarters, .desk-six-eighths, .desk-nine-twelfths {
     width: 75%;
   }
 
   /**
   * Fifths
   */
-
-  .desk-one-fifth,
-  .desk-two-tenths {
+  .desk-one-fifth, .desk-two-tenths {
     width: 20%;
   }
 
-  .desk-two-fifths,
-  .desk-four-tenths {
+  .desk-two-fifths, .desk-four-tenths {
     width: 40%;
   }
 
-  .desk-three-fifths,
-  .desk-six-tenths {
+  .desk-three-fifths, .desk-six-tenths {
     width: 60%;
   }
 
-  .desk-four-fifths,
-  .desk-eight-tenths {
+  .desk-four-fifths, .desk-eight-tenths {
     width: 80%;
   }
 
   /**
   * Sixths
   */
-
-  .desk-one-sixth,
-  .desk-two-twelfths {
+  .desk-one-sixth, .desk-two-twelfths {
     width: 16.666%;
   }
 
-  .desk-five-sixths,
-  .desk-ten-twelfths {
+  .desk-five-sixths, .desk-ten-twelfths {
     width: 83.333%;
   }
 
   /**
   * Eighths
   */
-
   .desk-one-eighth {
     width: 12.5%;
   }
@@ -3380,7 +2905,6 @@ label,
   /**
   * Tenths
   */
-
   .desk-one-tenth {
     width: 10%;
   }
@@ -3400,7 +2924,6 @@ label,
   /**
   * Twelfths
   */
-
   .desk-one-twelfth {
     width: 8.333%;
   }
@@ -3417,27 +2940,21 @@ label,
     width: 91.666%;
   }
 }
-
 /**
  * If you have set the additional `$responsive-extra` variable to ÔÇÿtrueÔÇÖ in
  * `_vars.scss` then you now have access to the following class available to
  * accomodate much larger screen resolutions.
  */
-
 /* endif */
-
 /*------------------------------------*\
     $PUSH
 \*------------------------------------*/
-
 /**
  * Push classes, to move grid items over to the right by certain amounts.
  */
-
 /**
  * Whole
  */
-
 .push--one-whole {
   left: 100%;
 }
@@ -3445,90 +2962,65 @@ label,
 /**
  * Halves
  */
-
-.push--one-half,
-.push--two-quarters,
-.push--three-sixths,
-.push--four-eighths,
-.push--five-tenths,
-.push--six-twelfths {
+.push--one-half, .push--two-quarters, .push--three-sixths, .push--four-eighths, .push--five-tenths, .push--six-twelfths {
   left: 50%;
 }
 
 /**
  * Thirds
  */
-
-.push--one-third,
-.push--two-sixths,
-.push--four-twelfths {
+.push--one-third, .push--two-sixths, .push--four-twelfths {
   left: 33.333%;
 }
 
-.push--two-thirds,
-.push--four-sixths,
-.push--eight-twelfths {
+.push--two-thirds, .push--four-sixths, .push--eight-twelfths {
   left: 66.666%;
 }
 
 /**
  * Quarters
  */
-
-.push--one-quarter,
-.push--two-eighths,
-.push--three-twelfths {
+.push--one-quarter, .push--two-eighths, .push--three-twelfths {
   left: 25%;
 }
 
-.push--three-quarters,
-.push--six-eighths,
-.push--nine-twelfths {
+.push--three-quarters, .push--six-eighths, .push--nine-twelfths {
   left: 75%;
 }
 
 /**
  * Fifths
  */
-
-.push--one-fifth,
-.push--two-tenths {
+.push--one-fifth, .push--two-tenths {
   left: 20%;
 }
 
-.push--two-fifths,
-.push--four-tenths {
+.push--two-fifths, .push--four-tenths {
   left: 40%;
 }
 
-.push--three-fifths,
-.push--six-tenths {
+.push--three-fifths, .push--six-tenths {
   left: 60%;
 }
 
-.push--four-fifths,
-.push--eight-tenths {
+.push--four-fifths, .push--eight-tenths {
   left: 80%;
 }
 
 /**
  * Sixths
  */
-
-.push--one-sixth,
-.push--two-twelfths {
+.push--one-sixth, .push--two-twelfths {
   left: 16.666%;
 }
 
-.push--five-sixths,
-.push--ten-twelfths {
+.push--five-sixths, .push--ten-twelfths {
   left: 83.333%;
 }
 
 /**
  * Eighths
  */
-
 .push--one-eighth {
   left: 12.5%;
 }
@@ -3548,7 +3040,6 @@ label,
 /**
  * Tenths
  */
-
 .push--one-tenth {
   left: 10%;
 }
@@ -3568,7 +3059,6 @@ label,
 /**
  * Twelfths
  */
-
 .push--one-twelfth {
   left: 8.333%;
 }
@@ -3588,7 +3078,6 @@ label,
 /**
  * Not a particularly great selector, but the DRYest way to do things.
  */
-
 [class*="push--"] {
   position: relative;
 }
@@ -3597,7 +3086,6 @@ label,
   /**
    * Whole
    */
-
   .push--desk-one-whole {
     left: 100%;
   }
@@ -3605,90 +3093,65 @@ label,
   /**
    * Halves
    */
-
-  .push--desk-one-half,
-  .push--desk-two-quarters,
-  .push--desk-three-sixths,
-  .push--desk-four-eighths,
-  .push--desk-five-tenths,
-  .push--desk-six-twelfths {
+  .push--desk-one-half, .push--desk-two-quarters, .push--desk-three-sixths, .push--desk-four-eighths, .push--desk-five-tenths, .push--desk-six-twelfths {
     left: 50%;
   }
 
   /**
    * Thirds
    */
-
-  .push--desk-one-third,
-  .push--desk-two-sixths,
-  .push--desk-four-twelfths {
+  .push--desk-one-third, .push--desk-two-sixths, .push--desk-four-twelfths {
     left: 33.333%;
   }
 
-  .push--desk-two-thirds,
-  .push--desk-four-sixths,
-  .push--desk-eight-twelfths {
+  .push--desk-two-thirds, .push--desk-four-sixths, .push--desk-eight-twelfths {
     left: 66.666%;
   }
 
   /**
    * Quarters
    */
-
-  .push--desk-one-quarter,
-  .push--desk-two-eighths,
-  .push--desk-three-twelfths {
+  .push--desk-one-quarter, .push--desk-two-eighths, .push--desk-three-twelfths {
     left: 25%;
   }
 
-  .push--desk-three-quarters,
-  .push--desk-six-eighths,
-  .push--desk-nine-twelfths {
+  .push--desk-three-quarters, .push--desk-six-eighths, .push--desk-nine-twelfths {
     left: 75%;
   }
 
   /**
    * Fifths
    */
-
-  .push--desk-one-fifth,
-  .push--desk-two-tenths {
+  .push--desk-one-fifth, .push--desk-two-tenths {
     left: 20%;
   }
 
-  .push--desk-two-fifths,
-  .push--desk-four-tenths {
+  .push--desk-two-fifths, .push--desk-four-tenths {
     left: 40%;
   }
 
-  .push--desk-three-fifths,
-  .push--desk-six-tenths {
+  .push--desk-three-fifths, .push--desk-six-tenths {
     left: 60%;
   }
 
-  .push--desk-four-fifths,
-  .push--desk-eight-tenths {
+  .push--desk-four-fifths, .push--desk-eight-tenths {
     left: 80%;
   }
 
   /**
    * Sixths
    */
-
-  .push--desk-one-sixth,
-  .push--desk-two-twelfths {
+  .push--desk-one-sixth, .push--desk-two-twelfths {
     left: 16.666%;
   }
 
-  .push--desk-five-sixths,
-  .push--desk-ten-twelfths {
+  .push--desk-five-sixths, .push--desk-ten-twelfths {
     left: 83.333%;
   }
 
   /**
    * Eighths
    */
-
   .push--desk-one-eighth {
     left: 12.5%;
   }
@@ -3708,7 +3171,6 @@ label,
   /**
    * Tenths
    */
-
   .push--desk-one-tenth {
     left: 10%;
   }
@@ -3728,7 +3190,6 @@ label,
   /**
    * Twelfths
    */
-
   .push--desk-one-twelfth {
     left: 8.333%;
   }
@@ -3745,24 +3206,19 @@ label,
     left: 91.666%;
   }
 }
-
 /*------------------------------------*\
     $PULL
 \*------------------------------------*/
-
 /**
  * Pull classes, to move grid items over to the right by certain amounts.
  */
-
 /*------------------------------------*\
     $BRAND
 \*------------------------------------*/
-
 /**
  * `.brand` is a quick and simple way to apply your brand face and/or color to
  * any element using a handy helper class.
  */
-
 .brand {
   font-family: "Helvetica Neue", sans-serif!important;
   color: #6d9705!important;
@@ -3780,7 +3236,6 @@ label,
 /*------------------------------------*\
     $HELPER
 \*------------------------------------*/
-
 /**
  * A series of helper classes to use arbitrarily. Only use a helper class if an
  * element/component doesnÔÇÖt already have a class to which you could apply this
@@ -3790,11 +3245,9 @@ label,
  * A lot of these classes carry `!important` as you will always want them to win
  * out over other selectors.
  */
-
 /**
  * Add/remove floats
  */
-
 .float--right {
   float: right !important;
 }
@@ -3810,7 +3263,6 @@ label,
 /**
  * Text alignment
  */
-
 .text--left {
   text-align: left  !important;
 }
@@ -3826,7 +3278,6 @@ label,
 /**
  * Font weights
  */
-
 .weight--light {
   font-weight: 300 !important;
 }
@@ -3842,7 +3293,6 @@ label,
 /**
  * Add/remove margins
  */
-
 .push {
   margin: 24px !important;
 }
@@ -3936,7 +3386,6 @@ label,
 /**
  * Add/remove paddings
  */
-
 .soft {
   padding: 24px !important;
 }
@@ -4030,12 +3479,10 @@ label,
 /**
  * Pull items full width of `.island` parents.
  */
-
 .full-bleed {
   margin-right: -24px !important;
   margin-left: -24px !important;
 }
-
 .islet .full-bleed {
   margin-right: -12px !important;
   margin-left: -12px !important;
@@ -4045,7 +3492,6 @@ label,
  * Add a help cursor to any element that gives the user extra information on
  * `:hover`.
  */
-
 .informative {
   cursor: help !important;
 }
@@ -4053,10 +3499,7 @@ label,
 /**
  * Mute an object by reducing its opacity.
  */
-
-.muted,
-.site-logo,
-.article__meta {
+.muted, .site-logo, .article__meta {
   opacity: 0.5 !important;
 }
 
@@ -4066,7 +3509,6 @@ label,
    <p class=proceed><a href=#>Read more...</a></p>
  *
  */
-
 .proceed {
   text-align: right !important;
 }
@@ -4077,7 +3519,6 @@ label,
    <a href=# class=go>Read more</a>
  *
  */
-
 .go:after {
   content: "\00A0" "\00BB" !important;
 }
@@ -4085,7 +3526,6 @@ label,
 /**
  * Apply capital case to an element (usually a `strong`).
  */
-
 .caps {
   text-transform: uppercase !important;
 }
@@ -4094,7 +3534,6 @@ label,
  * Hide content off-screen without resorting to `display:none;`, also provide
  * breakpoint specific hidden elements.
  */
-
 .accessibility,
 .visuallyhidden {
   border: 0 !important;
@@ -4120,7 +3559,6 @@ label,
     width: 1px !important;
   }
 }
-
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .accessibility--lap,
   .visuallyhidden--lap {
@@ -4134,7 +3572,6 @@ label,
     width: 1px !important;
   }
 }
-
 @media only screen and (min-width: 481px) {
   .accessibility--lap-and-up,
   .visuallyhidden--lap-and-up {
@@ -4148,7 +3585,6 @@ label,
     width: 1px !important;
   }
 }
-
 @media only screen and (max-width: 1023px) {
   .accessibility--portable,
   .visuallyhidden--portable {
@@ -4162,7 +3598,6 @@ label,
     width: 1px !important;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   .accessibility--desk,
   .visuallyhidden--desk {
@@ -4176,7 +3611,6 @@ label,
     width: 1px !important;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .accessibility--desk-wide,
   .visuallyhidden--desk-wide {
@@ -4190,22 +3624,15 @@ label,
     width: 1px !important;
   }
 }
-
 /* endif */
-
 /*------------------------------------*\
     $TYPOGRAPHY
 \*------------------------------------*/
-
 h1 {
   color: #000;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2, h3, h4, h5, h6 {
   color: #3A3A3A;
   font-weight: 300;
 }
@@ -4222,7 +3649,6 @@ a:hover {
 /*------------------------------------*\
     $ICONS
 \*------------------------------------*/
-
 @font-face {
   font-family: 'icons';
   src: url("/fonts/icons.eot");
@@ -4230,7 +3656,6 @@ a:hover {
   font-weight: normal;
   font-style: normal;
 }
-
 .icon {
   font-family: 'icons';
   speak: none;
@@ -4287,29 +3712,28 @@ a:hover {
 /*------------------------------------*\
     $BEAUTONS
 \*------------------------------------*/
-
 .nav__next,
-.nav__prev,
-.article .btn {
+.nav__prev, .article .btn {
   background-color: #DADBE1;
   color: #fff;
   line-height: 1;
   font-size: 20px;
   padding: 12px;
 }
-
 .nav__next:hover,
-.nav__prev:hover,
-.article .btn:hover {
+.nav__prev:hover, .article .btn:hover {
   background-color: #6d9705;
 }
-
 .disabled.nav__next:hover,
-.disabled.nav__prev:hover,
-.article .disabled.btn:hover {
+.disabled.nav__prev:hover, .article .disabled.btn:hover {
   background-color: #DADBE1;
 }
 
+/*
+// |--------------------------------------------------------------------------
+// |  $PAGE
+// |--------------------------------------------------------------------------
+*/
 html {
   background-color: #F4F3EF;
   color: #4d4d4d;
@@ -4331,7 +3755,15 @@ body {
     margin-top: 48px;
   }
 }
-
+/*
+// |--------------------------------------------------------------------------
+// |  $PAGE-HEAD
+// |--------------------------------------------------------------------------
+*/
+/*
+// |  Mobile header and navigation
+// |--------------------------------------------------------------------------
+*/
 .header {
   border-bottom: 2px solid #cccccc;
   margin-bottom: 48px;
@@ -4342,7 +3774,6 @@ body {
     display: none;
   }
 }
-
 .header__site-logo {
   float: left;
   margin-bottom: 0;
@@ -4352,11 +3783,14 @@ body {
   float: right;
   padding-top: 17px;
 }
-
 .header__nav > li {
   margin-left: 12px;
 }
 
+/*
+// |  Site logo
+// |--------------------------------------------------------------------------
+*/
 .site-logo {
   color: #4d4d4d;
   display: inline-block;
@@ -4374,7 +3808,6 @@ body {
 /*------------------------------------*\
     $SIDE-PANEL
 \*------------------------------------*/
-
 .side-panel {
   display: none;
 }
@@ -4435,7 +3868,15 @@ body {
     visibility: visible;
   }
 }
-
+/*
+// |--------------------------------------------------------------------------
+// |  $ARTICLE
+// |--------------------------------------------------------------------------
+*/
+/*
+// |  Inter-article next and previous post navigation
+// |--------------------------------------------------------------------------
+*/
 .nav--article {
   display: none;
 }
@@ -4448,7 +3889,6 @@ body {
     top: 48px;
   }
 }
-
 .nav__next,
 .nav__prev {
   padding: 0;
@@ -4469,6 +3909,10 @@ body {
   opacity: 0.5;
 }
 
+/*
+// |  Article content
+// |--------------------------------------------------------------------------
+*/
 .article__title {
   margin-bottom: 0;
 }
@@ -4487,8 +3931,7 @@ body {
 }
 
 .article .nav__next,
-.article .nav__prev,
-.article .btn {
+.article .nav__prev, .article .btn {
   background-color: #6d9705;
 }
 
@@ -4515,21 +3958,23 @@ body {
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
-
 .copyright {
   font-size: 12px;
   margin-top: 48px;
 }
 
+/*
+// |--------------------------------------------------------------------------
+// |  $MISC
+// |--------------------------------------------------------------------------
+*/
 /**
  * Coloured highlighting
  */
-
 ::-moz-selection {
   background-color: #6d9705;
   color: #fff;
 }
-
 ::selection {
   background-color: #6d9705;
   color: #fff;
@@ -4539,16 +3984,13 @@ body {
   text-align: center;
   padding: 8em 0;
 }
-
 .quote blockquote {
   font-size: 48px;
 }
-
 .quote footer {
   font-size: 24px;
   margin-top: 48px;
 }
-
 .quote cite {
   border: 1px solid #4d4d4d;
   border-width: 1px 0;
