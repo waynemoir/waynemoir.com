@@ -1,11 +1,12 @@
 exclude: [build.bat, README.md, inuit.css, style.scss, node_modules, Gruntfile.js, tasks, package.json]
 markdown: rdiscount
 highlighter: true
+paginate: 5
 permalink: /post/:year/:month/:title
+gems:
+  - jekyll-redirect-from
+
 
 name: Wayne Moir
 description: A user experience designer that occasionally writes about interesting things.
 url: http://www.waynemoir.com
-
-gems:
-  - jekyll-redirect-from
