@@ -7,7 +7,7 @@ categories:
 - Usability testing
 ---
 
-For the first six month after joining my current employer I must have explained the value of usability testing a hundred times. Each time I was met by a dismissive attitude and told that design within the company was not mature enough for it.
+For the first six months after joining my current employer I must have explained the value of usability testing a hundred times. Each time I was met by a dismissive attitude and told that design within the company was not mature enough for it.
 
 This cycle went on until we were mid way through a project and I become concerned its usability was not quite what it should be. I felt that during the translation of designs from paper prototypes to production code we had lost enough subtle but critical design elements that outsiders to the project team would struggle to understand what the interface was trying to communicate to them.
 
