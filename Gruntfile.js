@@ -15,6 +15,7 @@ module.exports = function(grunt) {
 
 // Register tasks
 	grunt.registerTask('default', function () {
+		grunt.option('force', true);
 		grunt.task.run([
 			'clean',
 			'sass',
