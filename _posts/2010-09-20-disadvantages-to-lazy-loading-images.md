@@ -2,6 +2,7 @@
 layout: post
 
 title: Disadvantages to Lazy Loading Images
+redirect_from: "/articles/2010/09/disadvantages-to-lazy-loading-images/"
 
 categories:
 - Web design

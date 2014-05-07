@@ -2,6 +2,7 @@
 layout: post
 
 title: Background Images Not Displaying in Chrome
+redirect_from: "/articles/2012/01/background-images-not-displaying-in-chrome/"
 
 categories:
 - Web Design

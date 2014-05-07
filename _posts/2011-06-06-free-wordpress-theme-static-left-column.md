@@ -2,6 +2,7 @@
 layout: post
 
 title: 'Free WordPress Theme: Static Left Column'
+redirect_from: "/articles/2011/06/free-wordpress-theme-static-left-column/"
 
 categories:
 - Front end development

@@ -2,6 +2,7 @@
 layout: post
 
 title: Hate the Pen Tool in Photoshop?
+redirect_from: "/articles/2010/10/hate-photoshops-pen-tool/"
 
 categories:
 - Interface design

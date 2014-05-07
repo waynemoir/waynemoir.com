@@ -2,6 +2,7 @@
 layout: post
 
 title: Font Icons
+redirect_from: "/articles/2012/08/font-icons/"
 
 categories:
 - Web Design

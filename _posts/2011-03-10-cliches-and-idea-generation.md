@@ -2,6 +2,7 @@
 layout: post
 
 title: Cliches and Idea Generation
+redirect_from: "/articles/2011/03/cliches-and-idea-generation/"
 
 categories:
 - Web Design

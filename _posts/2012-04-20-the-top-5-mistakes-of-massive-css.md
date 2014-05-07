@@ -2,6 +2,7 @@
 layout: post
 
 title: CSS Performance and Maintainability
+redirect_from: "/articles/2012/04/the-top-5-mistakes-of-massive-css/"
 
 categories:
 - Web Design

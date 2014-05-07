@@ -2,6 +2,7 @@
 layout: post
 
 title: Negative Space in Design
+redirect_from: "/articles/2011/02/negative-space-in-design/"
 
 categories:
 - Web Design

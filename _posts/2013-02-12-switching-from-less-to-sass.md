@@ -2,6 +2,7 @@
 layout: post
 
 title: Switching from LESS to Sass
+redirect_from: "/articles/2013/02/switching-from-less-to-sass/"
 
 categories:
 - Web Design

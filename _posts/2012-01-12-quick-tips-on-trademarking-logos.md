@@ -2,6 +2,7 @@
 layout: post
 
 title: Quick Tips for Logos Trade Marks
+redirect_from: "/articles/2012/01/quick-tips-on-trademarking-logos/"
 
 categories:
 - Web Design

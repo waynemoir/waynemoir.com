@@ -1,7 +1,9 @@
+
 ---
 layout: post
 
 title: Designing The Experience
+redirect_from: "/articles/2010/08/designing-the-experience/"
 
 categories:
 - Way of thinking

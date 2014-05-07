@@ -2,6 +2,7 @@
 layout: post
 
 title: HTML5 Elements in Internet Explorer
+redirect_from: "/articles/2011/01/html5-elements-in-internet-explorer/"
 
 categories:
 - Web Design

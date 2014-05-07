@@ -2,6 +2,7 @@
 layout: post
 
 title: Technical Web Typography
+redirect_from: "/articles/2011/03/technical-web-typography/"
 
 categories:
 - Web Design

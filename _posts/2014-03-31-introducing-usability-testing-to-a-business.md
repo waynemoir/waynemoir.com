@@ -2,6 +2,7 @@
 layout: post
 
 title: Introducing usability testing to a business that doesn't understand its value
+redirect_from: "/articles/2014/03/introducing-usability-testing-to-a-business/"
 
 categories:
 - Usability testing
