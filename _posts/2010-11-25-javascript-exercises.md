@@ -2,6 +2,7 @@
 layout: post
 
 title: JavaScript Exercises
+redirect_from: "/articles/2010/11/javascript-exercises/"
 
 categories:
 - Web design

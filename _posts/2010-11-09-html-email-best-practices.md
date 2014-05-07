@@ -2,6 +2,7 @@
 layout: post
 
 title: HTML E-mail Best Practices
+redirect_from: "/articles/2010/11/html-email-best-practices/"
 
 categories:
 - Web design

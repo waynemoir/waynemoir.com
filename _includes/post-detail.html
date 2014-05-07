@@ -1,0 +1,64 @@
+{% include vars.html %}
+
+
+
+<article class="article">
+
+	<h1 title="Permanent link to {{title}}" class="article__title">
+		<a href="{{root_url}}{{url}}">{{ title }}</a>
+	</h1>
+
+
+	<p class="article__meta">
+		{{ date | date: "%B %e, %Y" }}
+
+
+		{% assign categoriesIteration = 0 %}
+		{% if categories  != null %}
+			|
+			<span class="article__categories">
+				{% assign categoriesLength = categories | size %}
+				{% for category in categories %}
+					{% assign categoriesIteration = categoriesIteration | plus:1 %}
+					{{ category }}{% if categoriesIteration < categoriesLength %},{% endif %}
+				{% endfor %}
+			</span>
+		{% endif %}
+	</p>
+
+
+	{{content}}
+
+</article>
+
+
+
+
+<ul class="nav  nav--article">
+
+	<li>
+		{% if previousUrl %}
+			<a href="{{previousUrl}}" title="Previous article: {{previousTitle}}" class="nav__prev">
+				<i class="icon  icon--large  icon-arrow-left" aria-hidden="true"></i>
+			</a>
+		{% else %}
+			<div class="nav__prev  disabled">
+				<i class="icon  icon--large  icon-arrow-left" aria-hidden="true"></i>
+			</div>
+		{% endif %}
+	</li>
+
+
+	<li>
+		{% if nextUrl %}
+			<a href="{{nextUrl}}" title="Next article: {{nextTitle}}" class="nav__next">
+				<i class="icon  icon--large  icon-arrow-right" aria-hidden="true"></i>
+			</a>
+		{% else %}
+			<div class="nav__next  disabled">
+				<i class="icon  icon--large  icon-arrow-right" aria-hidden="true"></i>
+			</div>
+		{% endif %}
+	</li>
+
+</ul>

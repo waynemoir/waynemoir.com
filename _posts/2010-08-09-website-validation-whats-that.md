@@ -2,6 +2,7 @@
 layout: post
 
 title: Website Validation, Whats That?
+redirect_from: "/articles/2010/08/website-validation-whats-that/"
 
 categories:
 - Web Design

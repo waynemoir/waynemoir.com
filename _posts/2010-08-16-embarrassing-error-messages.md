@@ -2,6 +2,7 @@
 layout: post
 
 title: Embarrassing Error Messages
+redirect_from: "/articles/2010/08/embarrassing-error-messages/"
 
 categories:
 - Feedback

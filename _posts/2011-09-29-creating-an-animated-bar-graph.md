@@ -2,6 +2,7 @@
 layout: post
 
 title: Creating an Animated Bar Graph
+redirect_from: "/articles/2011/09/creating-an-animated-bar-graph/"
 
 categories:
 - Web Design
