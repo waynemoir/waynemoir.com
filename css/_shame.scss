@@ -16,11 +16,11 @@
 
 
 .pagination > li {
-	padding: 12px;
+	padding: $half-spacing-unit;
 }
 
 
 .pagination > li > a {
-	padding: 12px;
-	margin: -12px;
+	padding: $half-spacing-unit;
+	margin: -$half-spacing-unit;
 }
