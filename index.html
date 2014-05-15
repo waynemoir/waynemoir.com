@@ -2,8 +2,54 @@
 layout: default
 ---
 
-{% assign post = site.posts.first %}
-{% assign content = post.content %}
+<ul class="block-list  block-list--large">
+	 {% for post in paginator.posts %}
+
+		<li>
+			{% assign content = post.content %}
 
 
-{% include post-detail.html %}
+			{% if post.categories  contains "quotes" %}
+
+				<article>
+					{{content}}
+				</article>
+
+			{% else %}
+
+				{% include post-detail.html %}
+
+			{% endif %}
+
+		</li>
+
+
+	 {% endfor %}
+</ul>
+
+
+
+
+<ol class="nav  pagination">
+	<li class="pagination__prev">
+		{% if paginator.previous_page %}
+
+			{% if paginator.previous_page == 1 %}
+				<a href="/">Previous</a>
+			{% else %}
+				<a href="/page{{paginator.previous_page}}">Previous</a>
+			{% endif %}
+
+		{% else %}
+			Previous
+		{% endif %}
+	</li><!--
+
+ --><li class="pagination__next">
+		{% if paginator.next_page %}
+			<a href="/page{{paginator.next_page}}">Next</a>
+		{% else %}
+			Next
+		{% endif %}
+	</li>
+</ol>

@@ -1,0 +1,31 @@
+.block-list--large {
+	border-top-width: 0;
+}
+
+.block-list--large > li {
+	margin-bottom: ($base-spacing-unit * 3);
+	padding-bottom: ($base-spacing-unit * 3);
+}
+
+
+
+.pagination {
+	margin-top: -($base-spacing-unit * 2);
+	text-align: center;
+}
+
+
+.pagination > li {
+	padding: $half-spacing-unit;
+}
+
+
+.pagination > li > a {
+	padding: $half-spacing-unit;
+	margin: -$half-spacing-unit;
+}
+
+
+h2, h3, h4, h5, h6 {
+	margin-bottom: $half-spacing-unit;
+}

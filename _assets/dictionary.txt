@@ -24,6 +24,7 @@ Photoshop
 Icomoon
 Inkscape
 Modernizr
+Breevy
 
 
 
@@ -43,6 +44,7 @@ bwalkin
 larrylegend
 shildner
 waynemoir
+suthen
 
 
 
@@ -58,6 +60,8 @@ Giles Colborne
 Sjoerd Visscher
 Jeffrey Jaffe
 Pamela Fox
+Claire Lew
+Lowri Davies
 
 
 
@@ -72,3 +76,4 @@ Spyre Studios
 Webdesigner Depot
 Web Soulz
 Drawar
+Mac
