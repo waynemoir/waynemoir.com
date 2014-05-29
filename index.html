@@ -35,21 +35,21 @@ layout: default
 		{% if paginator.previous_page %}
 
 			{% if paginator.previous_page == 1 %}
-				<a href="/">Previous</a>
+				<a href="/">Newer posts</a>
 			{% else %}
-				<a href="/page{{paginator.previous_page}}">Previous</a>
+				<a href="/page{{paginator.previous_page}}">Newer posts</a>
 			{% endif %}
 
 		{% else %}
-			Previous
+			Newer posts
 		{% endif %}
 	</li><!--
 
  --><li class="pagination__next">
 		{% if paginator.next_page %}
-			<a href="/page{{paginator.next_page}}">Next</a>
+			<a href="/page{{paginator.next_page}}">Older posts</a>
 		{% else %}
-			Next
+			Older posts
 		{% endif %}
 	</li>
 </ol>
