@@ -1,7 +1,7 @@
 exclude: [build.bat, README.md, inuit.css, style.scss, node_modules, Gruntfile.js, tasks, package.json]
 markdown: rdiscount
 highlighter: true
-paginate: 5
+paginate: 3
 permalink: /post/:year/:month/:title
 gems:
   - jekyll-redirect-from
