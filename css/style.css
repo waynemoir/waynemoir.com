@@ -831,7 +831,7 @@ textarea:focus {
  * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
  * and over in your markup.
  */
-.cf:after, .nav:after, .header:after {
+.cf:after, .nav:after, .matrix:after, .multi-list:after, .header:after {
   content: "";
   display: table;
   clear: both;
@@ -1892,25 +1892,105 @@ label,
  * Demo: jsfiddle.net/inuitcss/hR57q
  *
  */
-.block-list,
-.block-list > li {
+.block-list, .matrix,
+.block-list > li,
+.matrix > li {
   border: 0 solid #cccccc;
 }
 
-.block-list {
+.block-list, .matrix {
   list-style: none;
   margin-left: 0;
   border-top-width: 1px;
 }
-.block-list > li {
+.block-list > li, .matrix > li {
   border-bottom-width: 1px;
   padding: 12px;
 }
 
-.block-list__link {
+.block-list__link, .matrix__link {
   display: block;
   padding: 12px;
   margin: -12px;
+}
+
+/*------------------------------------*\
+    $MATRIX
+\*------------------------------------*/
+/**
+ * Create a grid of items out of a single list, e.g.:
+ *
+   <ul class="matrix  three-cols">
+       <li class=all-cols>Lorem</li>
+       <li>Ipsum <a href=#>dolor</a></li>
+       <li><a href=# class=matrix__link>Sit</a></li>
+       <li>Amet</li>
+       <li class=all-cols>Consectetuer</li>
+   </ul>
+ *
+ * Extend this object in your theme stylesheet.
+ *
+ * Demo: jsfiddle.net/inuitcss/Y2zrU
+ *
+ */
+.matrix {
+  border-left-width: 1px;
+}
+.matrix > li {
+  float: left;
+  border-right-width: 1px;
+}
+
+/**
+ * The `.multi-list` object is a lot like the `.matrix` object only without the
+ * blocky borders and padding.
+ *
+   <ul class="multi-list  four-cols">
+       <li>Lorem</li>
+       <li>Ipsum</li>
+       <li>Dolor</li>
+       <li>Sit</li>
+   </ul>
+ *
+ * Demo: jsfiddle.net/inuitcss/Y2zrU
+ *
+ */
+.multi-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.multi-list > li {
+  float: left;
+}
+
+/**
+ * Apply these classes alongside the `.matrix` or `.multi-list` classes on
+ * lists to determine how wide their columns are.
+ */
+.two-cols > li {
+  width: 50%;
+}
+
+.three-cols > li {
+  width: 33.333%;
+}
+
+.four-cols > li {
+  width: 25%;
+}
+
+.five-cols > li {
+  width: 20%;
+}
+
+/**
+ * Unfortunately we have to qualify this selector in order to bring its
+ * specificity above the `.[number]-cols > li` selectors above.
+ */
+.matrix > .all-cols,
+.multi-list > .all-cols {
+  width: 100%;
 }
 
 /*------------------------------------*\
@@ -3709,6 +3789,10 @@ a:hover {
   content: "\e605";
 }
 
+.icon-link:before {
+  content: "\e607";
+}
+
 /*------------------------------------*\
     $BEAUTONS
 \*------------------------------------*/
@@ -3939,7 +4023,7 @@ body {
     $QUOTE POST LAYOUT
 \*------------------------------------*/
 .quote .big-quote {
-  padding: 144px 0;
+  padding: 96px 0 48px;
 }
 
 .big-quote {
@@ -3958,7 +4042,7 @@ body {
   padding: 12px 24px;
 }
 
-.block-list__link {
+.block-list__link, .matrix__link {
   color: #4d4d4d;
 }
 
@@ -3966,14 +4050,15 @@ body {
   color: #6d9705;
 }
 
-.block-list__link:hover {
+.block-list__link:hover, .matrix__link:hover {
   background-color: #6d9705;
   cursor: pointer;
   opacity: 1 !important;
 }
 
-.block-list__link:hover,
-.block-list__link:hover .block-list__title {
+.block-list__link:hover, .matrix__link:hover,
+.block-list__link:hover .block-list__title,
+.matrix__link:hover .block-list__title {
   color: #fff;
   text-decoration: none;
 }
@@ -4028,4 +4113,13 @@ body {
 
 h2, h3, h4, h5, h6 {
   margin-bottom: 12px;
+}
+
+.matrix--actions {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.matrix__link {
+  color: #6d9705;
 }
