@@ -4,10 +4,7 @@
 
 <article class="article">
 
-	<h1 title="Permanent link to {{title}}" class="article__title">
-		<a href="{{root_url}}{{url}}">{{ title }}</a>
-	</h1>
-
+	<h1 class="article__title">{{ title }}</h1>
 
 	<p class="article__meta">
 		{{ date | date: "%B %e, %Y" }}
@@ -28,5 +25,8 @@
 
 
 	{{content}}
+
+
+	{% include post-actions.html %}
 
 </article>
