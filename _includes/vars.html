@@ -13,6 +13,11 @@
 	{% assign date 			= {{page.date}} %}
 	{% assign categories 	= {{page.categories}} %}
 
+
+	{% assign quote 		= {{page.quote}} %}
+	{% assign source 		= {{page.source}} %}
+	{% assign cite 			= {{page.cite}} %}
+
 {% else %}
 
 	{% assign previousUrl 	= {{post.previous.url}} %}
@@ -27,5 +32,10 @@
 	{% assign title 		= {{post.title}} %}
 	{% assign date 			= {{post.date}} %}
 	{% assign categories 	= {{post.categories}} %}
+
+
+	{% assign quote 		= {{post.quote}} %}
+	{% assign source 		= {{post.source}} %}
+	{% assign cite 			= {{post.cite}} %}
 
 {% endif %}

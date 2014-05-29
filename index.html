@@ -12,7 +12,7 @@ layout: default
 			{% if post.categories  contains "quotes" %}
 
 				<article>
-					{{content}}
+					{% include quote-detail.html %}
 				</article>
 
 			{% else %}
