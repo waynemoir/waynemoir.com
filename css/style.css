@@ -4019,8 +4019,17 @@ body {
   background-color: #6d9705;
 }
 
+.article blockquote {
+  text-indent: 0;
+}
+
+.article blockquote p:before,
+.article blockquote p::after {
+  content: "";
+}
+
 /*------------------------------------*\
-    $QUOTE POST LAYOUT
+    $POST LAYOUT FOR QUOTES
 \*------------------------------------*/
 .quote .big-quote {
   padding: 96px 0 48px;
@@ -4061,6 +4070,11 @@ body {
 .matrix__link:hover .block-list__title {
   color: #fff;
   text-decoration: none;
+}
+
+blockquote {
+  border-left: 5px solid #6d9705;
+  padding-left: 24px;
 }
 
 /*------------------------------------*\

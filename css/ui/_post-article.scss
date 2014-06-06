@@ -89,3 +89,14 @@
 
 	background-color: $brand-color;
 }
+
+
+.article blockquote {
+	text-indent: 0; // Resets indentation for blockquotes within an article to allow for more complex quotations, for example when quoting a <p> then <ul> then a <p>
+}
+
+
+.article blockquote p:before,
+.article blockquote p::after{
+	content:""; // Removes automatic quotation marks for blockquotes within an article to allow for more complex quotations, for example when quoting a <p> then <ul> then a <p>
+}
