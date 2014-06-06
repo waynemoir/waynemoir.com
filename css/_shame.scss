@@ -27,5 +27,20 @@
 
 
 h2, h3, h4, h5, h6 {
+	font-weight: bold;
 	margin-bottom: $half-spacing-unit;
+}
+
+
+.matrix--actions {
+	margin-top: $base-spacing-unit * 2;
+	text-align: center;
+}
+
+.matrix__link {
+	color: $brand-color;
+}
+
+h2, .beta {
+	line-height: 1.2;
 }
