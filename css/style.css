@@ -4112,6 +4112,7 @@ body {
 }
 
 h2, h3, h4, h5, h6 {
+  font-weight: bold;
   margin-bottom: 12px;
 }
 
@@ -4122,4 +4123,8 @@ h2, h3, h4, h5, h6 {
 
 .matrix__link {
   color: #6d9705;
+}
+
+h2, .beta {
+  line-height: 1.2;
 }
