@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    $POST LAYOUT FOR QUOTES
+\*------------------------------------*/
+
+.quote .big-quote {
+	padding: ($base-spacing-unit * 4) 0 ($base-spacing-unit * 2);
+}
+
+
+.big-quote {
+	font-size: $kilo-size;
+	text-align: center;
+}
+
+
+.big-quote__footer {
+	font-size: $h3-size;
+	margin-top: ($base-spacing-unit * 2);
+}
+
+
+.big-quote__cite {
+	border: 1px solid $body-text;
+	border-width: 1px 0;
+	padding:  $half-spacing-unit $base-spacing-unit;
+}
