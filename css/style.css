@@ -3755,6 +3755,7 @@ a:hover {
 
 .icon-logo:before {
   content: "\e604";
+  font-weight: bold;
 }
 
 .icon-github:before {
