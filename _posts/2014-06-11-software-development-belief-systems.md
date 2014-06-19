@@ -22,7 +22,7 @@ Rian van der Merwe's <a href="http://www.elezea.com/2014/06/software-development
 </blockquote>
 
 
-It would be easy to dismiss executive belief systems as just the way things are, or to gloss over the importance of understanding and working to change them. However their ripple effect is phenominal; the damage they can do to the culture alone can destroy a company from the inside.
+It would be easy to dismiss executive belief systems as just the way things are, or to gloss over the importance of understanding and working to change them. However their ripple effect is phenomenal; the damage they can do to the culture alone can destroy a company from the inside.
 
 
 Belief system #1 is most certainly the one to which my executives currently subscribe. In our organisation the problems this belief system creates had been evident for some time and came to a head around six months ago when nearly half our development department left the business over a two month period.
