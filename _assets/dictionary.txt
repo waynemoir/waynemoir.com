@@ -1,5 +1,6 @@
 // General terms
-
+touchpoints
+whiteboard
 
 
 
@@ -64,6 +65,8 @@ Claire Lew
 Lowri Davies
 Rian van der Merwe
 Rian
+Jim Rohn
+David Heinemeier Hansson
 
 
 
@@ -79,3 +82,4 @@ Webdesigner Depot
 Web Soulz
 Drawar
 Mac
+Blu-Tack
