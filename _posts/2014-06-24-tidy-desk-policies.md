@@ -13,7 +13,7 @@ categories:
 Psychology studies have shown that changes as minor as <a href="http://anthillonline.com/how-a-picture-of-a-punk-can-boost-your-creativity/">thinking about the lifestyle and appearance of a punk</a> or an accountant can have a significant impact on our ability to be creative. Imagine how much impact the sterile environment created by that tidy desk policy is having on creative thinking.
 
 
-Different people and job roles have different needs and need different environments in order to fulfil their potential. These kind of policies ignore those needs, and worse still try to suppress them. What they really show is that you don't understand people. The problem with this is that <a href="http://www.youtube.com/watch?v=llKvV8_T95M">if you don't understand people, you don't understand business</a>. 
+Different people and job roles have different needs and need different environments in order to fulfil their potential. These kind of policies ignore those needs, and worse still try to suppress them. What they really show is that you don't understand people. The problem with this is that <a href="http://www.youtube.com/watch?v=llKvV8_T95M">if you don't understand people, you don't understand business</a>.
 
 
 Some people thrive in chaos and others require order. Creativity and innovation cannot exist in a sterile environment, studies have found that <a href="http://www.apa.org/monitor/2013/10/messy-desk.aspx">a messy desk encourages a creative mind</a>.
