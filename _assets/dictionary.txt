@@ -66,6 +66,7 @@ Lowri Davies
 Rian van der Merwe
 Rian
 Jim Rohn
+David Heinemeier Hansson
 
 
 
