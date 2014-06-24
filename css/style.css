@@ -4006,7 +4006,8 @@ body {
   text-transform: capitalize;
 }
 
-.article img {
+.article img
+.article__asset {
   background: #eee;
   border: 1px solid;
   border-color: transparent #a1a0a0 #a1a0a0 transparent;
