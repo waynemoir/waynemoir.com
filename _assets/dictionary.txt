@@ -33,6 +33,8 @@ Breevy
 // Places
 Polegate
 Izmir
+Palazzo Pubblico
+Siena
 
 
 
@@ -67,6 +69,7 @@ Rian van der Merwe
 Rian
 Jim Rohn
 David Heinemeier Hansson
+John Ruskin
 
 
 
